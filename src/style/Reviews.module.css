@@ -1,0 +1,82 @@
+
+.reviewsSection {
+    margin-top: 45px;
+    margin-bottom: 43px;
+}
+
+.reviewsTitle {
+    margin: 0 auto 95px;
+    max-width: 946px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.reviewsListBlock {
+    margin: 0 auto;
+    max-width: 946px;
+}
+
+.reviewsList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.reviewsItem {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 30px;
+    border: 1px solid #E9ECEE;
+    border-radius: 10px;
+    width: 100%;
+    padding: 65px 95px 65px 55px;
+}
+
+.reviewsImg {
+    border-radius: 50%;
+    margin-bottom: 33px;
+}
+
+.reviewsTitleItem {
+    margin-bottom: 20px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
+    /* or 19px */
+
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+
+.reviewsDescrItem {
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: #ACB8C0;
+    max-width: 165px;
+}
+
+.reviewsDescr {
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    letter-spacing: -0.02em;
+
+    color: #607483;
+}

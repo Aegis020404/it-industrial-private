@@ -1,0 +1,147 @@
+.vacancySection {
+    margin: 45px 0 180px;
+    transition: all .35s ease-in-out;
+}
+
+.title {
+    margin-bottom: 95px;
+    margin-left: 100px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.accordionBlock {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 12px;
+    margin: 0 0 0 100px;
+    transition: all .35s ease-in-out;
+}
+
+.accordion {
+    padding: 17px 17px 17px 41px;
+    background: #FFFFFF;
+    border: 1px solid #E8EDF1;
+    max-height: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+
+.accordionActive {
+    max-height: 100%;
+}
+
+.accordionBottomBlock {
+   max-width: 680px;
+    opacity: 0;
+   transform: translateX(100px);
+   pointer-events: none;
+   transition: all .35s ease-in-out;
+}
+
+
+.accordionActive .accordionBottomBlock {
+    transform: none;
+    opacity: 1;
+}
+
+
+.accordionHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.accordionTitle {
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+    letter-spacing: -0.02em;
+
+    color: #F84263;
+    transition: all .35s ease-in-out;
+}
+
+.accordionSignBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #F84263;
+}
+
+.accordionLineV, .accordionLineH{
+    position: absolute;
+    width: 13px;
+    height: 1px;
+    background-color: #F84263;
+    border-radius: 3px;
+    transition: all .35s ease-in-out;
+}
+
+.accordionActive .accordionTitle {
+    color: #607483;
+}
+
+.accordionActive  .accordionLineH {
+    transform: rotate(180deg);
+}
+
+.accordionActive  .accordionLineV {
+    transform: rotate(0deg);
+}
+.accordionLineV {
+    transform: rotate(90deg);
+}
+
+
+.accordionDescr {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.accordionDescr, .accordionItem, .accordionWhatDo {
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 24px */
+
+    letter-spacing: -0.02em;
+
+    color: #607483;
+}
+
+.accordionWhatDo {
+    margin-bottom: 25px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.accordionItem span{
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.accordionItem span {
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    background-color: #607483;
+    border-radius: 50%;
+}

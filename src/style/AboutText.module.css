@@ -1,0 +1,95 @@
+.aboutSection {
+    position: relative;
+    margin: 45px 0 85px;
+    min-height: 500px;
+}
+
+.aboutBackImg {
+    position: absolute;
+    left: auto;bottom: -30px;right: -10px;
+    
+    width: 480px;
+    height: 483px;
+    background-image: url('../assets/img/blank-about.svg');
+    background-size: contain;
+    background-position: center;
+}
+
+.aboutTitle {
+    margin-bottom: 95px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 120%;
+    /* or 55px */
+
+    letter-spacing: -0.02em;
+
+    color: #25495C;
+}
+
+.aboutContent {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 115px;
+    max-width: 950px;
+}
+
+.countCard {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.countTopCard {
+display: flex;
+flex-direction: column;
+margin-bottom: 60px;
+}
+
+.count {
+    margin-bottom: 5px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 110%;
+    /* identical to box height, or 61px */
+
+    letter-spacing: -0.02em;
+
+    color: #25495C;
+}
+
+.countDescr {
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+
+    letter-spacing: -0.02em;
+
+    color: #607483;
+}
+
+.aboutText {
+    font-family: 'GothamProRegular';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+letter-spacing: -0.02em;
+
+color: #607483;
+}
+
+.aboutText span {
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+}
