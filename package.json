@@ -2,7 +2,7 @@
   "name": "it-industrial",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aegis020404.github.io/it-industrial-1/",
+  "homepage": "https://aegis020404.github.io/it-industrial-private/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
