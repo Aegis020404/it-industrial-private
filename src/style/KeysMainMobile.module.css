@@ -1,0 +1,9 @@
+.mobileBlock {
+    padding-bottom: 110px;
+}
+
+.mobileList {
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    gap: 80px;
+}

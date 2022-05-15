@@ -13,7 +13,7 @@ const AppRouter = ()=>{
                        exact={route.exact}
                        key={route.path}/>
             )}
-            <Redirect to='/it-industrial-private' />
+            <Redirect to='/it-industrial-1' />
         </Switch>
     )
 }

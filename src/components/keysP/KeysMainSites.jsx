@@ -1,11 +1,11 @@
 import React from 'react';
-import cl from './../../style/KeysMain.module.css';
+import cl from './../../style/KeysMainSites.module.css';
 import orangePhone from './../../assets/img/orange-img-phone.png';
 import blackGadjet from './../../assets/img/auto-gadjets.png';
-import greyLlumar from './../../assets/img/pad-mobile.jpg';
+import greyLlumar from './../../assets/img/llumar-pad.png';
 import ecoFemale from './../../assets/img/female-sort.png';
 import blueHockey from './../../assets/img/pad-hockey.png';
-import KeysMainSItem from './KeysMainSItem';
+import KeysItemList from '../KeysItemList';
 
 const KeysMainSites = ()=>{
 
@@ -25,7 +25,7 @@ const KeysMainSites = ()=>{
        <div className={cl.keysSitesBlock}>
            <ul className={cl.keysSitesLisst}>
                 {infoArr.map((e,i)=>
-                    <KeysMainSItem descr={e.descr} classesImg={e.imageInfo.classesImg} logo={e.imageInfo.logo} alt={e.imageInfo.alt} background={e.imageInfo.background} img={e.imageInfo.img}/>
+                    <KeysItemList descr={e.descr} classesImg={e.imageInfo.classesImg} logo={e.imageInfo.logo} alt={e.imageInfo.alt} background={e.imageInfo.background} img={e.imageInfo.img}/>
                 )}
            </ul>
        </div>

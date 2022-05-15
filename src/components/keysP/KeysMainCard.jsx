@@ -4,6 +4,9 @@ import cl from './../../style/KeysMain.module.css';
 import { connect } from 'react-redux/lib/exports';
 import { selectBtnKeys } from "../../redux/keysNav-redux";
 import KeysMainSites from "./KeysMainSites";
+import KeysMainSeo from "./KeysMainSeo";
+import KeysMainMobile from "./KeysMainMobile";
+import KeysMainCrm from "./KeysMainCrm";
 
 const KeysMainCard = (props)=>{
     return (
@@ -11,7 +14,9 @@ const KeysMainCard = (props)=>{
             <nav className={cl.keysNav}>
                 <MyBtns arrBtns={props.state.btns} selectBtn={props.selectBtnKeys} btnsClasses={cl.keysNavList} btnClasses={cl.keysNavItem}/>
             </nav>
-            <KeysMainSites/>
+            
+            <KeysMainSeo/>
+          
         </div>
     )
 }
