@@ -17,7 +17,7 @@ const keysMainReducer = (state = initialState, action) => {
     switch (action.type) {
         case SELECT_BTN: {
             return {
-                ...state, btns:[...state.btns.map((el,i)=>i==action.key? {...el,selected: !el.selected } : el)]
+                ...state, btns:[...state.btns.map((el,i)=>i==action.key? {...el,selected: true } : {...el, selected: false})]
                 }
             }
         }
