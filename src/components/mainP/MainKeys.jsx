@@ -29,7 +29,7 @@ const MainKeys = ()=>{
                             )}
                         </ul>
                     </div>
-                    <Link to='/keys'>
+                    <Link to='/keys' onClick={e=>{document.body.scrollTo({top:0,behavior:'smooth'})}}>
                         <MyBtnBlank classes={cl.keysBtn}>все кейсы</MyBtnBlank>
                     </Link>
                    

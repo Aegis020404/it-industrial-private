@@ -1,4 +1,5 @@
 .keysSitesBlock {
+    transition: all .35s ease-in-out;
     padding-bottom: 100px;
 }
 

@@ -1,13 +1,14 @@
 import React from 'react';
 import cl from './MyBtns.module.css';
 
-const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses})=>{
+const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive})=>{
     return (
         <div className={[cl.btns, btnsClasses].join` `}>
         {arrBtns.map((el, i) => (
             <button className={el.selected ? [cl.btn, cl.btnSelected].join` ` : [btnClasses,cl.btn].join` `} key={i} my_key={i}
                     onClick={(e,i) => {
                         selectBtn(e.target.getAttribute('my_key'))
+                        setTabActive(e.target.getAttribute('my_key'))
                         e.preventDefault();
                     }}>
                     {el.text}

@@ -3,7 +3,7 @@ import crmLlumar from './../../assets/img/llumar-crm.png';
 import cl from './../../style/KeysMainCrm.module.css';
 import KeysItemList from '../KeysItemList';
 
-const KeysMainCrm = ()=>{
+const KeysMainCrm = ({classesTabs})=>{
     const infoArr = [{descr: 'Разработка индивидуальной CRM-системы',img: {background:'#E50A0B', image: crmLlumar, alt:'Индивидуальная CRM-система разработанная для компании "LLumar"',classesImg: cl.crmLlumarImg, logo: <svg width="81" height="45" viewBox="0 0 81 45" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M4.38873 16.8357H0.823242V43.7824H10.4429V40.6823H4.38873V16.8357Z" fill="white"/>
     <path d="M16.3028 16.8357H12.6895V43.7824H22.333V40.6823H16.3028V16.8357Z" fill="white"/>
@@ -24,7 +24,7 @@ const KeysMainCrm = ()=>{
     </svg>
     }}]
     return (
-        <div className={cl.crmBlock}>
+        <div className={[cl.crmBlock, classesTabs].join` `}>
             <ul className={cl.crmList}>
                 {infoArr.map((e,i)=><KeysItemList descr={e.descr} logo={e.img.logo} img={e.img.image} background={e.img.background} alt={e.img.alt} classesImg={e.img.classesImg}/>)}
             </ul>

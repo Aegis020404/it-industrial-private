@@ -152,7 +152,9 @@ const Header = () => {
                             <Link to='/keys' className={cl.navPage}>
                                 <MyNavLink classes={cl.nav_span}>Кейсы</MyNavLink>
                             </Link>
-                            <MyNavLink classes={cl.nav_span}>Тарифы</MyNavLink>
+                            <Link to='/tariffs'>
+                                <MyNavLink classes={cl.nav_span}>Тарифы</MyNavLink>
+                            </Link>
                             <MyNavLink classes={cl.nav_span}>Контакты</MyNavLink>
                         </nav>
 

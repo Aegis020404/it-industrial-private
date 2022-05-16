@@ -4,7 +4,7 @@ import AboutCompanyPage from "../pages/AboutCompanyPage";
 import ReviewsPage from "../pages/ReviewsPage";
 import VacancyPage from "../pages/VacancyPage";
 import KeysPage from '../pages/KeysPage'; 
-
+import TariffPage from "../pages/TariffPage";
 
 
 export const publicRouters = [
@@ -12,6 +12,7 @@ export const publicRouters = [
     {path: '/keys', component: KeysPage, exact: true},
     {path: '/about', component: AboutCompanyPage, exact: true},
     {path: '/reviews', component: ReviewsPage, exact: true},
-    {path: '/vacancy', component: VacancyPage, exact: true}
+    {path: '/vacancy', component: VacancyPage, exact: true},
+    {path: '/tariffs', component: TariffPage, exact: true}
 ]
 

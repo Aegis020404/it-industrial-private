@@ -18,6 +18,7 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: #607483;
+    transition: all .35s ease-in-out;
 }
 
 .btnSelected {
@@ -25,5 +26,5 @@
     -webkit-box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25) !important;
     box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25) !important;;
     border-radius: 100px !important;;
-    color: #FFFFFF !important;;
+    color: #FFFFFF !important;
 }

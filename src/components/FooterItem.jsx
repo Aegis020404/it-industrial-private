@@ -10,7 +10,7 @@ const FooterItem = ({title, info, titleClass}) => {
                 <ul className={cl.footerIClist}>
                     {info.map(e=>
                         <li className={[cl.footerICitem, e.class].join` `} key={e.link}>
-                            <Link to={e.page} className={cl.footerIClink}>{e.link}</Link>
+                            <Link to={e.page} className={cl.footerIClink} onClick={e=>{document.body.scrollTo({top:0,behavior:'smooth'})}}>{e.link}</Link>
                         </li>
                     )}
                 </ul>

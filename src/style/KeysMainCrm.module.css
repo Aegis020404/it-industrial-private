@@ -1,5 +1,6 @@
 .crmBlock {
-    padding-bottom: 100px;
+    transition: all .35s ease-in-out;
+    padding-bottom: 110px;
 }
 
 .crmList {

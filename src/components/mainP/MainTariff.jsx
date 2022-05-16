@@ -15,6 +15,7 @@ import MyBtnFiled from '../UI/buttonback/MyBtnFiled';
 import {Pagination} from "swiper";
 import postRequest from "../../redux/requests";
 import MyThxModal from '../UI/thxmodal/MyThxModal';
+import TariffsListContainer from '../TariffsList.Item';
 
 let mapStateToProps = state => ({MainTariffPage: state.MainTariffPage})
 const MainTariff = props => {
