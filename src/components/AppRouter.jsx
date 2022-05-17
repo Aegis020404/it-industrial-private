@@ -11,7 +11,8 @@ const AppRouter = ()=>{
                 <Route component={route.component}
                        path={route.path}
                        exact={route.exact}
-                       key={route.path}/>
+                       key={route.path}
+                />
             )}
             <Redirect to='/it-industrial-1' />
         </Switch>

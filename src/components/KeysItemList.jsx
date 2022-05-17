@@ -1,8 +1,10 @@
 import React from 'react';
 import cl from './../style/KeysItem.module.css';
+import {NavLink} from "react-router-dom";
 
 const KeysItemList = ({logo, descr, background, alt, img, classesImg})=>{
     return (
+
         <li className={cl.keysItem}>
         <figure alt={alt} className={cl.keysFigure}>
             <div className={cl.keysImgBlock} style={{backgroundColor: background}}>
@@ -18,6 +20,7 @@ const KeysItemList = ({logo, descr, background, alt, img, classesImg})=>{
             <figcaption className={cl.keysDescr}>{descr}</figcaption>
         </figure>
     </li>
+
     )
 }
 

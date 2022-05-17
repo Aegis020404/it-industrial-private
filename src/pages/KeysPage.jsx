@@ -1,16 +1,21 @@
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef} from 'react';
 import MainApplication from '../components/mainP/MainApplication';
 import KeysMain from '../components/keysP/KeysMain';
-
+import cl from './../../src/style/KeysMain.module.css';
 
 const KeysPage = () => {
     const keysI = useRef('')
-    useEffect(()=>{
+    useEffect(() => {
         keysI.current.classList.toggle('keysI')
-    },[keysI])
+    }, [keysI])
     return (
         <div>
             <main ref={keysI} className='keys'>
+                <div className="container">
+                    <div className={cl.pag}>
+                        <span className={cl.reddit}>Главная</span><span className={cl.pagPoint}></span><span className={cl.gray}>Кейсы</span>
+                    </div>
+                </div>
                 <KeysMain/>
                 <MainApplication/>
             </main>
