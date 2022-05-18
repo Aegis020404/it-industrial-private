@@ -32,6 +32,23 @@ import acovtor4 from './../assets/img/4acovtor.png'
 import acovtor5 from './../assets/img/5acovtor.png'
 import acovtor6 from './../assets/img/6acovtor.png'
 
+import app1 from './../assets/img/app1.png'
+import app2 from './../assets/img/app2.png'
+import app3 from './../assets/img/app3.png'
+import app4 from './../assets/img/app4.png'
+import app5 from './../assets/img/app5.png'
+import app6 from './../assets/img/app6.png'
+
+import crm1 from './../assets/img/1crm.png'
+import crm2 from './../assets/img/2crm.png'
+import crm3 from './../assets/img/3crm.png'
+import crm4 from './../assets/img/4crm.png'
+import crm5 from './../assets/img/5crm.png'
+import crm6 from './../assets/img/6crm.png'
+
+
+
+
 
 import React from "react";
 
@@ -82,6 +99,25 @@ const initialState = [{
     aboutCompany: 'Переработка вторсырья – основное направление деятельности нашей.' + ' «Эковтор» имеет своем распоряжении современное высокотехнологичное оборудование, позволяющее производить переработку быстро и качественно.',
     task: 'Разработать сайт услуг для компании по переработки вторсырья',
     imageInfo: [['', acovtor1], ['Главная страница', acovtor2], ['Мобильная версия', acovtor3], ['Заказ услуги', acovtor4], ['Мобильная версия', acovtor5], ['Спасибо за просмотр!', acovtor6]]
+
+},{
+    descrAchor: ' Перевозки App',
+    descr: 'Перевозки App',
+    href: '/Перевозки-App',
+    aboutCompany: 'Круглосуточная служба перевозки лежачих\n' +
+        'больных и инвалидов колясочников. Cлужба перевозки работает круглосуточно и готова выехать по любому адресу в назначенное время.',
+    task: 'Разработать CRM-систему для медицинского такси',
+    imageInfo: [['', app1], ['Заказ', app2], ['Автопарк', app3], ['Аналитика', app4], ['Элементы', app5], ['Спасибо за просмотр!', app6]]
+
+},{
+    descrAchor: 'CRM-системы',
+    descr: 'Разработка индивидуальной \n' +
+        'CRM-системы',
+    href: '/CRM',
+    aboutCompany: `Официальный эксклюзивный дистрибьютор LLumar на территории России и стран СНГ.
+    \nКомпания основана в 1997 году. Лидирующий поставщик профессиональных тонирующих и антигравийных пленок, произведенных в США.`,
+    task: 'Разработать CRM-систему для международной компании Llumar',
+    imageInfo: [['', crm1], ['Основное', crm2], ['Мобильная версия', crm3], ['Продажи по дилерам', crm4], ['Гарантийные талоны', crm5], ['Спасибо за просмотр!', crm6]]
 
 },]
 

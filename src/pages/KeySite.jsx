@@ -31,8 +31,8 @@ const KeySite = (props) => {
             <div className={cl.container}>
                 <div className={cl.descr}>{state.descr}</div>
                 <div className={cl.achorSite}>
-                    <a href={state.achorSite[1]} target='_blank' className={cl.hrefSite} >{state.achorSite[0]}
-                    </a></div>
+                    { state.achorSite ? <a href={state.achorSite[1]} target='_blank' className={cl.hrefSite} >{state.achorSite[0]}</a> : ''}
+                </div>
                 <div className={cl.about}>
                     <div className={cl.aboutCompany}>
                         <div className={cl.title}>О компании</div>

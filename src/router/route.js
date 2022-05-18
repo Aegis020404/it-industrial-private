@@ -18,6 +18,9 @@ export const publicRouters = [
     {path: '/llumar', component: KeySiteContainer, exact: true},
     {path: '/ec-vtor', component: KeySiteContainer, exact: true},
 
+    {path: '/Перевозки-App', component: KeySiteContainer, exact: true},
+    {path: '/CRM', component: KeySiteContainer, exact: true},
+
 
     {path: '/about', component: AboutCompanyPage, exact: true},
     {path: '/reviews', component: ReviewsPage, exact: true},
