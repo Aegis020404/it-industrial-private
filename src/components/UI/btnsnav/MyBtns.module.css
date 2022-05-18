@@ -1,10 +1,16 @@
 
-.btns {
-    display: -ms-grid;
-    display: grid;
-    gap: 12px;
-}
+@media (min-width: 576px) {
+    .btns {
+        display: flex;
 
+    }
+}
+/*@media (max-width: 576px) {*/
+    .swipeSl {
+        width:auto !important;
+        margin-right:10px;
+    }
+/*}*/
 .btn {
     cursor: pointer;
    
@@ -19,12 +25,17 @@
     letter-spacing: -0.02em;
     color: #607483;
     transition: all .35s ease-in-out;
+    height: 50px;
+    padding:17px 24px;
 }
 
 .btnSelected {
+    padding:17px 24px;
+    height: 50px;
+    /*line-height: 15px;*/
     background: #607483 !important;
-    -webkit-box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25) !important;
-    box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25) !important;;
-    border-radius: 100px !important;;
+    -webkit-box-shadow: 0 14px 24px rgba(207, 201, 201, 0.25) !important;
+    box-shadow: 0 14px 24px rgba(207, 201, 201, 0.25) !important;;
+    /*border-radius: 100px !important;;*/
     color: #FFFFFF !important;
 }
