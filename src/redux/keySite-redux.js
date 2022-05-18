@@ -63,7 +63,7 @@ const initialState = [{
     imageInfo: [['', stroimat1], ['Главная страница', stroimat2], ['Мобильная версия', stroimat3], ['Карточка товара и каталог', stroimat4], ['Элементы интерфейса', stroimat5], ['Спасибо за просмотр!',stroimat6]]
 
 }, {
-    descrAchor: 'интернет-магазин «Автоэстетика»',
+    descrAchor: 'Интернет-магазин «Автоэстетика»',
     descr: 'Разработка интернет-магазина «Автоэстетика»',
     achorSite: ['avto-estetica.ru', 'https://avto-estetica.ru/'],
     href: '/avto-estetica',
@@ -73,7 +73,7 @@ const initialState = [{
     imageInfo: [['', estetic1], ['Каталог товаров', estetic2], ['Карточка товара', estetic3], ['Оформление заказа и оплата', estetic4], ['Мобильная версия', estetic5], ['Спасибо за просмотр!', estetic6]]
 
 }, {
-    descrAchor: 'сайт для Хоккейного клуба»',
+    descrAchor: 'Сайт для Хоккейного клуба',
     descr: 'Разработка сайта для Хоккейного клуба',
     achorSite: ['hock-team.ru', 'https://hock-team.ru/'],
     href: '/hock-team',
@@ -83,7 +83,7 @@ const initialState = [{
     imageInfo: [['', hockey1], ['Главный экран', hockey2], ['О клубе', hockey3], ['Цены и как записаться', hockey4], ['Мобильная версия', hockey5], ['Спасибо за просмотр!', hockey6]]
 
 }, {
-    descrAchor: 'сайт для бренда Llumar',
+    descrAchor: 'Сайт для бренда Llumar',
     descr: 'Разработка сайта для бренда Llumar',
     achorSite: ['llumar.ru', 'https://llumar.ru/'],
     href: '/llumar',
@@ -93,7 +93,7 @@ const initialState = [{
     imageInfo: [['', lumar1], ['Главная страница', lumar2], ['Каталог пленок', lumar3], ['Мобильная версия', lumar4], ['Элементы интерфейса', lumar5], ['Спасибо за просмотр!', lumar6]]
 
 }, {
-    descrAchor: 'сайт «Эковтор»',
+    descrAchor: 'Сайт «Эковтор»',
     descr: 'Разработка сайта «Эковтор»',
     achorSite: ['ec-vtor.ru', 'http://ec-vtor.ru/'],
     href: '/ec-vtor',

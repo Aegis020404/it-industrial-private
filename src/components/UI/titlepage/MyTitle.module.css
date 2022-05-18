@@ -8,7 +8,9 @@
     color: #25495C;
 } 
 @media (max-width:768px) {
-    
+    .title {
+        font-size: 35px;
+    }
 }
 @media (max-width:576px) {
     .title {

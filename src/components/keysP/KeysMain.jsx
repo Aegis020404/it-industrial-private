@@ -8,7 +8,7 @@ const KeysMain = ()=>{
     const [navInfoArr, setNavInfoArr] = useState(['Кейсы']);
     return (
         <section className={cl.keysMain}>
-            <div className={["container"].join` `}>
+            <div className={["container", cl.cont].join` `}>
                 <div className={cl.keysCont}>
                     <MyTitle title='Кейсы' classes={cl.keysTitle} />
                     <KeysMainCard setNavInfo={setNavInfoArr} />

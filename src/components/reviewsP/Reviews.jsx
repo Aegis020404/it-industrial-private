@@ -2,6 +2,7 @@ import React from 'react';
 import cl from './../../style/Reviews.module.css';
 import photoOfClient from './../../assets/img/photoOfClient.png'
 import ReviewsItem from './ReviewsItem';
+import MyTitle from './../UI/titlepage/MyTitle';
 
 const Reviews = ()=>{
     const reviewsInfo = [
@@ -58,9 +59,7 @@ const Reviews = ()=>{
     return (
         <section className={cl.reviewsSection}>
             <div className="container">
-                <h1 className={cl.reviewsTitle}>
-                    Отзывы
-                </h1>
+                <MyTitle title='Отзывы' classes={cl.reviewsTitle}></MyTitle>
                 <div className={cl.reviewsListBlock}>
                     <ul className={cl.reviewsList}>
                        {reviewsInfo.map(review => <ReviewsItem imgPerson={review.photo} namePerson={review.name} commentPerson={review.comment} positionPerson={review.position}/>)}

@@ -22,7 +22,7 @@ const KeysMainCard = (props)=>{
     return (
         <div className={cl.keysNavBlock}>
             <nav className={cl.keysNav}>
-                <MyBtns arrBtns={props.state.btns} setTabActive={setTabActive} selectBtn={props.selectBtnKeys} btnsClasses={cl.keysNavList} btnClasses={cl.keysNavItem}/>
+                <MyBtns arrBtns={props.state.btns} setTabActive={setTabActive} selectBtn={props.selectBtnKeys} btnsClasses={cl.keysNavList} btnClasses={cl.keysNavItem} itemSwipeClasses={cl.keysSwipeItem}/>
             </nav>
             <KeysMainSites classesTabs={arrClasses[0].class}/>
             <KeysMainSeo  classesTabs={arrClasses[1].class}/>

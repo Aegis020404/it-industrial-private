@@ -8,3 +8,16 @@
     grid-template-rows: repeat(1, auto);
     gap: 80px;
 }
+
+@media (max-width:768px) {
+    .crmList {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:576px) {
+    .crmLlumarImg img {
+        width: 270px;
+        height: 200px;
+    }
+}

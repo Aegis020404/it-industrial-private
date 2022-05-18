@@ -8,3 +8,27 @@
     grid-template-rows: repeat(1, auto);
     gap: 80px;
 }
+
+
+
+@media (max-width:768px) {
+    .mobilaAppImg  img {
+       margin-bottom: 10px;
+    }
+
+}
+@media (max-width:576px) {
+    .mobileBlock {
+        transition: all .35s ease-in-out;
+        padding-bottom: 55px;
+    }
+    .mobilaAppImg  img {
+        max-width: 170px;
+        min-height: 210px;
+        margin: 0;
+    }
+    .logoBlue {
+        width: 40px;
+        height: 33px;
+    }
+}

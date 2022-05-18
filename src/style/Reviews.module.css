@@ -10,7 +10,6 @@
     font-family: 'GothamProMedium';
     font-style: normal;
     font-weight: 500;
-    font-size: 46px;
     line-height: 120%;
     letter-spacing: -0.02em;
     color: #25495C;
@@ -79,4 +78,65 @@
     letter-spacing: -0.02em;
 
     color: #607483;
+}
+
+
+@media (max-width:992px) {
+    .reviewsDescr {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .reviewsTitle {
+        margin: 0 auto 60px;
+        max-width: 946px;
+    }
+    .reviewsList {
+        gap: 20px;
+    }
+    .reviewsItem {
+        gap: 15px;
+        padding: 40px 70px 40px 40px;
+    }
+    .reviewsDescr {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .reviewsTitle {
+        margin: 0 auto 20px;
+    }
+    .reviewsItem {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 40px;
+        padding: 25px 21px 35px 25px;
+    }
+    .reviewsRight {
+        order: -1;
+    }
+    .reviewsImgCard {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        gap: 30px;
+    }
+    .reviewsImgBlock {
+        display: inline-block;
+        max-width: 60px;
+    }
+    .reviewsImg {
+        margin: 0;
+        max-width: 60px;
+        height: 60px;
+    }
+
+    .reviewsTitleItem {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        max-width: 60px;
+    }
 }

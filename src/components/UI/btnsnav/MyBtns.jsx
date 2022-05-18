@@ -2,7 +2,7 @@ import React from 'react';
 import cl from './MyBtns.module.css';
 import {Swiper} from "swiper";
 
-const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive}) => {
+const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive,itemSwipeClasses}) => {
     React.useEffect(() => {
         let swiper = null;
         let mediaQuerySize = 900;
@@ -43,7 +43,7 @@ const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive}) => 
                 <div className="swiperBtnsCase swiper ">
                     <div className={"swiper-wrapper " + [cl.btns, btnsClasses].join` `}>
                         {arrBtns.map((el, i) => (
-                            <div className={"swiper-slide " + cl.swipeSl}>
+                            <div className={"swiper-slide " + cl.swipeSl + ' ' + itemSwipeClasses}>
                                 <button
                                     className={el.selected ? [cl.btn, cl.btnSelected, btnClasses].join` ` : [btnClasses, cl.btn].join` `}
                                     key={i} my_key={i}

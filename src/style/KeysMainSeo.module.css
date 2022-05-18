@@ -198,3 +198,14 @@ a {
 .active .seoSwitchitem {
    transform: translateX(18px);
 }
+
+@media (max-width:1200px) {
+    .seoItemBlock {
+        gap: 60px;
+    }
+    
+.seoChangeTop, .seoChangeBottom {
+    padding: 0 30px 31px 30px;
+    border-radius: 10px;
+}
+}

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {connect} from "react-redux/lib";
 import cl from './../style/keySite.module.css'
 import {NavLink} from "react-router-dom";
@@ -12,9 +12,12 @@ const KeySite = (props) => {
     const [modal, setModal] = useState(false)
     const [thxModal, setThxModal] = useState(false)
     let [state] = props.KeySitePage.filter(el => el.href === props.match.path)
-    console.log(state)
+    const keyItem = useRef('')
+    useEffect(()=>{
+        keyItem.current.classList.toggle('keyI')
+    },[keyItem])
     return (
-        <div className={cl.KeySite} >
+        <div ref={keyItem} className={[cl.KeySite, 'key'].join` `} >
             <div className={"container"}>
                 <div className={cl.pag}>
                     <NavLink to='/it-industrial-1'>

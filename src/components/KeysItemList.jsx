@@ -2,7 +2,7 @@ import React from 'react';
 import cl from './../style/KeysItem.module.css';
 import {NavLink} from "react-router-dom";
 
-const KeysItemList = ({logo, descr, background, alt, img, classesImg}) => {
+const KeysItemList = ({logo, descr, background, alt, img, classesImg, imgSet}) => {
     return (
 
         <li className={cl.keysItem}>
@@ -16,7 +16,7 @@ const KeysItemList = ({logo, descr, background, alt, img, classesImg}) => {
                     </span>
                         </div>
                         <div className={[cl.keysImgCard, classesImg].join` `}>
-                            <img src={img} className={cl.keysImg}/>
+                            <img src={img} srcSet={imgSet + ' ' + '2x'} className={cl.keysImg}/>
                         </div>
                     </div>
                     <figcaption className={cl.keysDescr}>{descr}</figcaption>

@@ -5,10 +5,12 @@ const ReviewsItem = ({imgPerson, namePerson, positionPerson, commentPerson})=>{
     return (
         <li className={cl.reviewsItem}>
             <div className={cl.reviewsLeft}>
-                <div className={cl.reviewsImgBlock}>
-                    <img src={imgPerson} alt="Personality image"  className={cl.reviewsImg}/>
+                <div className={cl.reviewsImgCard}>
+                    <div className={cl.reviewsImgBlock}>
+                        <img src={imgPerson} alt="Personality image"  className={cl.reviewsImg}/>
+                    </div>
+                    <h4 className={cl.reviewsTitleItem}>{namePerson}</h4>
                 </div>
-                <h4 className={cl.reviewsTitleItem}>{namePerson}</h4>
                 <p className={cl.reviewsDescrItem}>{positionPerson}</p>
             </div>
             <div className={cl.reviewsRight}>

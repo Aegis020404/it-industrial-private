@@ -1,5 +1,9 @@
 .keysMain {
-    padding-top: 45px;
+    padding-top: 35px;
+}
+.cont {
+    display: flex;
+    justify-content: end;
 }
 
 .reddit {
@@ -11,6 +15,11 @@
     letter-spacing: -0.02em;
 
     color: #F84263;
+}
+
+.keysCont {
+    max-width: 1040px ;
+    width: 100%;
 }
 
 .pag {
@@ -40,26 +49,19 @@
     display: inline-block;
 }
 
-.keysCont {
-    margin-left: 100px;
-}
-
-.keysTitle {
-    margin-bottom: 40px;
-}
-
-.keysNav {
-    margin-bottom: 45px;
-}
 
 .keysNavList {
+    padding: 40px 0 45px 4px;
     grid-template-columns: repeat(8, auto);
+}
+
+.keysSwipeItem {
+    filter: drop-shadow(0px 14px 24px rgba(207, 201, 201, 0.25));
 }
 
 .keysNavItem {
     padding: 17px 0;
     outline: 1px solid #DBE0E3;
-filter: drop-shadow(0px 14px 24px rgba(207, 201, 201, 0.25));
 }
 
 .disable {
@@ -92,8 +94,20 @@ filter: drop-shadow(0px 14px 24px rgba(207, 201, 201, 0.25));
         display: none;
     }
 }
+
+
+@media (max-width:768px) {
+
+    .keysNavList {
+        padding: 30px 0 35px;
+    }
+}
+
 @media (max-width:576px) {
-    .keysCont {
-        margin: 0
+    .keysMain {
+        padding-top: 20px;
+    }
+    .keysNavList {
+        padding: 20px 0 32px;
     }
 }
