@@ -5,7 +5,7 @@ import {Swiper} from "swiper";
 const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive}) => {
     React.useEffect(() => {
         let swiper = null;
-        let mediaQuerySize = 576;
+        let mediaQuerySize = 900;
 
         function catalogSliderInit() {
             if (!swiper) {

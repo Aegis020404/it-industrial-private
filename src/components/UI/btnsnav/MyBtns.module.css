@@ -1,4 +1,6 @@
-
+.btns {
+     background: white !important;
+}
 @media (min-width: 576px) {
     .btns {
         display: flex;
@@ -7,6 +9,7 @@
 }
 /*@media (max-width: 576px) {*/
     .swipeSl {
+        box-shadow: none;
         width:auto !important;
         margin-right:10px;
     }
@@ -35,7 +38,8 @@
     /*line-height: 15px;*/
     background: #607483 !important;
     -webkit-box-shadow: 0 14px 24px rgba(207, 201, 201, 0.25) !important;
-    box-shadow: 0 14px 24px rgba(207, 201, 201, 0.25) !important;;
+    /*box-shadow: 0 14px 24px rgba(207, 201, 201, 0.25) !important;;*/
+    box-shadow: none;
     /*border-radius: 100px !important;;*/
     color: #FFFFFF !important;
 }
