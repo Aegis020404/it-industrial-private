@@ -7,7 +7,7 @@ const KeysItemList = ({logo, descr, background, alt, img, classesImg}) => {
 
         <li className={cl.keysItem}>
 
-            <NavLink to='Перевозки-App' className={cl.navLink}>
+
                 <figure alt={alt} className={cl.keysFigure}>
                     <div className={cl.keysImgBlock} style={{backgroundColor: background}}>
                         <div className={cl.keysImgCard}>
@@ -21,7 +21,6 @@ const KeysItemList = ({logo, descr, background, alt, img, classesImg}) => {
                     </div>
                     <figcaption className={cl.keysDescr}>{descr}</figcaption>
                 </figure>
-            </NavLink>
         </li>
 
     )

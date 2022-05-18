@@ -3,6 +3,7 @@ import stroimat2 from './../assets/img/2stroimat.png'
 import stroimat3 from './../assets/img/3stroimat.png'
 import stroimat4 from './../assets/img/4stroimat.png'
 import stroimat5 from './../assets/img/5stroimat.png'
+import stroimat6 from './../assets/img/6stroimat.png'
 
 import estetic1 from './../assets/img/1estetic.png'
 import estetic2 from './../assets/img/2estetic.png'
@@ -59,7 +60,7 @@ const initialState = [{
     href: '/строй-мат',
     aboutCompany: 'Компания является крупнейшим официальным дистрибьютором ведущих производителей строительно–отделочных материалов, таких как Кнауф, Saint–Gobain, Ceresit, Основит, Евро Л, Kronoflooring и другие.\n' + '\n' + 'Побеждали в тендерах и выступали в качестве поставщика на многих объектах Москвы и РФ.',
     task: 'Разработать полноценный интернет-магазин на Wordpress, добавить более 20 000 товаров на сайт',
-    imageInfo: [['', stroimat1], ['Главная страница', stroimat2], ['Мобильная версия', stroimat3], ['Карточка товара и каталог', stroimat4], ['Элементы интерфейса', stroimat5], ['Спасибо за просмотр!',]]
+    imageInfo: [['', stroimat1], ['Главная страница', stroimat2], ['Мобильная версия', stroimat3], ['Карточка товара и каталог', stroimat4], ['Элементы интерфейса', stroimat5], ['Спасибо за просмотр!',stroimat6]]
 
 }, {
     descrAchor: 'интернет-магазин «Автоэстетика»',
