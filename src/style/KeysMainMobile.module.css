@@ -25,7 +25,7 @@
     .mobilaAppImg  img {
         max-width: 170px;
         min-height: 210px;
-        margin: 0;
+        margin-bottom:5px;
     }
     .logoBlue {
         width: 40px;

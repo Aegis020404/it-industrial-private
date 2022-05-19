@@ -6,7 +6,7 @@ import VacancyPage from "../pages/VacancyPage";
 import KeysPage from '../pages/KeysPage'; 
 import TariffPage from "../pages/TariffPage";
 import KeySiteContainer from "../pages/KeySite";
-
+import ContactsPage from "../pages/ContactsPage";
 
 export const publicRouters = [
     {path: '/it-industrial-1', component: MainPage, exact: true},
@@ -26,6 +26,6 @@ export const publicRouters = [
     {path: '/reviews', component: ReviewsPage, exact: true},
     {path: '/vacancy', component: VacancyPage, exact: true},
     {path: '/tariffs', component: TariffPage, exact: true},
-
+    {path: '/contacts', component: ContactsPage, exact: true}
 ]
 

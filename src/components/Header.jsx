@@ -80,15 +80,19 @@ const Header = () => {
         headerI.current.classList.add(cl.headerL)
     },[headerI])
 
+    const scrollTopPage = ()=>{
+        document.body.scrollTo({top:0,behavior:'smooth'})
+    }
+
     return (
         <header ref={headerI} className={cl.header}>
             <div className={cl.topCard}>
                 <div className="container">
                     <div  className={cl.topHeader}>
                         <div className={cl.topList}>
-                            <Link to='/about' className={[cl.links, cl.fLink].join` `}>О компании</Link>
-                            <Link to='/reviews'  className={cl.links}>Отзывы</Link>
-                            <Link to='/vacancy' className={cl.links}>Вакансии</Link>
+                            <Link to='/about' onClick={scrollTopPage} className={[cl.links, cl.fLink].join` `}>О компании</Link>
+                            <Link to='/reviews' onClick={scrollTopPage} className={cl.links}>Отзывы</Link>
+                            <Link to='/vacancy' onClick={scrollTopPage} className={cl.links}>Вакансии</Link>
                         </div>
                         <div className={cl.topLinks}>
                             <div className={cl.textUs}>
@@ -127,7 +131,7 @@ const Header = () => {
                 <div className={cl.defaultHeader}>
                 <div className={cl.clear}></div>
                 <div className={cl.bottomHeader}>
-                    <NavLink  to='/it-industrial-1' className={cl.achorMain}>
+                    <NavLink  to='/it-industrial-1' onClick={scrollTopPage} className={cl.achorMain}>
                         <div className={cl.company}>
                             <div className={cl.logoWrap}>
                                 <span className={cl.logo}></span>
@@ -149,13 +153,15 @@ const Header = () => {
                                     </svg>
                                 </span>
                             </div>
-                            <Link to='/keys' className={cl.navPage}>
+                            <Link to='/keys' onClick={scrollTopPage} className={cl.navPage}>
                                 <MyNavLink classes={cl.nav_span}>Кейсы</MyNavLink>
                             </Link>
-                            <Link to='/tariffs'>
+                            <Link to='/tariffs' onClick={scrollTopPage}>
                                 <MyNavLink classes={cl.nav_span}>Тарифы</MyNavLink>
                             </Link>
-                            <MyNavLink classes={cl.nav_span}>Контакты</MyNavLink>
+                            <Link to='/contacts'>
+                                <MyNavLink classes={cl.nav_span}>Контакты</MyNavLink>
+                            </Link>
                         </nav>
 
                         <div className={cl.fix}>

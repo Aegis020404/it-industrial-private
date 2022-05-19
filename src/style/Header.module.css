@@ -478,11 +478,11 @@
     letter-spacing: -0.02em;
 
     color: #969494;
-    transition: all .3s ease;
+    transition: all .35s ease;
     cursor: pointer;
 }
 
-.headerICitem:hover {
+.headerICitem a:hover {
     color: var(--pink-color);
 }
 .activeNav {

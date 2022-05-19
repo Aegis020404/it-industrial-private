@@ -204,8 +204,127 @@ a {
         gap: 60px;
     }
     
-.seoChangeTop, .seoChangeBottom {
-    padding: 0 30px 31px 30px;
-    border-radius: 10px;
+    .seoChangeTop, .seoChangeBottom {
+        padding: 26px 30px 31px 30px;
+        border-radius: 10px;
+    }
+    .seoChangeBottom {
+        padding-top: 16px;
+    }
+
+    .seoChangeBottomDescr, .seoChangeTopDescr, .seoChangeTopCount, .seoChangeBottomCount {
+        font-size: 15px;
+    }
 }
+
+@media (max-width:992px) {
+    .seoItem {
+        padding-bottom: 30px;
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .seoItemBlock {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, auto);
+        gap: 30px;
+    }
+    .seoChangeBlock {
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+    }
+    .seoChangeTop, .seoChangeBottom {
+        padding: 16px 20px 21px 20px;
+        border-radius: 10px;
+    }
+
+    .seoRightImg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .seoChangeBottomDescr, .seoChangeTopDescr, .seoChangeTopCount, .seoChangeBottomCount {
+        font-size: 14px;
+    }
+    .seoChangeBottomDescr, .seoChangeTopDescr {
+        margin-right: 15px;
+    }
+    .seoItemLink {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .seoRightImg img {
+        max-width: 454px;
+        min-height: 343px;
+    }
+    .seoItemTitle {
+        margin-bottom: 10px;
+    }
+    .seoRightTopTen {
+        margin-bottom: 25px;
+    } 
+}
+
+@media (max-width:768px) {
+    .seoChangeBlock {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+    }
+    .seoRightImg {
+       display: block;
+    }
+    .seoRightImg img {
+        margin: 0 auto;
+        max-width: auto;
+        width: 100%;
+        height: auto;
+        min-height: 160px;
+    }
+    .seoItem {
+        padding-bottom: 30px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px 35px 25px 35px;
+    }
+}
+
+@media (max-width:576px ) {
+    .seoItem {
+        padding-bottom: 30px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 25px 20px 25px 20px;
+    }
+    .seoItemTitle {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .seoItemLink {
+        font-size: 14px;
+    }
+    .seoChangeTopTitle,.seoChangeBottomTitle {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .seoChangeBottomDescr, .seoChangeTopDescr, .seoChangeTopCount, .seoChangeBottomCount {
+        font-size: 12px;
+    }
+    .seoChangeCard {
+        gap: 6px;
+    }
+    .seoItemBlock {
+        gap:20px
+    }
+    .seoRightTopTen {
+        margin-bottom: 10px;
+    }
+    .seoSwitchDescr {
+        margin-bottom: 20px;
+    }
 }

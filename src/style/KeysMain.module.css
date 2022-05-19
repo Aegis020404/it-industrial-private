@@ -27,16 +27,15 @@
     align-items: center;
 
     margin-top: 25px;
-    /*margin-left: 30%;*/
 }
 .gray {
+    margin-top: 2px;
     font-family: 'GothamProLight';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 11px;
     letter-spacing: -0.02em;
-
     color: #ACB8C0;
 }
 .pagPoint {
@@ -47,6 +46,7 @@
     height: 3px;
     background: #DADBDD;
     display: inline-block;
+  
 }
 
 
@@ -109,5 +109,8 @@
     }
     .keysNavList {
         padding: 20px 0 32px;
+    }
+    .pag {
+        margin-top: 10px;
     }
 }

@@ -1,0 +1,99 @@
+.contact {
+    margin-top: 45px;
+    padding-bottom: 110px;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: end;
+}
+
+
+.contactCont {
+    max-width: 1040px;
+    width: 100%;
+}
+
+.titleCont {
+    margin-bottom: 95px;
+}
+
+.contentInfo {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+}
+
+.contactImg {
+    margin-bottom: 53px;
+}
+
+.contactImgBlock {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 71px;
+    height: 71px;
+    box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25);
+}
+
+.contactDescr {
+    margin-bottom: 20px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ACB8C0;
+}
+
+.contactLine {
+    display: inline-block;
+    width: 26px;
+    height: 3px;
+    background-color: #ACB8C0;
+    border-radius: 5px;
+}
+
+.contactTel {
+    margin-bottom: 45px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+.contactTelName {
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    color: #ACB8C0;
+}
+.telLocation {
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.mail {
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #F84263;
+}
+
+.contactMail {
+    margin: 0;
+}

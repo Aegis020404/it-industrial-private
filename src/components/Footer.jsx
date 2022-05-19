@@ -107,7 +107,7 @@ const Footer = () => {
                 link: 'Отзывы',
                 class: cl.footerCIItemUM,
                 page: '/reviews'
-            }, {link: 'Контакты', class: cl.footerCIItemD}]
+            }, {link: 'Контакты', class: cl.footerCIItemD,page: '/contacts'}]
         },
         {
             title: 'Разработка и развитие',
