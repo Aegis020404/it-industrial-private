@@ -1,7 +1,12 @@
 import cl from './../style/tariffSEO.module.css'
 
 let inititalState = {
-    firstColumn: [
+    firstColumn: {
+        title: 'Тарифы на продвижение сайтов',
+        text: 'Стоимость SEO продвижения рассчитывается индивидуально и зависит от\n' +
+            'конкурентности\n' +
+            'вашей ниши и количества поисковых фраз',
+        cases: [
         {
             color: cl.red,
             title: 'Начальный',
@@ -33,8 +38,10 @@ let inititalState = {
             ],
             price: 'от 60 000 руб.',
         },
-    ],
-    secondColumn: [
+    ]},
+    secondColumn: {
+        titleText: 'Также мы предлагаем следующие виды продвижения',
+        cases : [
         {
             color: cl.yellow,
             title: 'С оплатой за трафик',
@@ -52,7 +59,7 @@ let inititalState = {
             ],
             price: 'от 200 руб. за лид.',
         },
-    ]
+    ]}
 }
 
 export function tarrifSEORedux(state = inititalState, action) {

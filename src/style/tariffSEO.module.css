@@ -36,6 +36,17 @@
     letter-spacing: -0.02em;
     color: #25495C;
 }
+.titleText {
+    margin-bottom: 60px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
 .text {
     max-width: 800px;
     text-align: center;
@@ -71,6 +82,14 @@
     letter-spacing: -0.02em;
 }
 .wrapList {
+    text-align: left;
+    font-family: 'GothamProLight';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #607483;
     background: white;
     padding-top: 30px;
     margin-bottom: 46px;
@@ -82,8 +101,8 @@
 }
 .listTitle {
     margin-bottom: 13px;
-    text-align: left;
     display: flex;
+    text-align: left;
     align-items: center;
     font-family: 'GothamProLight';
     font-style: normal;
@@ -103,6 +122,20 @@
     border-radius: 50%;
     margin-right: 16px;
 }
+.caserText {
+    margin-bottom: 73px;
+    margin-left: 72px;
+    text-align: left;
+    /*margin-top: 30px;*/
+    font-family: 'GothamProLight';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #607483;
+    max-width: 250px;
+}
 .price {
     font-family: 'GothamProMedium';
     font-style: normal;
@@ -121,8 +154,6 @@
 .wrapperSlid {
     margin-bottom: 110px;
 }
-
-
 
 
 
