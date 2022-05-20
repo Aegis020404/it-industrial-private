@@ -9,7 +9,7 @@ import KeySiteContainer from "../pages/KeySite";
 import ContactsPage from "../pages/ContactsPage";
 
 export const publicRouters = [
-    {path: '/it-industrial-1', component: MainPage, exact: true},
+    {path: '/it-industrial-private', component: MainPage, exact: true},
     {path: '/keys', component: KeysPage, exact: true},
 
     {path: '/строй-мат', component: KeySiteContainer, exact: true},
