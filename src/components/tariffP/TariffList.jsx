@@ -9,20 +9,20 @@ const TariffList = () => {
         <section className={cl.tariff}>
             <span className={cl.tariffBackground}></span>
             <div className="container">
-            {/*    <div className={cl.pagNav}>*/}
-            {/*        <NavLink to='/it-industrial-1'>*/}
-            {/*        <span className={cl.navMain}>Главная</span>*/}
-            {/*        </NavLink>*/}
-            {/*        <span className={cl.navCurrent}>Тарифы</span>*/}
-            {/*    </div>*/}
-            {/*    <h1 className={cl.tariffTitle}>Тарифы</h1>*/}
+                <div className={cl.pagNav}>
+                    <NavLink to='/it-industrial-1'>
+                    <span className={cl.navMain}>Главная</span>
+                    </NavLink>
+                    <span className={cl.navCurrent}>Тарифы</span>
+                </div>
+                <h1 className={cl.tariffTitle}>Тарифы</h1>
 
-            {/*    <MainTariffContainer/>*/}
+                <MainTariffContainer/>
 
                 <TariffSeoContainer column={'firstColumn'}/>
                 <TariffSeoContainer column={'secondColumn'}/>
             </div>
-            {/*<MainApplication/>*/}
+            <MainApplication/>
         </section>
     )
 }

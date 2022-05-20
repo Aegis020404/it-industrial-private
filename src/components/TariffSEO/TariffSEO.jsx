@@ -64,11 +64,13 @@ const TariffSeo = (props) => {
                             </ul>
                             : <div className={cl.wrapList}><div className={cl.caserText}>{el.list}</div></div>
                             }
+                            <div className={cl.btnWrap}>
                             <div className={cl.price}>{el.price}</div>
-                            <MyBtnBlank classes={cl.btn} onClick={e => {
-                                e.preventDefault(e);
-                                setModal(true)
-                            }}>Заказать</MyBtnBlank>
+                                <MyBtnBlank classes={cl.btn} onClick={e => {
+                                    e.preventDefault(e);
+                                    setModal(true)
+                                }}>Заказать</MyBtnBlank>
+                            </div>
                         </div>
                     )}
                 </div>
