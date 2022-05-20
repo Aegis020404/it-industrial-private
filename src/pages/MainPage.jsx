@@ -15,6 +15,7 @@ import Footer from "../components/Footer";
 import MainOfferContainer from "../components/mainP/MainOffer";
 import MainReview from "../components/mainP/MainReview";
 import MainDevContainer from "../components/mainP/MainDev";
+import cl from "../style/MainTariff.module.css";
 
 const MainPage = ()=>{
 
@@ -28,7 +29,9 @@ const MainPage = ()=>{
             <main ref={mainI} className="main">
                 <SliderContainer />
 
-                <MainTariffContainer />
+                <MainTariffContainer title={<div className={cl.tariffTittleBlock}>
+                    <h2 className={cl.tariffTitle}>Тарифы на разработку сайтов</h2>
+                </div>}/>
 
                 <MainQuiz />
                 <MainApplication/>

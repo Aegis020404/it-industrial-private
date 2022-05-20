@@ -17,7 +17,7 @@ import postRequest from "../../redux/requests";
 import MyThxModal from '../UI/thxmodal/MyThxModal';
 import TariffsListContainer from '../TariffsList.Item';
 
-let mapStateToProps = state => ({MainTariffPage: state.MainTariffPage})
+let mapStateToProps = state => ({MainTariffPage: state.MainTariffPage, })
 const MainTariff = props => {
     const [theme, setTheme] = useState('')
     const [modal, setModal] = useState(false)
@@ -60,14 +60,12 @@ const MainTariff = props => {
                 }, []);
             }
         }
-
         function catalogSliderDestroy() {
             if (swiper) {
                 swiper.destroy();
                 swiper = null;
             }
         }
-
         function loadResize() {
             let windowWidth = window.innerWidth
             if (windowWidth <= mediaQuerySize) {
@@ -85,9 +83,9 @@ const MainTariff = props => {
     return (
         <section ref={tariffS} className={cl.tariffSection} >
 
-            <div className={cl.tariffTittleBlock}>
-                <h2 className={cl.tariffTitle}>Тарифы на разработку сайтов</h2>
-            </div>
+            {
+                props.title
+            }
             <div className={cl.tariffListBlock}>
 
                 <div className={'swiper swiperT ' + cl.mySwiper}>

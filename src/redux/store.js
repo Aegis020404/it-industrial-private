@@ -5,6 +5,7 @@ import MainDevReducer from "./mainDev-redux";
 import mainOfferReducer from "./mainOffer-redux";
 import keysMainReducer from './keysNav-redux.js';
 import {KeySiteReducer} from "./keySite-redux";
+import {tarrifSEORedux} from "./tariffSEO-redux";
 
 let reducers = combineReducers( {
     mainSliderPage: sliderReducer,
@@ -13,6 +14,7 @@ let reducers = combineReducers( {
     mainOfferPage: mainOfferReducer,
     keysNavPage: keysMainReducer,
     KeySitePage: KeySiteReducer,
+    tarrifSEOPage: tarrifSEORedux,
 })
 
 let store = createStore(reducers)
