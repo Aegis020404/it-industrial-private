@@ -80,8 +80,14 @@
     display: inline-grid;
     grid-template-columns: repeat(4, auto);
     gap: 21px;
+    align-content:center;
     transition: all .35s ease-in-out;
     pointer-events: all;
+}
+
+.nav a {
+    display: flex;
+    align-items: center;
 }
 
 .mHeaderDropItem {

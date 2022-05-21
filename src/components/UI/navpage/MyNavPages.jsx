@@ -1,18 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import cl from './MyNavPages.module.css';
 
 const NavPagesHead = ({navItems})=>{
     return (
-        <div className={cl.navBlock}>
-            <div className={cl.navCard}>
-                <nav className={cl.nav}>
-                    <ul className={cl.navList}>
-                        <li className={cl.navItem}>
-                            Главная
+        <div className="container">
+            <div className={cl.pag}>
+                <ul className={cl.pagList}>
+                    <li className={cl.pagItem}>
+                        <Link to='/it-industrial-1'>
+                            <span className={cl.disablePage}>Главная</span>
+                        </Link>
+                    </li>
+                    {navItems.map((e,i,arr)=>
+                        e.link !== undefined  ? 
+                        <li className={cl.pagItem}>
+                            <span className={cl.pagSec}></span>
+                            <Link to={e.link}>
+                                <span className={i+1 == arr.length ? cl.activePage : cl.disablePage}>{e.text}</span>
+                            </Link>
                         </li>
-                        {navItems.map(e=><li className={cl.navItem}>{e}</li>)}
-                    </ul>
-                </nav>
+                        :
+                        <li className={cl.pagItem}>
+                            <span className={cl.pagSec}></span>
+                            <span className={i+1 == arr.length ? cl.activePage : cl.disablePage}>{e.text}</span>
+                        </li>
+                       
+                    )}
+                </ul>
             </div>
         </div>
     )

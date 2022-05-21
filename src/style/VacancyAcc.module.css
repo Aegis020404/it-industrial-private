@@ -1,11 +1,18 @@
 .vacancySection {
     margin: 45px 0 180px;
-    transition: all .35s ease-in-out;
+}
+.container {
+    display: flex;
+    justify-content: end;
+}
+
+.vacancyCont {
+    max-width: 1040px;
+    width: 100%;
 }
 
 .title {
     margin-bottom: 95px;
-    margin-left: 100px;
     font-family: 'GothamProMedium';
     font-style: normal;
     font-weight: 500;
@@ -19,37 +26,57 @@
     display: grid;
     grid-template-rows: repeat(4, auto);
     gap: 12px;
-    margin: 0 0 0 100px;
-    transition: all .35s ease-in-out;
 }
 
 .accordion {
     padding: 17px 17px 17px 41px;
     background: #FFFFFF;
     border: 1px solid #E8EDF1;
-    max-height: 70px;
     border-radius: 10px;
     cursor: pointer;
-    transition: all .4s linear;
-}
-
-.accordionActive {
-    max-height: 100%;
+    /* transition: all .4s linear; */
 }
 
 .accordionBottomBlock {
-   max-width: 680px;
-    opacity: 0;
-   transform: translateX(100px);
-   pointer-events: none;
-   transition: all .35s ease-in-out;
+    
 }
 
-
-.accordionActive .accordionBottomBlock {
-    transform: none;
-    opacity: 1;
+.accordionTest {
+    width: 40px;
+    height: auto;
+    background-color: red;
+    max-height: 5px;
+    box-sizing: border-box;
 }
+
+.test {
+   animation:  open alternate .35s ease-in-out forwards;
+}
+.dis {
+    animation:  close alternate .35s ease-in-out forwards;
+}
+
+@keyframes close {
+    0% {
+        max-height: 1000px;
+    }
+    100% {
+        max-height: 5px;
+    }
+}
+
+/* .accordionActive .accordionTest {
+    animation: open alternate .35s ease-in-out forwards;
+} */
+@keyframes open {
+    0% {
+        max-height: 5px;
+    }
+    100% {
+        max-height: 1000px;
+    }
+}
+
 
 
 .accordionHeading {
@@ -99,6 +126,7 @@
 .accordionActive  .accordionLineH {
     transform: rotate(180deg);
 }
+
 
 .accordionActive  .accordionLineV {
     transform: rotate(0deg);

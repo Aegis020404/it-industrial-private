@@ -3,11 +3,13 @@ import cl from './../../style/VacancyAcc.module.css';
 
 const VacancyAccItem = ({title, descr, whatDo, info})=>{
     const accordionActive = (e)=>{
-        e.preventDefault()
         e.target.classList.toggle(cl.accordionActive)
+        e.target.classList.toggle(cl.accordionDisable)
     }
+  
+
     return (
-        <div className={cl.accordion} onClick={e => accordionActive(e)}>
+        <div className={[cl.accordion, cl.accordionDisable].join` `} onClick={e=>accordionActive(e)}>
             <div className={cl.accordionHeading}>
                 <h3 className={cl.accordionTitle}>{title}</h3>
                 <div className={cl.accordionSignBlock}>
@@ -16,19 +18,27 @@ const VacancyAccItem = ({title, descr, whatDo, info})=>{
                 </div>
             </div>
             <div className={cl.accordionBottomBlock}>
-                <p className={cl.accordionDescr}>{descr}</p>
-                <p className={cl.accordionWhatDo}>{whatDo}</p>
-                <ul className={cl.accordionList}>
-                    {info.map(e => 
-                    <li className={cl.accordionItem}>
-                        <span></span>
-                        {e}
-                    </li>
-                    )}
-                </ul>
+                <div className={cl.accordionCard}>
+                    <p className={cl.accordionDescr}>{descr}</p>
+                    <p className={cl.accordionWhatDo}>{whatDo}</p>
+                    <ul className={cl.accordionList}>
+                        {info.map(e => 
+                        <li className={cl.accordionItem}>
+                            <span></span>
+                            {e}
+                        </li>
+                        )}
+                    </ul>
+                </div>  
             </div>
         </div>
     )
 }
 
 export default VacancyAccItem
+
+
+// .accordionCard {
+//     max-height: 0px;
+//     opacity: 0;
+// }

@@ -1,15 +1,15 @@
 import React from 'react';
-import {GoogleMap, Marker} from "react-google-maps";
 import cl from './../../style/ContactMap.module.css';
-
+import Map from './../../assets/img/map.jpg';
 
 const ContactMap = (props)=>{
-   
+ 
     return (
         <section className={cl.mapSection}>
-            
-        </section>
-       
+            <div className={cl.map}>
+                <img src={Map} alt="" />
+            </div>
+        </section>  
     )
 
 }

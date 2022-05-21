@@ -3,6 +3,14 @@
     margin: 45px 0 85px;
     min-height: 500px;
 }
+.container {
+    display: flex;
+    justify-content: end;
+}
+.aboutCont {
+    max-width: 1040px;
+    width: 100%;
+}
 
 .aboutBackImg {
     position: absolute;

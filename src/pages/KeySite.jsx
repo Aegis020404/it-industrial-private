@@ -7,6 +7,7 @@ import miniPhone from './../assets/img/miniPhone.png'
 import MyModal from "../components/UI/modal/MyModal";
 import MyThxModal from "../components/UI/thxmodal/MyThxModal";
 import MyBtnBlank from "../components/UI/buttonborder/MyBtnBlank";
+import NavPagesHead from '../components/UI/navpage/MyNavPages';
 
 const KeySite = (props) => {
     const [modal, setModal] = useState(false)
@@ -16,23 +17,10 @@ const KeySite = (props) => {
     useEffect(()=>{
         keyItem.current.classList.toggle('keyI')
     },[keyItem])
+    const infoPage = [{text: 'Кейсы', link: '/keys'}, {text: state.descrAchor}]
     return (
         <div ref={keyItem} className={[cl.KeySite, 'key'].join` `} >
-            <div className={"container"}>
-                <div className={cl.pag}>
-                    <NavLink to='/it-industrial-1'>
-                        <span className={cl.achor}>Главная</span>
-                    </NavLink>
-                    <NavLink to='/keys'>
-                        <span className={cl.achor}>Кейсы</span>
-                    </NavLink>
-                    <a href="#">
-                        <span className={cl.currentAchor}>{state.descrAchor}</span>
-                    </a>
-                </div>
-
-
-            </div>
+                <NavPagesHead navItems={infoPage}/>
             <div className={cl.container}>
                 <div className={cl.descr}>{state.descr}</div>
                 <div className={cl.achorSite}>

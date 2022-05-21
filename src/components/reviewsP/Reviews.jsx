@@ -58,13 +58,16 @@ const Reviews = ()=>{
         }]
     return (
         <section className={cl.reviewsSection}>
-            <div className="container">
-                <MyTitle title='Отзывы' classes={cl.reviewsTitle}></MyTitle>
-                <div className={cl.reviewsListBlock}>
-                    <ul className={cl.reviewsList}>
-                       {reviewsInfo.map(review => <ReviewsItem imgPerson={review.photo} namePerson={review.name} commentPerson={review.comment} positionPerson={review.position}/>)}
-                    </ul>
+            <div className={["container", cl.container].join` `}>
+                <div className={cl.reviewsCont}>
+                    <MyTitle title='Отзывы' classes={cl.reviewsTitle}></MyTitle>
+                    <div className={cl.reviewsListBlock}>
+                        <ul className={cl.reviewsList}>
+                        {reviewsInfo.map(review => <ReviewsItem imgPerson={review.photo} namePerson={review.name} commentPerson={review.comment} positionPerson={review.position}/>)}
+                        </ul>
+                    </div>
                 </div>
+               
             </div>
         </section>
     )

@@ -3,20 +3,18 @@ import MainApplication from '../components/mainP/MainApplication';
 import KeysMain from '../components/keysP/KeysMain';
 import cl from './../../src/style/KeysMain.module.css';
 import {NavLink} from "react-router-dom";
+import NavPagesHead from '../components/UI/navpage/MyNavPages';
 
 const KeysPage = () => {
     const keysI = useRef('')
     useEffect(() => {
         keysI.current.classList.toggle('keysI')
     }, [keysI])
+    const infoPage = [{text: 'Кейсы'}]
     return (
         <div>
             <main ref={keysI} className='keys'>
-                <div className="container">
-                    <div className={cl.pag}>
-                        <NavLink to='/it-industrial-1' ><span className={cl.reddit}>Главная</span></NavLink><span className={cl.pagPoint}></span><span className={cl.gray}>Кейсы</span>
-                    </div>
-                </div>
+                <NavPagesHead navItems={infoPage}/>
                 <KeysMain/>
                 <MainApplication/>
             </main>

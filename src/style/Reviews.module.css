@@ -5,7 +5,7 @@
 }
 
 .reviewsTitle {
-    margin: 0 auto 95px;
+    margin-bottom: 95px;
     max-width: 946px;
     font-family: 'GothamProMedium';
     font-style: normal;
@@ -16,8 +16,14 @@
 }
 
 .reviewsListBlock {
-    margin: 0 auto;
-    max-width: 946px;
+    width: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.reviewsCont {
+    max-width: 950px;
 }
 
 .reviewsList {
