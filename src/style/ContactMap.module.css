@@ -1,4 +1,7 @@
-.map img {
-    width: 100%;
-    min-height: 700px;
+.mapCard {
+    pointer-events: none;
+}
+
+.active {
+    pointer-events: all;
 }

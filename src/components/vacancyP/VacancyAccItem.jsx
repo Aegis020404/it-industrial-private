@@ -1,15 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import cl from './../../style/VacancyAcc.module.css';
 
-const VacancyAccItem = ({title, descr, whatDo, info})=>{
-    const accordionActive = (e)=>{
-        e.target.classList.toggle(cl.accordionActive)
-        e.target.classList.toggle(cl.accordionDisable)
-    }
-  
-
+const VacancyAccItem = ({title, descr, whatDo, info})=>
+{
+    const [active, setActive] = useState(false)
     return (
-        <div className={[cl.accordion, cl.accordionDisable].join` `} onClick={e=>accordionActive(e)}>
+        <div className={active ? [cl.accordion, cl.accordionActive].join` ` : cl.accordion} onClick={e=>setActive(!active)}>
             <div className={cl.accordionHeading}>
                 <h3 className={cl.accordionTitle}>{title}</h3>
                 <div className={cl.accordionSignBlock}>

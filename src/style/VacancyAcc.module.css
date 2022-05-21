@@ -13,13 +13,7 @@
 
 .title {
     margin-bottom: 95px;
-    font-family: 'GothamProMedium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 46px;
-    line-height: 120%;
-    letter-spacing: -0.02em;
-    color: #25495C;
+    
 }
 
 .accordionBlock {
@@ -38,22 +32,14 @@
 }
 
 .accordionBottomBlock {
-    
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.35s ease-in-out;
 }
 
-.accordionTest {
-    width: 40px;
-    height: auto;
-    background-color: red;
-    max-height: 5px;
-    box-sizing: border-box;
-}
-
-.test {
-   animation:  open alternate .35s ease-in-out forwards;
-}
-.dis {
-    animation:  close alternate .35s ease-in-out forwards;
+.accordionActive .accordionBottomBlock {
+    max-height: 600px;
 }
 
 @keyframes close {
@@ -70,10 +56,10 @@
 } */
 @keyframes open {
     0% {
-        max-height: 5px;
+        height: 0;
     }
     100% {
-        max-height: 1000px;
+        height: auto;
     }
 }
 
@@ -172,4 +158,67 @@
     width: 4px;
     background-color: #607483;
     border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .vacancySection {
+        margin: 40px 0 120px;
+    }
+    .title {
+        margin-bottom: 75px;
+    }
+}
+
+@media (max-width:768px) {
+    .vacancySection {
+        margin: 30px 0 120px;
+    }
+    .title {
+        margin-bottom: 60px;
+    }
+
+    .accordion {
+        padding-left: 30px;
+    }
+
+    .accordionActive .accordionBottomBlock {
+        max-height: 800px;
+    }
+}
+
+@media (max-width:576px) {
+    
+    .accordionDescr, .accordionItem, .accordionWhatDo {  
+        padding-right: 25px;
+        font-size: 13px;
+    }
+
+    .accordion {
+        padding: 16px 9px 16px 25px;
+        border-radius: 5px;
+    }
+    .accordionActive .accordionBottomBlock {
+        max-height: 1100px;
+    }
+
+    .accordionLineV, .accordionLineH {
+        width: 8px;
+    }
+
+    
+.accordionSignBlock {
+    
+    width: 19px;
+    height: 19px;
+}
+.accordionTitle {
+    font-size: 13px;
+}
+.title {
+    margin-bottom: 30px;
+}
+
+.vacancySection {
+    margin: 25px 0 50px;
+}
 }

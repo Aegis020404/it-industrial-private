@@ -221,6 +221,9 @@ html {
     opacity: 1;
 }
 
+.mapboxgl-ctrl-logo::before {
+    display: none;
+}
 
 
 
