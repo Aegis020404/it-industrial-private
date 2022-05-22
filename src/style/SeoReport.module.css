@@ -1,0 +1,63 @@
+.reportSection {
+    padding: 90px 0;
+}
+
+.reportTitle {
+    max-width: 1050px;
+    margin: 0 auto 90px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    /* or 48px */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #25495C;
+}
+
+.reportList {
+    max-width: 1000px;
+    margin: 0 auto 88px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: start;
+    column-gap: 150px;
+    row-gap: 30px;
+}
+
+.reportItem {
+    max-width: 375px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    align-items: start;
+    gap: 27px;
+}
+
+.reportImgBlock {
+    margin-top: 4px;
+}
+
+.reportDescr {
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    /* or 22px */
+
+    letter-spacing: -0.02em;
+
+    color: #607483;
+}
+
+.reportResult {
+    background: #FFFFFF;
+    box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25);
+    border-radius: 10px;
+    min-height: 210px;
+}

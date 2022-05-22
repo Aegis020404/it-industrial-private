@@ -150,8 +150,8 @@
  transition: all .35s ease-in-out;
 }
 
-.navArrowActive  {
-
+.navArrowActive .nav_span  {
+    color: var(--pink-color) !important;
 }
 
 
@@ -490,9 +490,6 @@
 
 .headerICitem a:hover {
     color: var(--pink-color);
-}
-.activeNav {
-    color: var(--pink-color) !important; 
 }
 
 

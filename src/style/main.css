@@ -210,14 +210,14 @@ html {
     background-color: rgb(103, 103, 103);
 }
 
-.main, .about, .keys, .reviews, .vacancy, .tariff, .key, .contacts {
+.main, .about, .keys, .reviews, .vacancy, .tariff, .key, .contacts, .seo {
     -webkit-transition: all .35s ease-in-out;
     -o-transition: all .35s ease-in-out;
     transition: all .35s ease-in-out;
     opacity: 0;
 }
 
-.mainL, .keysI, .aboutI, .reviewsI, .vacancyI , .tariffI, .keyI, .contactsI  {
+.mainL, .keysI, .aboutI, .reviewsI, .vacancyI , .tariffI, .keyI, .contactsI, .seoI  {
     opacity: 1;
 }
 

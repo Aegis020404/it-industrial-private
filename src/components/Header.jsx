@@ -34,20 +34,23 @@ const Header = () => {
     
 
     const [navItem, setNavItem] = useState(false)
-    const arrowItem = useRef('')
+    const [arrowItem, setArrowItem] = useState(false)
     const [modal, setModal] = useState(false)
     const [thxModal, setThxModal] = useState(false)
     const headerNavV = [cl.nav_span]
-
-
-  
+    
+    
+    useMemo(()=>{
+        setArrowItem(!arrowItem)
+    },[navItem])
 
     const navActive = (e)=>{
-        e.preventDefault()
-        arrowItem.current.classList.toggle(cl.navArrowActive)
+        // e.preventDefault()
+        // arrowItem.current.classList.toggle(cl.navArrowActive)
         setNavItem(!navItem)
-        e.target.classList.toggle(cl.activeNav)
+        // e.target.classList.toggle(cl.activeNav)
     }
+
 
     useMemo(()=>{
         if(burger)  {document.body.classList.add('desable-scroll-h')
@@ -145,7 +148,7 @@ const Header = () => {
 
                     <div className={cl.changeitem}>
                         <nav className={cl.nav}>
-                            <div className={cl.navBlock} ref={arrowItem}>
+                            <div className={!arrowItem ? [cl.navBlock,cl.navArrowActive].join` `:cl.navBlock}>
                                 <MyNavLink classes={cl.nav_span} onClick={e=>navActive(e)}>Услуги</MyNavLink>
                                 <span className={cl.navArrow}>
                                     <svg width="8" height="6" fill="#4C6171" viewBox="0 0 8 6"  xmlns="http://www.w3.org/2000/svg">

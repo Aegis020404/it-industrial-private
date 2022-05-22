@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import cl from './../../style/VacancyAcc.module.css';
 
-const VacancyAccItem = ({title, descr, whatDo, info})=>
+const VacancyAccItem = ({title, descr, whatDo, info, classesItem, classesBlock, classesDescr})=>
 {
     const [active, setActive] = useState(false)
     return (
-        <div className={active ? [cl.accordion, cl.accordionActive].join` ` : cl.accordion} onClick={e=>setActive(!active)}>
+        <div className={active ? [cl.accordion, cl.accordionActive, classesBlock].join` ` : cl.accordion} onClick={e=>{setActive(!active)}}>
             <div className={cl.accordionHeading}>
                 <h3 className={cl.accordionTitle}>{title}</h3>
                 <div className={cl.accordionSignBlock}>
@@ -13,10 +13,11 @@ const VacancyAccItem = ({title, descr, whatDo, info})=>
                     <span className={cl.accordionLineH}></span>
                 </div>
             </div>
-            <div className={cl.accordionBottomBlock}>
+            <div className={[cl.accordionBottomBlock, classesItem].join` `}>
                 <div className={cl.accordionCard}>
-                    <p className={cl.accordionDescr}>{descr}</p>
-                    <p className={cl.accordionWhatDo}>{whatDo}</p>
+                    <p className={[cl.accordionDescr, classesDescr].join` `}>{descr}</p>
+                    {whatDo !== undefined && <p className={cl.accordionWhatDo}>{whatDo}</p>}
+                    {info !== undefined && 
                     <ul className={cl.accordionList}>
                         {info.map(e => 
                         <li className={cl.accordionItem}>
@@ -25,6 +26,7 @@ const VacancyAccItem = ({title, descr, whatDo, info})=>
                         </li>
                         )}
                     </ul>
+                    }
                 </div>  
             </div>
         </div>

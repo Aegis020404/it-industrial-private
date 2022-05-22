@@ -1,0 +1,63 @@
+.monthSection {
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.monthTitle {
+    margin: 0 auto 88px;
+    max-width: 1050px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.monthContent {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    gap: 100px;
+}
+
+.monthLeftList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,auto);
+    row-gap: 51px;
+    column-gap: 20px;
+}
+.monthRight {
+    border-radius: 15px;
+}
+
+.monthRightImg img {
+    width: 100%;
+    min-height: 630px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.monthITitle {
+    margin-bottom: 23px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.monthIDescr {
+    margin-right: 25px;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #607483;
+}

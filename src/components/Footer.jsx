@@ -40,7 +40,7 @@ const Footer = () => {
             link: 'Позиции в ТОП-10',
             class: cl.footerCIItemD
         }, {link: 'Оплата за трафик', class: cl.footerCIItemD}, {
-            link: 'Оплата а лиды',
+            link: 'Оплата за лиды',
             class: cl.footerCIItemD
         }, {link: 'Интернет-магазин', class: cl.footerCIItemD}, {
             link: 'Молодым сайтам',

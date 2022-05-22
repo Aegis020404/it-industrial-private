@@ -1,0 +1,59 @@
+.stableSection {
+    padding: 85px 0;
+    background: rgba(217, 189, 194, 0.06);
+}
+
+.stableTitle {
+    margin-bottom: 77px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.stableList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 65px;
+}
+
+.stableItem {
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stableImgBlock {
+    min-height: 75px;
+    display: inline-block;
+}
+
+.stableITitle {
+    min-height: 40px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.stableIDescr {
+    min-height: 180px;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #607483;
+}
