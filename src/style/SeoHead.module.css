@@ -2,7 +2,6 @@
     background-image: url('./../assets/img/hero-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
     min-height: 700px;
 }
 

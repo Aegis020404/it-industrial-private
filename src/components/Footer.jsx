@@ -36,6 +36,7 @@ const Footer = () => {
     const infoItem = [{
         title: 'Продвижение сайтов',
         titleClass: cl.footerCItitleD,
+        page: '/seo',
         info: [{link: 'Калькулятор стоимости', class: cl.footerCIItemD}, {
             link: 'Позиции в ТОП-10',
             class: cl.footerCIItemD
@@ -112,6 +113,7 @@ const Footer = () => {
         {
             title: 'Разработка и развитие',
             titleClass: cl.footerCItitleD,
+            page: '/mobile-develop',
             info: [{link: 'Создание сайтов', class: cl.footerCIItemB}, {
                 link: 'Техническая поддержка сайтов',
                 class: cl.footerCIItemB
@@ -175,11 +177,11 @@ const Footer = () => {
                         <li className={cl.footerItem}>
                             <div className={cl.footerIPromotion}>
                                 <ul className={cl.footerIList}>
-                                    <FooterItem titleClass={infoItem[0].titleClass} title={infoItem[0].title}
+                                    <FooterItem titleClass={infoItem[0].titleClass} page={infoItem[0].page} title={infoItem[0].title}
                                                 info={infoItem[0].info}/>
                                 </ul>
                                 <ul className={cl.footerIList}>
-                                    <FooterItem titleClass={infoItem[1].titleClass} title={infoItem[1].title}
+                                    <FooterItem titleClass={infoItem[1].titleClass} page={infoItem[1].page} title={infoItem[1].title}
                                                 info={infoItem[1].info}/>
                                 </ul>
                             </div>
@@ -187,15 +189,15 @@ const Footer = () => {
                         <li className={cl.footerItem}>
                             <div className={cl.footerIAd}>
                                 <ul className={cl.footerIList}>
-                                    <FooterItem titleClass={infoItem[2].titleClass} title={infoItem[2].title}
+                                    <FooterItem titleClass={infoItem[2].titleClass} page={infoItem[2].page} title={infoItem[2].title}
                                                 info={infoItem[2].info}/>
                                 </ul>
                                 <ul className={cl.footerIList}>
-                                    <FooterItem titleClass={infoItem[3].titleClass} title={infoItem[3].title}
+                                    <FooterItem titleClass={infoItem[3].titleClass} page={infoItem[3].page} title={infoItem[3].title}
                                                 info={infoItem[3].info}/>
                                 </ul>
                                 <ul className={cl.footerIList}>
-                                    <FooterItem titleClass={infoItem[4].titleClass} title={infoItem[4].title}
+                                    <FooterItem titleClass={infoItem[4].titleClass} page={infoItem[4].page} title={infoItem[4].title}
                                                 info={infoItem[4].info}/>
                                 </ul>
                             </div>
@@ -203,7 +205,7 @@ const Footer = () => {
                         <li className={[cl.footerItem, cl.footerFI].join` `}>
                             <div className={cl.footerIDev}>
                                 <ul className={[cl.footerIList].join` `}>
-                                    <FooterItem titleClass={infoItem[5].titleClass} title={infoItem[5].title} info={infoItem[5].info}/>
+                                    <FooterItem titleClass={infoItem[5].titleClass} page={infoItem[5].page} title={infoItem[5].title} info={infoItem[5].info}/>
                                 </ul>
                             </div>
                         </li>

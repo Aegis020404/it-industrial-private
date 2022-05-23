@@ -12,7 +12,7 @@ const SeoQuestions = ()=>{
     return (
         <section className={cl.questSection}>
             <div className="container">
-                <h1 className={cl.questTitle}>Часто задаваемые вопросы</h1>
+                <h2 className={cl.questTitle}>Часто задаваемые вопросы</h2>
                 <VacancyAccAll itemList={infoArr} classesItem={cl.accItem} classesDescr={cl.accordionDescr} classesBlock={cl.accBlock}/>
             </div>
         </section>

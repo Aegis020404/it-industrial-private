@@ -19,7 +19,7 @@ const SeoStable = ()=>{
     return (
         <section className={cl.stableSection}>
             <div className="container">
-                <h1 className={cl.stableTitle}>SEO продвижение поможет вам получать стабильный поток целевых заявок длительное время</h1>
+                <h2 className={cl.stableTitle}>SEO продвижение поможет вам получать стабильный поток целевых заявок длительное время</h2>
                 <div className={cl.stableListBlock}>
                     <ul className={cl.stableList}>
                         {infoArr.map(e=>

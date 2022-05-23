@@ -12,7 +12,7 @@ const SeoMonth = ()=>{
     return (
         <section className={cl.monthSection}>
             <div className="container">
-                <h1 className={cl.monthTitle}>Ежемесячно SEO оптимизатор выполняет следующие работы</h1>
+                <h2 className={cl.monthTitle}>Ежемесячно SEO оптимизатор выполняет следующие работы</h2>
                 <div className={cl.monthContent}>
                     <div className={cl.monthLeft}>
                         <ul className={cl.monthLeftList}>

@@ -56,8 +56,77 @@
 }
 
 .reportResult {
+    display: grid;
+    grid-template-columns: 2fr 2fr 7fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     background: #FFFFFF;
     box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25);
     border-radius: 10px;
     min-height: 210px;
+}
+
+.reportMCount {
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 130%;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.reportMonth {
+    justify-self: start;
+}
+
+.reportMMonth {
+    margin-left: 7px;
+    display: inline-block;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.reportImgRes {
+    background-image: url('./../assets/img/seo-report.png');
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.reportResText {
+    justify-self: start;
+    max-width: 580px;
+}
+
+.reportResTitle {
+    margin-bottom: 20px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.reportResDescr {
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #607483;
 }

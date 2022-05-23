@@ -8,6 +8,7 @@ import TariffPage from "../pages/TariffPage";
 import KeySiteContainer from "../pages/KeySite";
 import ContactsPage from "../pages/ContactsPage";
 import SeoPage from "../pages/SeoPage";
+import MobilePage from "../pages/MobilePage";
 
 export const publicRouters = [
     {path: '/it-industrial-private', component: MainPage, exact: true},
@@ -29,5 +30,7 @@ export const publicRouters = [
     {path: '/tariffs', component: TariffPage, exact: true},
     {path: '/contacts', component: ContactsPage, exact: true},
     {path: '/seo', component: SeoPage, exact: true},
+    {path: '/mobile-develop', component: MobilePage, exact: true},
+    
 ]
 

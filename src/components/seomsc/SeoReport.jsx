@@ -7,7 +7,7 @@ const SeoReport = ()=>{
     return (
         <section className={cl.reportSection}>
             <div className="container">
-                <h1 className={cl.reportTitle}>Каждый месяц мы будем предоставлять вам подробный отчет о работе</h1>
+                <h2 className={cl.reportTitle}>Каждый месяц мы будем предоставлять вам подробный отчет о работе</h2>
                 <div className={cl.reportListBLock}>
                     <ul className={cl.reportList}>
                         {infoArr.map(e=><SeoReportItem text={e}/>)}

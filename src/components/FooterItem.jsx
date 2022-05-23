@@ -2,10 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cl from '../style/Footer.module.css';
 
-const FooterItem = ({title, info, titleClass}) => {
+const FooterItem = ({title, info, page, titleClass}) => {
     return (
         <div className={cl.footerIComponent}>
-            {title !== 'Меню' ? <a className={[cl.footerICtitle, titleClass].join` `}>{title}</a> : <h4 className={[cl.footerICtitle, titleClass].join` `}>{title}</h4>}
+            {page !== undefined ? 
+            <Link onClick={e=>{document.body.scrollTo({top:0,behavior:'smooth'})}} to={page}>{title !== 'Меню' ? <a className={[cl.footerICtitle, titleClass].join` `}>{title}</a> : <h4 className={[cl.footerICtitle, titleClass].join` `}>{title}</h4>}</Link>
+            :
+            title !== 'Меню' ? <a className={[cl.footerICtitle, titleClass].join` `}>{title}</a> : <h4 className={[cl.footerICtitle, titleClass].join` `}>{title}</h4>
+            }
+            
             <nav>
                 <ul className={cl.footerIClist}>
                     {info.map(e=>
