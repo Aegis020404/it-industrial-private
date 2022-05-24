@@ -121,10 +121,11 @@
 }
 
 .listTitle {
+    align-items: baseline;
     margin-bottom: 13px;
     display: flex;
     text-align: left;
-    align-items: center;
+    /*align-items: center;*/
     font-family: 'GothamProLight';
     font-style: normal;
     font-weight: 400;
@@ -138,13 +139,14 @@
     margin: 0;
 }
 
-.listTitle:before {
+.circle {
+    flex-shrink: 0;
     margin-left: 77px;
-    content: '';
+    /*content: '';*/
     border: 2px solid #25495C;
     display: block;
-    width: 6px;
-    height: 6px;
+    width: 10px !important;
+    height: 10px !important;
     border-radius: 50%;
     margin-right: 16px;
 }
@@ -200,7 +202,7 @@
         background: #000;
     }
 
-    .listTitle:before {
+    .circle {
         margin-left: 50px
     }
 }

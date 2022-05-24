@@ -78,7 +78,7 @@ const MainTariff = props => {
         loadResize()
         window.addEventListener('load', loadResize);
         window.addEventListener('resize', loadResize);
-    });
+    },[]);
 
     const tariffS = useRef('')
     return (

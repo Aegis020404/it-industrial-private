@@ -74,7 +74,7 @@ const TariffSeo = (props) => {
                             </div>
                             {Array.isArray(el.list) ? <ul className={cl.wrapList}>
                                 {
-                                    el.list.map(li => <li className={cl.listTitle}> {li}</li>)
+                                    el.list.map(li => <li className={cl.listTitle}><div className={cl.circle}/> <div>{li}</div></li>)
                                 }
 
                             </ul>
