@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import cl from './../../style/ContactMap.module.css';
 import ReactMapGl, {Marker} from 'react-map-gl';
 
@@ -8,8 +8,13 @@ const ContactMap = (props)=>{
         longitude: 37.637397,
         zoom: 16,
         width: '100%',
-        height: '700px',
+        height: '100%',
     })
+    window.addEventListener("resize", ()=>{
+        if(window.innerWidth <= 576 && viewport.zoom !== 16) {
+            setViewport({...viewport, zoom: 13, latitude: 55.622375 , longitude: 37.633675})
+        }
+    });
     
     const [viewportMarker, setViewportMarker] = useState({
         latitude:55.622843,

@@ -57,6 +57,7 @@ const Footer = () => {
         {
             title: 'Социальный маркетинг',
             titleClass: cl.footerCItitleD,
+            page: '/crm-develop',
             info: [{link: 'Продвижение в социальных сетях', class: cl.footerCIItemD}, {
                 link: 'Создание и ведение групп',
                 class: cl.footerCIItemD
