@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 
 import MobilePortfolio from "../components/mobilemsc/MobilePortfolio";
 import MainApplication from "../components/mainP/MainApplication";
-import MobileService from "../components/mobilemsc/MobileService";
 import MainSimple from './../components/mainP/MainSimple'
 import MainReview from "../components/mainP/MainReview";
 import MainQuestion from './../components/mainP/MainQuestion'

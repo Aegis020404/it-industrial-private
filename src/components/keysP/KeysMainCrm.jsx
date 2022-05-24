@@ -1,6 +1,5 @@
 import React from 'react';
-import crmLlumar from './../../assets/img/llumar-crm.png';
-import crmLlumarSet from './../../assets/img/llumar-crm-2.png';
+import crmLlumar from './../../assets/img/keys-crm-red.svg';
 import cl from './../../style/KeysMainCrm.module.css';
 import KeysItemList from '../KeysItemList';
 import {NavLink} from "react-router-dom";
@@ -9,7 +8,6 @@ const KeysMainCrm = ({classesTabs}) => {
     const infoArr = [{
         descr: 'Разработка индивидуальной CRM-системы', img: {
             background: '#E50A0B',
-            imageSet:crmLlumarSet,
             image: crmLlumar,
             alt: 'Индивидуальная CRM-система разработанная для компании "LLumar"',
             classesImg: cl.crmLlumarImg,
@@ -71,7 +69,7 @@ const KeysMainCrm = ({classesTabs}) => {
                 <NavLink to='/CRM' onClick={scrollTopPage}>
                     {infoArr.map((e, i) => <KeysItemList descr={e.descr} logo={e.img.logo} img={e.img.image}
                                                          background={e.img.background} alt={e.img.alt}
-                                                         classesImg={e.img.classesImg} imgSet={e.img.imageSet}/>)}
+                                                         classesImg={e.img.classesImg}/>)}
                  </NavLink>
                 </ul>
             </div>
