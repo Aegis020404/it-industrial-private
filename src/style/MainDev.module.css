@@ -2,8 +2,9 @@
     margin-top: 138px;
     min-height: 350px;
     height: auto;
-    overflow:hidden;
+    overflow: hidden;
 }
+
 .container {
     height: 100%;
 
@@ -18,6 +19,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
 }
+
 .contentBlock {
     height: 100%;
 }
@@ -28,7 +30,7 @@
 
 
 .text {
-   
+
     text-align: center;
     font-family: var(--ff-madium);
     font-style: normal;
@@ -44,6 +46,7 @@
 .Swiper {
     padding-top: 80px;
 }
+
 .mySwiper {
     /*height: 100% !important;*/
     min-height: 350px;
@@ -66,7 +69,7 @@
 }
 
 .title {
-    
+
     font-family: var(--ff-madium);
     font-style: normal;
     font-weight: 500;
@@ -97,6 +100,7 @@
     width: 64px;
     height: 62px;
 }
+
 .stepIcon3 {
     display: inline-block;
     background-image: url('../assets/img/dev.-second.svg');
@@ -106,6 +110,7 @@
     width: 63px;
     height: 63px;
 }
+
 .stepIcon4 {
     display: inline-block;
     background-image: url('../assets/img/dev-third.svg');
@@ -115,6 +120,7 @@
     width: 64px;
     height: 64px;
 }
+
 .stepIcon5 {
     display: inline-block;
     background-image: url('../assets/img/dev-fourth.svg');
@@ -124,6 +130,7 @@
     width: 64px;
     height: 64px;
 }
+
 .stepIcon6 {
     display: inline-block;
     background-image: url('../assets/img/dev-first.svg');
@@ -133,18 +140,163 @@
     width: 68px;
     height: 68px;
 }
+
+.stepIconCRM1 {
+    display: inline-block;
+    background-image: url('../assets/img/1stepIconCRM.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 83px;
+    height: 83px;
+}
+
+.stepIconCRM2 {
+    display: inline-block;
+    background-image: url('../assets/img/2stepIconCRM.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 83px;
+
+}
+
+.stepIconCRM3 {
+    display: inline-block;
+    background-image: url('../assets/img/3stepIconCRM.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 85px;
+}
+
+.stepIconCRM4 {
+    display: inline-block;
+    background-image: url('../assets/img/4stepIconCRM.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 83px;
+    height: 83px;
+}
+
+.stepIconCRM5 {
+    display: inline-block;
+    background-image: url('../assets/img/5stepIconCRM.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 82px;
+    height: 82px;
+}
+
+.stepIconCRM6 {
+    display: inline-block;
+    background-image: url('../assets/img/6stepIconCRM.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 82px;
+    height: 82px;
+}
+
+.devMobile1 {
+    display: inline-block;
+    background-image: url('../assets/img/1devMobile.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 73px;
+}
+
+.devMobile2 {
+    display: inline-block;
+    background-image: url('../assets/img/2devMobile.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 81px;
+    height: 64px;
+}
+
+.devMobile3 {
+    display: inline-block;
+    background-image: url('../assets/img/3devMobile.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 64px;
+}
+
+.devMobile4 {
+    display: inline-block;
+    background-image: url('../assets/img/4devMobile.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+}
+
+.devMobile5 {
+    display: inline-block;
+    background-image: url('../assets/img/5devMobile.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 62px;
+    height: 64px;
+}
+
+.devMobile6 {
+    display: inline-block;
+    background-image: url('../assets/img/6devMobile.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 68px;
+}
+
+.wholeText {
+    margin-top: 40px;
+    align-self: start;
+    width: 360px !important;
+    font-family: 'GothamProLight';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #607483;
+}
+
+/*.lis::marker {*/
+    /*color: black;*/
+    /*font-size: 5px;*/
+    /*list-style:initial !important;*/
+/*}*/
+.ulContainer {
+    margin-top: 20px;
+    list-style-type: disc;
+}
+
+
 .stepCount {
     position: relative;
-   
+
     right: 0px;
     bottom: 59px;
-    color:#fff!important;
+    color: #fff !important;
     text-shadow: 1px 0px 1px #DADBDD,
     0 1px 1px #DADBDD,
     -1px 0 1px #DADBDD,
     0 -1px 1px #DADBDD,
-    0 1px 0px #DADBDD
-    ;
+    0 1px 0px #DADBDD;
 
     font-family: var(--ff-black);
     font-style: normal;
@@ -159,6 +311,7 @@
 .wrapperM {
     display: none;
 }
+
 .photoWrap {
     display: flex;
     justify-content: center;
@@ -203,7 +356,7 @@
 .controlWrap {
     position: absolute;
     bottom: 150px;
-   
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,6 +367,7 @@
     z-index: 10;
 
 }
+
 .blullfuck {
     width: 100px;
     height: 100px;
@@ -226,7 +380,7 @@
     width: 25px;
     height: 20px;
     cursor: pointer;
-   
+
 }
 
 .arrowNextGray {
@@ -236,7 +390,7 @@
     background-image: url('../assets/img/ArrowNextGray.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: contain;
 }
 
 .arrowPrevGray {
@@ -246,7 +400,7 @@
     background-image: url('../assets/img/ArrowPrevGray.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: contain;
 }
 
 .pagination {
@@ -264,14 +418,14 @@
 }
 
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
     .photoWrap {
         margin-right: 120px;
     }
 
     .stepper {
-       margin-right: 40px;
-      
+        margin-right: 40px;
+
     }
 
     .stepCount {
@@ -289,8 +443,8 @@
     .stepper, .photoWrapBlock, .stepCount, .wrapList {
         min-height: 200px;
     }
-    
-    
+
+
     .text {
         text-align: center;
         font-family: var(--ff-madium);
@@ -302,6 +456,7 @@
         justify-content: space-between;
         color: #25495C;
     }
+
     .step {
         font-family: var(--ff-regular);
         font-style: normal;
@@ -325,6 +480,7 @@
 
         color: #607483;
     }
+
     .photoWrap {
         display: flex;
         justify-content: center;
@@ -336,13 +492,14 @@
         border-radius: 50%;
         margin-right: 65px;
     }
+
     .stepCount {
         position: relative;
         right: 40px;
         bottom: 29px;
-        color:#fff!important;
-       
-    
+        color: #fff !important;
+
+
         font-family: var(--ff-black);
         font-style: normal;
         font-weight: 900;
@@ -370,8 +527,9 @@
         height: auto;
         display: flex;
         justify-content: space-between;
-       
+
     }
+
     .arr {
         height: auto;
         width: 22px;
@@ -383,7 +541,7 @@
     .listItem {
         max-width: 200px;
         width: 100%;
-       
+
     }
 
     .arrowNextGray {
@@ -393,9 +551,9 @@
         background-image: url('../assets/img/ArrowNextGray.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size:contain;
+        background-size: contain;
     }
-    
+
     .arrowPrevGray {
         width: 100%;
         height: 16px;
@@ -403,25 +561,25 @@
         background-image: url('../assets/img/ArrowPrevGray.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size:contain;
+        background-size: contain;
     }
 
     .pagination {
         z-index: 5;
     }
+
     .listItem {
         margin-bottom: 20px;
-        font-size:11px;
+        font-size: 11px;
         /*max-width: 140px;*/
     }
 }
 
 @media (max-width: 768px) {
 
- 
-    
+
     .text {
-      
+
         text-align: center;
         font-family: var(--ff-madium);
         font-style: normal;
@@ -432,6 +590,7 @@
         justify-content: space-between;
         color: #25495C;
     }
+
     .step {
         font-family: var(--ff-regular);
         font-style: normal;
@@ -464,6 +623,7 @@
         margin-right: 30px;
         color: #607483;
     }
+
     .photoWrap {
         display: flex;
         justify-content: center;
@@ -476,17 +636,18 @@
         margin-top: 10px;
         margin-right: 40px;
     }
+
     .stepCount {
         position: relative;
         right: 22px;
         bottom: 37px;
         transform: none;
-        color:#fff!important;
+        color: #fff !important;
         text-shadow: 1px 0 1px #DADBDD,
         0 1px 1px #DADBDD,
         -1px 0 1px #DADBDD,
         0 -1px 1px #DADBDD;
-    
+
         font-family: var(--ff-bold);
         font-style: normal;
         font-weight: 900;
@@ -513,7 +674,7 @@
     .controlWrap {
         margin-left: 0;
     }
-   
+
     .arrowNextGray {
         width: 20px;
         height: 14px;
@@ -522,9 +683,9 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-top: 3px;
-        background-size:contain;
+        background-size: contain;
     }
-    
+
     .arrowPrevGray {
         width: 20px;
         height: 14px;
@@ -532,44 +693,48 @@
         background-image: url('../assets/img/ArrowPrevGray.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size:contain;
+        background-size: contain;
     }
+
     .listItem {
         margin-right: 0;
         margin-bottom: 10px;
         margin-right: 0;
         max-width: 250px;
         width: 100%;
-        font-size:12px;
+        font-size: 12px;
         line-height: 115%;
         max-width: 130px;
     }
+
     .MainDev {
         margin-top: 70px;
         min-height: 300px;
-        overflow:hidden;
+        overflow: hidden;
     }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
     .mySwiper {
         height: 100% !important;
     }
+
     .Swiper {
         height: 100%;
         padding-top: 0;
     }
+
     .MainDev {
         margin-top: 56px;
         min-height: 550px;
         height: auto;
-     
+
     }
 
     .text {
         margin-bottom: 30px;
         font-size: 16px;
-    line-height: 120%;
+        line-height: 120%;
     }
 
     .wrapper {
@@ -582,10 +747,9 @@
         display: grid;
         grid-template-rows:auto auto;
         gap: 20px;
-      
+
     }
 
-  
 
     .stepM {
         font-family: 'GothamProRegular';
@@ -597,7 +761,7 @@
         letter-spacing: -0.02em;
         color: #F84263;
         margin-bottom: 14px;
-        padding: 1px 4px ;
+        padding: 1px 4px;
         width: 50px;
         border: 0.768943px solid #F84263;
         border-radius: 2px;
@@ -621,7 +785,7 @@
     .listIteMm {
         position: relative;
         display: flex;
-      
+
         /*padding-left: 37px;*/
         min-height: 40px;
         width: 205px;
@@ -644,7 +808,9 @@
 
     .stepCountM {
         position: absolute;
-        right: 0;top: 0;bottom: 50%;
+        right: 0;
+        top: 0;
+        bottom: 50%;
         font-family: 'GothamProBlACK';
         font-style: normal;
         font-weight: 900;
@@ -660,9 +826,9 @@
 
     .stepperBlock {
         height: 100%;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .listBlockM {
@@ -670,7 +836,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    } 
+    }
 
     .container {
         height: 100% !important;
@@ -696,7 +862,6 @@
         box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25);
     }
 
-  
 
     .pagination {
         font-size: 12px;

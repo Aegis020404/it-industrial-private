@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, {useMemo} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation, Pagination} from "swiper";
 import "swiper/css";
@@ -11,36 +11,33 @@ import {connect} from "react-redux/lib";
 let mapStateToProps = state => ({MainDevPage: state.MainDevPage})
 
 
-
 const MainDev = (props) => {
     let spaceBetweenSwiper = 50;
+    let state = props.MainDevPage[props.column]
 
-
-    useMemo(()=>{
-        if (window.innerWidth < 576) {spaceBetweenSwiper = 10}
-    },[])
-    return (
-        <section className={cl.MainDev}>
+    useMemo(() => {
+        if (window.innerWidth < 576) {
+            spaceBetweenSwiper = 10
+        }
+    }, [])
+    return (<section className={cl.MainDev}>
             <div className={["container", cl.container].join` `}>
-            <h1 className={cl.text}>Процесс разработки сайта под ключ</h1>
-         
-            <Swiper
+                <h1 className={cl.text}>Процесс разработки сайта под ключ</h1>
+
+                <Swiper
                     navigation={{
-                        prevEl: '.arrPrev',
-                        nextEl: '.arrNext',
+                        prevEl: '.arrPrev', nextEl: '.arrNext',
                     }}
                     pagination={{
-                        el: '.pagination',
-                        renderBullet: function (index) {
+                        el: '.pagination', renderBullet: function (index) {
                             return `<span class="dot swiper-pagination-bullet">${index}</span>`
-                        },
-                        type: 'fraction'
+                        }, type: 'fraction'
                     }}
-                    spaceBetween={ spaceBetweenSwiper}
+                    spaceBetween={spaceBetweenSwiper}
                     autoHeight={true}
                     modules={[Navigation, Pagination]}
                     className={cl.mySwiper}>
-                     <div className={cl.controlWrap}>
+                    <div className={cl.controlWrap}>
                         <div className={`arrPrev ${cl.arr}`}>
                             <span className={cl.arrowPrevGray}></span>
                         </div>
@@ -51,63 +48,84 @@ const MainDev = (props) => {
                             <span className={cl.arrowNextGray}></span>
                         </div>
                     </div>
-                    {props.MainDevPage.map((obj, i) => {
-                        return (
-                            <SwiperSlide key={i} className={cl.Swiper}>
+                    {state.map((obj, i) => {
+                        return (<SwiperSlide key={i} className={cl.Swiper}>
                                 <div className={cl.contentBlock}>
 
-                                <div className={cl.wrapper}>
-                                    <div className={cl.stepper}>
-                                        <div className={cl.step}>{i + 1} этап</div>
-                                        <div className={cl.title}>{obj.title}</div>
-                                    </div>
-                                    <div className={cl.photoWrapBlock}>
-                                        <div className={cl.photoWrap}>
-                                            <span className={[cl.photo, obj.photo].join` `}></span>
+                                    <div className={cl.wrapper}>
+                                        <div className={cl.stepper}>
+                                            <div className={cl.step}>{i + 1} этап</div>
+                                            <div className={cl.title}>{obj.title}</div>
                                         </div>
-                                        
-                                    </div>
+                                        <div className={cl.photoWrapBlock}>
+                                            <div className={cl.photoWrap}>
+                                                <span className={[cl.photo, obj.photo].join` `}></span>
+                                            </div>
 
-                                    <ul className={cl.wrapList}>
-                                        {obj.lists.map(list => {
-                                            return <><li className={cl.listItem}><div className={cl.line}></div><div>{list}</div></li></>
-                                        })}
+                                        </div>
 
-                                    </ul>
-                                    <div className={cl.stepCount}>
-                                        {i + 1}
-                                    </div>
-                                </div>
-                                <div className={cl.wrapperM}>
-                                    <div className={cl.stepperM}>
-                                        <div className={cl.stepperBlock}>
-                                            <div className={cl.stepM}>{i + 1} этап</div>
-                                            <div className={cl.titleM}>{obj.title}</div>
-                                            <ul className={cl.listBlockM}>
-                                                {obj.lists.map(list => {
-                                                    return <><li className={cl.listIteMm}><div className={cl.line}></div><div>{list}</div></li></>
-                                                })}
+                                        {Array.isArray(obj.lists) ? <ul className={cl.wrapList}>
+                                            {obj.lists.map(list => {
+                                                return <>
+                                                    <li className={cl.listItem}>
+                                                        <div className={cl.line}></div>
+                                                        <div>{list}</div>
+                                                    </li>
+                                                </>
+                                            })}
+                                        </ul> : typeof obj.lists === 'object' ? <div className={cl.wholeText}>
+                                            <div className={cl.innerTitle}>{obj.lists.title}</div>
+                                            <ul className={cl.ulContainer}>
+                                                {
+                                                    obj.lists.list.map(el=> <li className={cl.lis}>{el}</li>)
+                                                }
                                             </ul>
-                                        </div>
-                                        <div className={cl.stepCountM}>
-                                        {i + 1}
+                                        </div> : <div className={cl.wholeText}>{obj.lists}</div>}
+
+                                        <div className={cl.stepCount}>
+                                            {i + 1}
                                         </div>
                                     </div>
-                                    <div className={cl.photoBlockM}>
-                                        <div className={cl.photoWrapM}>
-                                            <span className={[cl.photoM, obj.photo].join` `}></span>
+                                    <div className={cl.wrapperM}>
+                                        <div className={cl.stepperM}>
+                                            <div className={cl.stepperBlock}>
+                                                <div className={cl.stepM}>{i + 1} этап</div>
+                                                <div className={cl.titleM}>{obj.title}</div>
+                                                {Array.isArray(obj.lists) ?    <ul className={cl.listBlockM}>
+                                                    {obj.lists.map(list => {
+                                                        return <>
+                                                            <li className={cl.listIteMm}>
+                                                                <div className={cl.line}></div>
+                                                                <div>{list}</div>
+                                                            </li>
+                                                        </>
+                                                    })}
+                                                </ul> : typeof obj.lists === 'object' ? <div className={cl.wholeText}>
+                                                    <div className={cl.innerTitle}>{obj.lists.title}</div>
+                                                    <ul>
+                                                        {
+                                                            obj.lists.list.map(el=> <li>{el}</li>)
+                                                        }
+                                                    </ul>
+                                                </div> : <div className={cl.wholeText}>{obj.lists}</div>}
+                                            </div>
+                                            <div className={cl.stepCountM}>
+                                                {i + 1}
+                                            </div>
+                                        </div>
+                                        <div className={cl.photoBlockM}>
+                                            <div className={cl.photoWrapM}>
+                                                <span className={[cl.photoM, obj.photo].join` `}></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                    </SwiperSlide>
-                    )
+                            </SwiperSlide>)
                     })}
                 </Swiper>
             </div>
-            
-        </section>
-    )
+
+        </section>)
 
 };
 const MainDevContainer = connect(mapStateToProps, {})(MainDev)
