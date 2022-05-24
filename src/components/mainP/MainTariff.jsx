@@ -41,6 +41,7 @@ const MainTariff = props => {
 
     // className={cl.mySwiper}
     React.useEffect(() => {
+
         let swiper = null;
         let mediaQuerySize = 576;
 
@@ -101,7 +102,7 @@ const MainTariff = props => {
                         ))}
                     </div>
 
-                    <div className={'pag1 ' + cl.pag}></div>
+                    <div className={'pag1 ' + cl.pag}/>
 
                 </div>
             </div>

@@ -2,28 +2,34 @@
     background: #F8426310;
     color: #F84263;
 }
+
 .green {
     background: #7BA56210;
     color: #4C6A3A;
 }
+
 .blue {
     background: #4280F810;
     color: #3952AB;
 }
+
 .yellow {
     background: #E89B2810;
     color: #FB8B24;
 }
+
 .gray {
     background: #75727010;
     color: #9098A8;
 }
+
 .column1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 146px;
 }
+
 .title {
     text-align: center;
     margin-bottom: 38px;
@@ -35,6 +41,7 @@
     letter-spacing: -0.02em;
     color: #25495C;
 }
+
 .titleText {
     margin-bottom: 60px;
     font-family: 'GothamProMedium';
@@ -46,6 +53,7 @@
     letter-spacing: -0.02em;
     color: #25495C;
 }
+
 .text {
     max-width: 800px;
     text-align: center;
@@ -64,17 +72,30 @@
     box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25) !important;
     border-radius: 5px;
     position: relative;
-    padding-bottom: 190px ;
+    padding-bottom: 190px;
     text-align: center;
     margin-left: 20px;
     width: 367px;
 }
+
+.pag {
+    display: block;
+    /*margin-top: 15px !important;*/
+    top: 0;
+    text-align: center;
+}
+
+.swiper {
+    margin-bottom: 100px;
+}
+
 .titleCase {
     padding: 16px 5px;
     min-height: 55px;
     box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25);
     border-radius: 5px 5px 0px 0px;
 }
+
 .titleCaseSpan {
     font-family: 'GothamProMedium';
     font-style: normal;
@@ -83,6 +104,7 @@
     line-height: 130%;
     letter-spacing: -0.02em;
 }
+
 .wrapList {
     margin: 0;
     text-align: left;
@@ -111,9 +133,11 @@
     letter-spacing: -0.02em;
     color: #607483;
 }
+
 .listTitle:last-child {
     margin: 0;
 }
+
 .listTitle:before {
     margin-left: 77px;
     content: '';
@@ -124,6 +148,7 @@
     border-radius: 50%;
     margin-right: 16px;
 }
+
 .caserText {
     /*margin-bottom: 73px;*/
     margin-left: 72px;
@@ -138,45 +163,63 @@
     color: #607483;
     max-width: 250px;
 }
+
 .price {
     font-family: 'GothamProMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 110%;
-        letter-spacing: -0.02em;
+    letter-spacing: -0.02em;
     color: #25495C;
     margin-bottom: 35px;
 }
+
 .btn {
     min-height: 50px;
     width: 200px;
 }
+
 .btnWrap {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 42px;
 }
+
 .wrapperSlid {
-    margin-bottom: 110px;
+    padding-right: 10px;
+    margin-bottom: 37px;
 }
-@media (max-width: 1200px) {
+
+@media (min-width: 1200px) {
+
     swiperSl {
-        width: 200px !important;
+        width: 2400px !important;
+        background: #000;
     }
+
     .listTitle:before {
-        margin-left:50px
+        margin-left: 50px
     }
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
 }
 
 
 
 
-@media (min-width: 576px) {
-    .wrapperSlid {
-        display: flex;
-        justify-content: center;
-    }
 
-}
+

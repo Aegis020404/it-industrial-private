@@ -10,7 +10,6 @@ const TariffList = () => {
             <span className={cl.tariffBackground}></span>
             <div className="container">
                 <h1 className={cl.tariffTitle}>Тарифы</h1>
-
                 <MainTariffContainer/>
 
                 <TariffSeoContainer column={'firstColumn'}/>
