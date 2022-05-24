@@ -188,6 +188,7 @@
 }
 
 .wrapperSlid {
+    justify-content: center;
     padding-right: 10px;
     margin-bottom: 37px;
 }
