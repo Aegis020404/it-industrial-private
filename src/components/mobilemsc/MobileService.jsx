@@ -1,6 +1,7 @@
 import React from 'react';
 import cl from './../../style/MobileService.module.css';
-import MobileServItem from './MobileServItem';
+import MobileOppServ from './MobileOppServ';
+
 
 const MobileService = ()=>{
     const infoArr = [{img: <svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,11 +17,7 @@ const MobileService = ()=>{
             <div className="container">
                 <h2 className={cl.serviceTitle}>Услуги по разработке приложений</h2>
                 <p className={cl.serviceDescr}>Обратитесь к нам и мы на ранней стадии поможем вам спроектировать бизнес-модель и стратегию его поэтапного развития. Важное место в нашей работе занимает аналитика: анализ требований и бизнес-процессов, маркетинговый и технический аудит, управление требованиями на всех этапах проекта.</p>
-                <div className={cl.serviceListBlock}>
-                    <ul className={cl.serviceList}>
-                        {infoArr.map(e=><MobileServItem title={e.title} descr={e.descr} img={e.img}/>)}
-                    </ul>
-                </div>
+                <MobileOppServ dataInfo={infoArr}/>
             </div>
         </section>
     )

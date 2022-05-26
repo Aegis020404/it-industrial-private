@@ -7,6 +7,9 @@ import MainReview from "../components/mainP/MainReview";
 import MainQuestion from './../components/mainP/MainQuestion'
 import MainLider from "../components/mainP/MainLider";
 import MainOfferContainer from "../components/mainP/MainOffer";
+import CrmHero from "../components/crmseo/CrnHero";
+import CrmCount from "../components/crmseo/CrmCount";
+import CrmOpportunities from '../components/crmseo/CrmOpportunities'
 
 const CRMPage = ()=>{
     const mobileI = useRef('')
@@ -16,6 +19,9 @@ const CRMPage = ()=>{
     return (
         <div>
             <main ref={mobileI} className="mobile">
+                <CrmHero/>
+                <CrmCount/>
+                <CrmOpportunities/>
                 <MobilePortfolio/>
                 {/* СЮДА ЭТАПЫ РАЗРАБОТКИ */}
                 <MainApplication/>
