@@ -1,14 +1,17 @@
 import React from 'react';
 import HeroSection from '../HeroSection';
 import cl from './../../style/MobileHero.module.css';
+import {connect} from "react-redux/lib";
 
-const MobileHero = ()=>{
-    const infoArr = {title: 'Разработка мобильных приложений в Москве', descr: 'Аналитика, дизайн и разработка цифровых решений для бизнеса', classesimg: cl.phoneHand}  
+const MobileHero =  props  => {
+    console.log(props)
+    const state = props.mobileHeroPage[props.column]
     return (
         <section className={cl.mobileSection}>
-           <HeroSection title={infoArr.title} descr={infoArr.descr} classesImg={infoArr.classesimg}/>
+           <HeroSection title={state.title} descr={state.descr} classesImg={state.classesimg}/>
         </section>
     )
 }
-
-export default MobileHero
+const mapStateToProps = state => ({mobileHeroPage: state.mobileHeroPage})
+const MobileHeroContainer = connect(mapStateToProps, {}) (MobileHero)
+export default MobileHeroContainer

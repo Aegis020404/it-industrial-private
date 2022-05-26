@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import cl from './../../style/MobileService.module.css';
 
-const MobileServItem = ({title, descr, img})=>{
+const MobileServItem = ({title, descr, img})=> {
+    useEffect(() => {})
     return (
         <li className={cl.serviceItem}>
             <div className={cl.serviceItemBlock}>

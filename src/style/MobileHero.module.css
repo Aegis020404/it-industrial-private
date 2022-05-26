@@ -4,3 +4,19 @@
     max-width: 400px;
     height: 588px;
 }
+.photoCRM {
+    width: 607px;
+    height: 340px;
+    background-image: url('../assets/img/2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.photoSEO {
+    width: 607px;
+    height: 340px;
+    background-image: url('../assets/img/darts.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

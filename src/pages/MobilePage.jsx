@@ -1,13 +1,15 @@
 import React, { useEffect, useRef } from "react";
-import MobileHero from "../components/mobilemsc/MobileHero";
+import MobileHeroContainer from "../components/mobilemsc/MobileHero";
 import MobilePortfolio from "../components/mobilemsc/MobilePortfolio";
 import MainApplication from "../components/mainP/MainApplication";
-import MobileService from "../components/mobilemsc/MobileService";
+import MobileServiceContainer from "../components/mobilemsc/MobileService";
 import MainSimple from './../components/mainP/MainSimple'
 import MainReview from "../components/mainP/MainReview";
 import MainQuestion from './../components/mainP/MainQuestion'
 import MainLider from "../components/mainP/MainLider";
 import MainOfferContainer from "../components/mainP/MainOffer";
+import TariffSeoContainer from "../components/TariffSEO/TariffSEO";
+import MainDevContainer from "../components/mainP/MainDev";
 
 const MobilePage = ()=>{
     const mobileI = useRef('')
@@ -17,11 +19,11 @@ const MobilePage = ()=>{
     return (
         <div>
             <main ref={mobileI} className="mobile">
-                <MobileHero/>
-                {/* СЮДА */}
-                <MobileService/>
+                <MobileHeroContainer column={'mobile'}/>
+                <TariffSeoContainer column={'mobileCreate'}/>
+                <MobileServiceContainer column={'mobileDevelop'}/>
                 <MobilePortfolio/>
-                 {/* СЮДА ЭТАПЫ РАЗРАБОТКИ */}
+                 <MainDevContainer column={'developerMobile'}/>
                 <MainApplication/>
                 <div style={{marginBottom: '130px', marginTop: '120px'}}>
                     <MainOfferContainer/>
