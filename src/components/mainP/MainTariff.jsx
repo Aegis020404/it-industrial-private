@@ -38,23 +38,23 @@ const MainTariff = props => {
         postRequest(forServerInfo)
     }
 
-
+        let pager = 'pag' + ~~(Math.random()*1000)
+        let swiperName = 'swiper' + ~~(Math.random()*1000)
     // className={cl.mySwiper}
     React.useEffect(() => {
 
         let swiper = null;
         let mediaQuerySize = 576;
-
         function catalogSliderInit() {
             if (!swiper) {
-                swiper = new Swiper('.swiperT', {
+                swiper = new Swiper(`.${swiperName}`, {
                     modules: [Pagination],
                     slidesPerView: "auto",
                     speed: 400,
                     spaceBetween: 10,
                     // autoHeight: true,
                     pagination: {
-                        el: '.pag1',
+                        el: '.'+pager,
                         type: 'bullets',
                     },
 
@@ -75,10 +75,10 @@ const MainTariff = props => {
                 catalogSliderDestroy()
             }
         }
-
+        loadResize()
         window.addEventListener('load', loadResize);
         window.addEventListener('resize', loadResize);
-    });
+    },[]);
 
     const tariffS = useRef('')
     return (
@@ -89,7 +89,7 @@ const MainTariff = props => {
             }
             <div className={cl.tariffListBlock}>
 
-                <div className={'swiper swiperT ' + cl.mySwiper}>
+                <div className={`swiper ${swiperName} ` + cl.mySwiper}>
 
 
                     <div className={'swiper-wrapper ' + cl.tariffList}>
@@ -102,7 +102,7 @@ const MainTariff = props => {
                         ))}
                     </div>
 
-                    <div className={'pag1 ' + cl.pag}/>
+                    <div className={pager +' '+ cl.pag}/>
 
                 </div>
             </div>

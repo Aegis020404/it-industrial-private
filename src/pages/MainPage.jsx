@@ -37,7 +37,7 @@ const MainPage = ()=>{
                 <MainApplication/>
 
 
-                <MainDevContainer/>
+                <MainDevContainer column={'turnkeyWebsite'}/>
 
                 <MainOfferContainer/>
                 <MainResult />

@@ -7,9 +7,11 @@ import MainReview from "../components/mainP/MainReview";
 import MainQuestion from './../components/mainP/MainQuestion'
 import MainLider from "../components/mainP/MainLider";
 import MainOfferContainer from "../components/mainP/MainOffer";
-import CrmHero from "../components/crmseo/CrnHero";
-import CrmCount from "../components/crmseo/CrmCount";
-import CrmOpportunities from '../components/crmseo/CrmOpportunities'
+
+import MainDevContainer from "../components/mainP/MainDev";
+import MobileServiceContainer from "../components/mobilemsc/MobileService";
+import MobileHeroContainer from "../components/mobilemsc/MobileHero";
+
 
 const CRMPage = ()=>{
     const mobileI = useRef('')
@@ -19,11 +21,11 @@ const CRMPage = ()=>{
     return (
         <div>
             <main ref={mobileI} className="mobile">
-                <CrmHero/>
-                <CrmCount/>
-                <CrmOpportunities/>
+                <MobileHeroContainer column={'crm'}/>
+                <MobileServiceContainer column={'crmDevelop'}/>
+
                 <MobilePortfolio/>
-                {/* СЮДА ЭТАПЫ РАЗРАБОТКИ */}
+                <MainDevContainer column={'developerCRM'}/>
                 <MainApplication/>
                 <div style={{marginBottom: '130px', marginTop: '120px'}}>
                     <MainOfferContainer/>

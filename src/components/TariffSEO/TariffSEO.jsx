@@ -19,7 +19,6 @@ const TariffSeo = (props) => {
 
         function inititalSwiper() {
             if (swiper) return
-            swiperWrapper.current.style.justifyContent = 'flex-start'
             swiper = new Swiper(`.${props.column}`, {
                 modules: [Pagination],
                 slidesPerView: 'auto',
@@ -45,6 +44,7 @@ const TariffSeo = (props) => {
             let windowWidth = window.innerWidth
             if (windowWidth <= mediaQuerySize) {
                 pag.current.style.display = 'block'
+            swiperWrapper.current.style.justifyContent = 'flex-start'
                 inititalSwiper()
             } else {
                 swiperWrapper.current.style.justifyContent = 'center'
@@ -74,7 +74,7 @@ const TariffSeo = (props) => {
                             </div>
                             {Array.isArray(el.list) ? <ul className={cl.wrapList}>
                                 {
-                                    el.list.map(li => <li className={cl.listTitle}> {li}</li>)
+                                    el.list.map(li => <li className={cl.listTitle}><div className={cl.circle}/> <div>{li}</div></li>)
                                 }
 
                             </ul>
