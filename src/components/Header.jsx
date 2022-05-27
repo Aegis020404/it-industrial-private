@@ -19,18 +19,9 @@ import MyThxModal from "./UI/thxmodal/MyThxModal";
 const Header = () => {
 
     const [burger, setBurger] = useState(false)
-    const burgerItem = useRef(false)
     const headerI = useRef('')
     const topHeader = useRef('')
-   
 
-    const getActiveBurger = (e)=>{
-        e.preventDefault()
-        setBurger(!burger)
-        burgerItem.current.classList.toggle(cl.burgerActive)
-    }
-    
-  
     
 
     const [navItem, setNavItem] = useState(false)
@@ -74,8 +65,8 @@ const Header = () => {
     
     document.body.addEventListener('scroll', (el)=>{
         currentScrollTop = document.body.scrollTop     
-        if (window.innerWidth > 576 && tempScrollTop < currentScrollTop && !topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.add(cl.topHeaderActive); headerI.current.classList.add(cl.headerActive)}
-        if (window.innerWidth > 576 && tempScrollTop > currentScrollTop && topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.remove(cl.topHeaderActive);  headerI.current.classList.remove(cl.headerActive)}
+        if (window.innerWidth > 768 && tempScrollTop < currentScrollTop && !topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.add(cl.topHeaderActive); headerI.current.classList.add(cl.headerActive)}
+        if (window.innerWidth > 768 && tempScrollTop > currentScrollTop && topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.remove(cl.topHeaderActive);  headerI.current.classList.remove(cl.headerActive)}
         tempScrollTop = currentScrollTop
     })
 
@@ -130,7 +121,7 @@ const Header = () => {
                 </div>
             </div>
             <div ref={topHeader} className={["container",  cl.headerI].join` `}>
-            <HeaderNav burgerA={getActiveBurger} headerNav={navItem} setHeaderNav={setNavItem} mainBlock={cl.navBlockMain}/>
+            <HeaderNav  headerNav={navItem} setHeaderNav={setNavItem} setBurgerItem={setBurger} mainBlock={cl.navBlockMain}/>
                 <div className={cl.defaultHeader}>
                 <div className={cl.clear}></div>
                 <div className={cl.bottomHeader}>
@@ -204,7 +195,7 @@ const Header = () => {
                     </div>
                             <MyModal block={headerI} visible={modal} setVisible={setModal} title='Оставить заявку' setThx={setThxModal}/>
                             <MyThxModal visible={thxModal} setVisible={setThxModal} />
-                        <div ref={burgerItem} className={[cl.burgerBlock].join` `} onClick={e=>{getActiveBurger(e); navActive(e); }}>
+                        <div  className={burger ? [cl.burgerBlock, cl.burgerActive].join` ` : [cl.burgerBlock].join` `} onClick={e=>{setBurger(!burger); navActive(e); }}>
                             <span className={cl.burgerLine}></span>
                         </div>
                 </div>

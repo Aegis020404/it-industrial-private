@@ -58,3 +58,42 @@
     color: #FFFFFF;
     opacity: 0.5;
 }
+
+@media (max-width:992px) {
+    .cont  {
+        padding-left:28px;
+        padding-right:28px;
+    }
+    .miniTitle {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:768px) {
+    .miniSection { 
+        min-height: 370px;
+    }
+    .miniTitle {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .miniDescr {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:576px) {
+    .cont  {
+        padding: 40px 28px 50px;
+    }
+    .miniSection { 
+        min-height: auto;
+    }
+    .miniTitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .miniDescr {
+        font-size: 14px;
+    }
+}

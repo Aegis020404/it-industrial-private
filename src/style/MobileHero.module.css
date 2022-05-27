@@ -12,11 +12,37 @@
     background-size: contain;
     background-position: center;
 }
-.photoSEO {
-    width: 607px;
-    height: 340px;
-    background-image: url('../assets/img/darts.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+
+
+.photoSEO  {
+    margin-top: 30px;
+    margin-left: 30px;
+    background-image: url('./../assets/img/darts.png');
+    min-height: 500px;
+}
+
+@media (max-width: 1200px) {
+    .photoSEO  {
+        margin-left: 0px;
+        background-image: url('./../assets/img/darts.png');
+        min-height: 500px;
+    }
+} 
+
+@media (max-width: 992px) {
+    .photoSEO  {
+        margin-top: 50px;
+        margin-left: 0px;
+        background-image: url('./../assets/img/darts.png');
+        min-height: 400px;
+    }
+}
+
+@media (max-width:576px) {
+    .photoSEO  {
+        margin-top: 50px;
+        margin-left: 0px;
+        background-image: url('./../assets/img/darts.png');
+        min-height: 290px;
+    }
 }

@@ -10,6 +10,7 @@ import MainLider from "../components/mainP/MainLider";
 import MainOfferContainer from "../components/mainP/MainOffer";
 import TariffSeoContainer from "../components/TariffSEO/TariffSEO";
 import MainDevContainer from "../components/mainP/MainDev";
+import cl from './../style/MobilePage.module.css';
 
 const MobilePage = ()=>{
     const mobileI = useRef('')
@@ -20,12 +21,14 @@ const MobilePage = ()=>{
         <div>
             <main ref={mobileI} className="mobile">
                 <MobileHeroContainer column={'mobile'}/>
-                <TariffSeoContainer column={'mobileCreate'}/>
+                <div className={cl.tariff}>
+                    <TariffSeoContainer column={'mobileCreate'}/>
+                </div>
                 <MobileServiceContainer column={'mobileDevelop'}/>
                 <MobilePortfolio/>
                  <MainDevContainer column={'developerMobile'}/>
                 <MainApplication/>
-                <div style={{marginBottom: '130px', marginTop: '120px'}}>
+                <div className={cl.offer}>
                     <MainOfferContainer/>
                 </div>
                 <MainLider/>

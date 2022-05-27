@@ -24,6 +24,7 @@ const SeoPage =()=>{
         <div>
             <main ref={seoI} className='seo'>
                 <SeoHead/>
+                <div style={{'marginTop': '90px'}}></div>
                 <SeoTariff/>
                 <SeoServices/>
                 <SeoStable/>
