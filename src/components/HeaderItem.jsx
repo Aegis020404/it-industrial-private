@@ -2,9 +2,9 @@ import React from "react";
 import cl from '../style/Header.module.css';
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-const HeaderItem = ({title, info, titleClass, setHeaderNav, burgerA, page}) => {
+const HeaderItem = ({title, info, titleClass, setHeaderNav, burgerA, page, setBurgerItem}) => {
     const changePage = (e)=>{
-
+        setBurgerItem(false)
         setHeaderNav(false)
     }
     return (

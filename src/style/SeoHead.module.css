@@ -11,3 +11,29 @@
     background-image: url('./../assets/img/darts.png');
     min-height: 500px;
 }
+
+@media (max-width: 1200px) {
+    .darts {
+        margin-left: 0px;
+        background-image: url('./../assets/img/darts.png');
+        min-height: 500px;
+    }
+} 
+
+@media (max-width: 992px) {
+    .darts {
+        margin-top: 50px;
+        margin-left: 0px;
+        background-image: url('./../assets/img/darts.png');
+        min-height: 400px;
+    }
+}
+
+@media (max-width:576px) {
+    .darts {
+        margin-top: 50px;
+        margin-left: 0px;
+        background-image: url('./../assets/img/darts.png');
+        min-height: 290px;
+    }
+}

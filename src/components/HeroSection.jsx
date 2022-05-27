@@ -4,13 +4,13 @@ import MyBtnBlank from './UI/buttonborder/MyBtnBlank';
 import MyModal from './UI/modal/MyModal';
 import MyThxModal from './UI/thxmodal/MyThxModal';
 
-const HeroSection = ({title, descr, classesImg})=>{
+const HeroSection = ({title, descr, classesImg, gridCl})=>{
     const [modal, setModal] = useState(false)
     const [thxModal, setThxModal] = useState(false)
     return (
         <section className={cl.section}>
         <div className="container">
-            <div className={cl.content}>
+            <div className={[cl.content, gridCl].join` `}>
                 <div className={cl.left}>
                     <h1 className={cl.title}>{title}</h1>
                     <p className={cl.descr}>{descr}</p>

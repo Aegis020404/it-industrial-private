@@ -1,0 +1,13 @@
+.title {
+font-family: 'GothamProMedium';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 120%;
+/* identical to box height, or 48px */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #25495C;
+}
