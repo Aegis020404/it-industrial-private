@@ -12,7 +12,7 @@ import TariffSeoContainer from "../components/TariffSEO/TariffSEO";
 import MainDevContainer from "../components/mainP/MainDev";
 import cl from './../style/MobilePage.module.css'
 const MobilePage = ()=>{
-    const mobileI = useRef('')
+    const mobileI = useRef(false)
     useEffect(()=>{
         mobileI.current.classList.toggle('mobileI')
     },[mobileI])

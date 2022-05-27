@@ -12,5 +12,6 @@ const MobileHero =  props  => {
         </section>
     )
 }
-
-export default MobileHero
+const mapStateToProps = state => ({mobileHeroPage: state.mobileHeroPage})
+const MobileHeroContainer = connect(mapStateToProps, {})(MobileHero)
+export default MobileHeroContainer
