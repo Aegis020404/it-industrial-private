@@ -136,4 +136,8 @@
         width: 52px;
         height: 52px;
     }
+    .stableSection {
+        padding: 55px 0;
+        background: rgba(217, 189, 194, 0.06);
+    }
 }

@@ -24,14 +24,15 @@ const SeoPage =()=>{
         <div>
             <main ref={seoI} className='seo'>
                 <SeoHead/>
-                <div style={{'marginTop': '90px'}}></div>
-                <SeoTariff/>
+                <div className='seo-page-t'>
+                    <SeoTariff/>
+                </div>
                 <SeoServices/>
                 <SeoStable/>
                 <SeoQuestions/>
                 <SeoMini/>
                 <SeoMonth/>
-                <div style={{'marginBottom': '155px'}}>
+                <div className='seo-page-o' >
                     <MainOfferContainer/>
                 </div>
                 <MainApplication/>

@@ -81,7 +81,13 @@
     --backgr-grey-color: #576C7D;
 }
 
+.seo-page-t {
+    margin-top: 90px;
+}
 
+.seo-page-o {
+    margin-bottom: 150px;
+}
 
 
 html, body {
@@ -238,4 +244,12 @@ html {
     body::-webkit-scrollbar {
         width: 10px;               /* ширина scrollbar */
     }
+    .seo-page-t {
+        margin-top: 45px;
+    }
+    
+    .seo-page-o {
+        margin-bottom: 60px;
+    }
+    
 }
