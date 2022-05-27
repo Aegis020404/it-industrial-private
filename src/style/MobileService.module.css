@@ -76,3 +76,19 @@
     letter-spacing: -0.02em;
     color: #607483;
 }
+@media (max-width: 576px) {
+    .pag {
+        margin-top: 27px;
+        text-align: center;
+    }
+    .swiperSl {
+        width: 288px;
+    }
+    .serviceList {
+        display: flex;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        column-gap: 0;
+        row-gap: 0;
+    }
+}

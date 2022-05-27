@@ -19,19 +19,19 @@ const MobilePage = ()=>{
     return (
         <div>
             <main ref={mobileI} className="mobile">
-                <MobileHeroContainer column={'mobile'}/>
-                <TariffSeoContainer column={'mobileCreate'}/>
+                {/*<MobileHeroContainer column={'mobile'}/>*/}
+                {/*<TariffSeoContainer column={'mobileCreate'}/>*/}
                 <MobileServiceContainer column={'mobileDevelop'}/>
-                <MobilePortfolio/>
-                 <MainDevContainer column={'developerMobile'}/>
-                <MainApplication/>
-                <div className={cl.offer}>
-                    <MainOfferContainer/>
-                </div>
-                <MainLider/>
-                <MainReview/>
-                <MainSimple/>
-                <MainQuestion/>
+                {/*<MobilePortfolio/>*/}
+                {/* <MainDevContainer column={'developerMobile'}/>*/}
+                {/*<MainApplication/>*/}
+                {/*<div className={cl.offer}>*/}
+                {/*    <MainOfferContainer/>*/}
+                {/*</div>*/}
+                {/*<MainLider/>*/}
+                {/*<MainReview/>*/}
+                {/*<MainSimple/>*/}
+                {/*<MainQuestion/>*/}
             </main>
         </div>
     )
