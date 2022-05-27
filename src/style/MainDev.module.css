@@ -143,7 +143,7 @@
 
 .stepIconCRM1 {
     display: inline-block;
-    background-image: url('../assets/img/1stepIconCRM.png');
+    background-image: url('../assets/img/1stepIconCRM.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -153,7 +153,7 @@
 
 .stepIconCRM2 {
     display: inline-block;
-    background-image: url('../assets/img/2stepIconCRM.png');
+    background-image: url('../assets/img/2stepIconCRM.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@
 
 .stepIconCRM3 {
     display: inline-block;
-    background-image: url('../assets/img/3stepIconCRM.png');
+    background-image: url('../assets/img/3stepIconCRM.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@
 
 .stepIconCRM4 {
     display: inline-block;
-    background-image: url('../assets/img/4stepIconCRM.png');
+    background-image: url('../assets/img/4stepIconCRM.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -184,7 +184,7 @@
 
 .stepIconCRM5 {
     display: inline-block;
-    background-image: url('../assets/img/5stepIconCRM.png');
+    background-image: url('../assets/img/5stepIconCRM.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@
 
 .stepIconCRM6 {
     display: inline-block;
-    background-image: url('../assets/img/6stepIconCRM.png');
+    background-image: url('../assets/img/6stepIconCRM.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -224,7 +224,7 @@
 
 .devMobile3 {
     display: inline-block;
-    background-image: url('../assets/img/3devMobile.png');
+    background-image: url('../assets/img/3devMobile.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -244,7 +244,7 @@
 
 .devMobile5 {
     display: inline-block;
-    background-image: url('../assets/img/5devMobile.png');
+    background-image: url('../assets/img/5devMobile.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
