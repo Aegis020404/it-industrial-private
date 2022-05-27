@@ -20,11 +20,10 @@ export const publicRouters = [
     {path: '/hock-team', component: KeySiteContainer, exact: true},
     {path: '/llumar', component: KeySiteContainer, exact: true},
     {path: '/ec-vtor', component: KeySiteContainer, exact: true},
-
-    {path: '/seo', component: SeoPage, exact: true},
     {path: '/Перевозки-App', component: KeySiteContainer, exact: true},
     {path: '/CRM', component: KeySiteContainer, exact: true},
 
+    {path: '/seo', component: SeoPage, exact: true},
 
     {path: '/about', component: AboutCompanyPage, exact: true},
     {path: '/reviews', component: ReviewsPage, exact: true},

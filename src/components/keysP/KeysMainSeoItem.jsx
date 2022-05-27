@@ -46,7 +46,8 @@ const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, be
                         <p className={cl.seoSwitchDescr}>Скриншот</p>
                     </div>
                     <div className={cl.seoRightImg}>
-                        <img src={schedule} srcSet={scheduleSet + ' ' + '2x'} alt="График, отображающий насколько повысились запросы компании"/>
+                        <img src={schedule}  alt="График, отображающий насколько повысились запросы компании"/>
+                        {/*srcSet={scheduleSet + ' ' + '2x'}*/}
                     </div>
                 </div>
             </div>
