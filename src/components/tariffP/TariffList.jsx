@@ -14,8 +14,6 @@ const TariffList = () => {
 
                 <TariffSeoContainer column={'firstColumn'}/>
                 <TariffSeoContainer column={'secondColumn'}/>
-                <TariffSeoContainer column={'mobileCreate'}/>
-                <TariffSeoContainer column={'CRMSystem'}/>
             </div>
             <MainApplication/>
         </section>

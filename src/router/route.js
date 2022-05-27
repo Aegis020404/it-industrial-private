@@ -21,6 +21,7 @@ export const publicRouters = [
     {path: '/llumar', component: KeySiteContainer, exact: true},
     {path: '/ec-vtor', component: KeySiteContainer, exact: true},
 
+    {path: '/seo', component: SeoPage, exact: true},
     {path: '/Перевозки-App', component: KeySiteContainer, exact: true},
     {path: '/CRM', component: KeySiteContainer, exact: true},
 
@@ -30,7 +31,6 @@ export const publicRouters = [
     {path: '/vacancy', component: VacancyPage, exact: true},
     {path: '/tariffs', component: TariffPage, exact: true},
     {path: '/contacts', component: ContactsPage, exact: true},
-    {path: '/seo', component: SeoPage, exact: true},
     {path: '/mobile-develop', component: MobilePage, exact: true},
     {path: '/crm-develop', component: CRMPage, exact: true},
 ]

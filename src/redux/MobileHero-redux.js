@@ -16,6 +16,12 @@ let initialState = {
         descr: 'Увеличим поток целевых заявок из Яндекса и Google',
         classesimg: cl.photoCRM
 
+    },
+    marketPlace: {
+        title: 'Продвижение в маркетплейсах',
+        descr: '',
+        classesimg: cl.marketPlace
+
     }
 }
 
