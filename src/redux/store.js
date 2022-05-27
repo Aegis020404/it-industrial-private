@@ -8,6 +8,7 @@ import {KeySiteReducer} from "./keySite-redux";
 import {tarrifSEORedux} from "./tariffSEO-redux";
 import {mobileServiceReducer} from "./mobileService-redux";
 import {mobileHeroReducer} from "./MobileHero-redux";
+import {KeysMainSeoReducer} from "./keysMainSeo-redux";
 
 let reducers = combineReducers( {
     mainSliderPage: sliderReducer,
@@ -19,6 +20,7 @@ let reducers = combineReducers( {
     tarrifSEOPage: tarrifSEORedux,
     mobileServicePage: mobileServiceReducer,
     mobileHeroPage: mobileHeroReducer,
+    KeysMainSeoPage: KeysMainSeoReducer,
 })
 
 let store = createStore(reducers)
