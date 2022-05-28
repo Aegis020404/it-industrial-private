@@ -2,20 +2,118 @@
     margin-left: 100px;
     background-image: url('./../assets/img/mobile-hand.png');
     max-width: 400px;
-    height: 588px;
+    min-height: 588px;
 }
 .photoCRM {
-    width: 607px;
-    height: 340px;
+    margin-top: 50px;
+    min-height: 340px;
+    max-width: 600px;
+    width: 100%;
     background-image: url('../assets/img/2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .photoSEO {
-    width: 607px;
-    height: 340px;
+    margin-top: 30px;
+    margin-left: 30px;
+    min-height: 500px;
     background-image: url('../assets/img/darts.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-.marketPlace {
-    width: 493px;
-    height: 494px;
-    background-image: url('../assets/img/greyBigLogo.svg');
+.grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+.gridM {
+
+}
+
+@media (max-width: 1200px) {
+    .photoSEO {
+        margin-left: 0px;
+        background-image: url('./../assets/img/darts.png');
+        min-height: 500px;
+    }
+    .gridM {
+        grid-template-columns: 4fr 3fr;
+    }
+    .phoneHand {
+        margin-left: 50px;
+        background-image: url('./../assets/img/mobile-hand.png');
+        max-width: 350px;
+        min-height: 500px;
+        
+    }
+} 
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: 6fr 7fr;
+    }
+    .gridM {
+        grid-template-columns: 3fr 2fr;
+    }
+    .photoSEO {
+        margin-top: 50px;
+        margin-left: 0px;
+        background-image: url('./../assets/img/darts.png');
+        min-height: 400px;
+        height: auto;
+    }
+    .photoCRM {
+        margin: 50px auto;
+        min-height: 300px;
+        max-width: 500px;
+        width: 100%;
+        background-image: url('../assets/img/2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+    .phoneHand {
+        margin: 0 auto;
+        background-image: url('./../assets/img/mobile-hand.png');
+        max-width: 300px;
+        min-height: 500px;
+        
+    }
+}
+
+@media (max-width:768px) {
+    .phoneHand {
+        margin: 40px auto 0;
+        background-image: url('./../assets/img/mobile-hand.png');
+        max-width: 300px;
+        min-height: 500px;
+        
+    }
+}
+
+@media (max-width:576px) {
+    .photoSEO {
+        margin-top: 50px;
+        margin-left: 0px;
+        background-image: url('./../assets/img/darts.png');
+        min-height: 290px;
+    }
+    .photoCRM {
+        margin-top: 60px;
+        min-height: 166px;
+        max-height: 500px;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+        background-image: url('../assets/img/2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top ;
+    }
+    .phoneHand {
+        margin: 40px auto 0;
+        background-image: url('./../assets/img/mobile-hand.png');
+        max-width: 300px;
+        min-height: 350px;
+    }
 }

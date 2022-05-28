@@ -9,8 +9,7 @@ import MainLider from "../components/mainP/MainLider";
 import MainOfferContainer from "../components/mainP/MainOffer";
 import MainDevContainer from "../components/mainP/MainDev";
 import MobileServiceContainer from "../components/mobilemsc/MobileService";
-import MobileHeroContainer from "../components/mobilemsc/MobileHero";
-import TariffSeoContainer from "../components/TariffSEO/TariffSEO";
+import CrmHeroContainer from "../components/crmseo/CrnHero";
 
 const CRMPage = ()=>{
     const mobileI = useRef('')
@@ -20,8 +19,7 @@ const CRMPage = ()=>{
     return (
         <div>
             <main ref={mobileI} className="mobile">
-                <MobileHeroContainer column={'crm'}/>
-                <TariffSeoContainer column={'CRMSystem'}/>
+                <CrmHeroContainer column='crm'/>
                 <MobileServiceContainer column={'crmDevelop'}/>
                 <MobilePortfolio/>
                 <MainDevContainer column={'developerCRM'}/>

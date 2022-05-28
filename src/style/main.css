@@ -81,7 +81,13 @@
     --backgr-grey-color: #576C7D;
 }
 
+.seo-page-t {
+    margin-top: 90px;
+}
 
+.seo-page-o {
+    margin-bottom: 150px;
+}
 
 
 html, body {
@@ -210,14 +216,14 @@ html {
     background-color: rgb(103, 103, 103);
 }
 
-.main, .about, .keys, .reviews, .vacancy, .tariff, .key, .contacts, .seo, .mobile {
-    -webkit-transition: all .35s ease-in-out;
-    -o-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;
+.main, .about, .keys, .reviews, .vacancy, .tariff, .key, .contacts, .seo, .mobile, .marketplace {
+    -webkit-transition: all .45s ease-in-out;
+    -o-transition: all .45s ease-in-out;
+    transition: all .45s ease-in-out;
     opacity: 0;
 }
 
-.mainL, .keysI, .aboutI, .reviewsI, .vacancyI , .tariffI, .keyI, .contactsI, .seoI, .mobileI {
+.mainL, .keysI, .aboutI, .reviewsI, .vacancyI , .tariffI, .keyI, .contactsI, .seoI, .mobileI, .marketplaceI {
     opacity: 1;
 }
 
@@ -238,4 +244,12 @@ html {
     body::-webkit-scrollbar {
         width: 10px;               /* ширина scrollbar */
     }
+    .seo-page-t {
+        margin-top: 45px;
+    }
+    
+    .seo-page-o {
+        margin-bottom: 60px;
+    }
+    
 }

@@ -14,7 +14,7 @@ import MainSimple from './../components/mainP/MainSimple'
 import MainQuestion from './../components/mainP/MainQuestion'
 import SeoReport from './../components/seomsc/SeoReport'
 import SeoTariff from './../components/seomsc/SeoTariff';
-import KeysMainSeoSwiperContainer from "../components/keysP/KeysMainSeoSwiper";
+import KeysMainSeoSwiperContainer from "../components/seomsc/KeysMainSeoSwiper";
 
 const SeoPage =()=>{
     const seoI = useRef(false)
@@ -24,16 +24,17 @@ const SeoPage =()=>{
     return (
         <div>
             <main ref={seoI} className='seo'>
-                <SeoHead/>
-                <div style={{'marginTop': '90px'}}></div>
-                <SeoTariff/>
+                <SeoHead column='seo'/>
+                <div className='seo-page-t'>
+                    <SeoTariff/>
+                </div>
                 <SeoServices/>
                 <KeysMainSeoSwiperContainer/>
                 <SeoStable/>
                 <SeoQuestions/>
                 <SeoMini/>
                 <SeoMonth/>
-                <div style={{'marginBottom': '155px'}}>
+                <div className='seo-page-o' >
                     <MainOfferContainer/>
                 </div>
                 <MainApplication/>

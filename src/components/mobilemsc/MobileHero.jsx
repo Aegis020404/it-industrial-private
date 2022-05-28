@@ -4,13 +4,13 @@ import cl from './../../style/MobileHero.module.css';
 import {connect} from "react-redux/lib";
 
 const MobileHero =  props  => {
-    const state = props.mobileHeroPage[props.column]
+    const state = props.totalHeroPage[props.column]
     return (
         <section className={cl.mobileSection}>
-           <HeroSection title={state.title} descr={state.descr} classesImg={state.classesimg}/>
+           <HeroSection title={state.title} descr={state.descr} classesImg={state.classesimg} gridCl={state.grid}/>
         </section>
     )
 }
-const mapStateToProps = state => ({mobileHeroPage: state.mobileHeroPage})
+const mapStateToProps = state => ({totalHeroPage: state.totalHeroPage})
 const MobileHeroContainer = connect(mapStateToProps, {})(MobileHero)
 export default MobileHeroContainer

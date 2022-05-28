@@ -51,7 +51,8 @@ const Footer = () => {
             class: cl.footerCIItemD
         }, {link: 'SEO-копирайтинг', class: cl.footerCIItemD}, {
             link: 'Продвижение в маркетплейсах',
-            class: cl.footerCIItemD
+            class: cl.footerCIItemD,
+            page: '/marketplace-seo'
         }, {link: 'Smart-SEO. Быстрый CPA', class: cl.footerCIItemD}]
     },
         {

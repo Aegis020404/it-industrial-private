@@ -108,6 +108,8 @@
         grid-template-rows: repeat(2,auto);
         justify-content: center;
         gap: 70px;
+    } .servicesSection {
+        padding-bottom: 85px;
     }
 }
 
@@ -128,5 +130,8 @@
     }
     .servicesList {
         gap: 40px;
+    }
+    .servicesSection {
+        padding-bottom: 60px;
     }
 }

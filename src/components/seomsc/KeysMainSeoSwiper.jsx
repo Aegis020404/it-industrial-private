@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from "react-redux/lib/";
-import KeysMainSeoItem from "./KeysMainSeoItem";
+import KeysMainSeoItem from "../keysP/KeysMainSeoItem";
 import cl from "../../style/KeysMainSeo.module.css";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination, Navigation} from "swiper";
@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 const KeysMainSeoSwiper = (props) => {
+    console.log(props)
     let state = props.KeysMainSeoPage;
     return (
         <div>
