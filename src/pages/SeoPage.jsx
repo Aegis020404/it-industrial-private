@@ -23,7 +23,7 @@ const SeoPage =()=>{
     return (
         <div>
             <main ref={seoI} className='seo'>
-                <SeoHead/>
+                <SeoHead column='seo'/>
                 <div className='seo-page-t'>
                     <SeoTariff/>
                 </div>

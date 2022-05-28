@@ -59,14 +59,16 @@ const TariffSeo = (props) => {
     })
     return (
         <div className={cl.tariffSEO}>
-            <div className={cl.column1}>
-                {state.title ? <div className={cl.title}>{state.title}</div> : ''}
-                {state.text ? <div className={cl.text}>{state.text}</div> : ''}
-                {state.titleText ? <div className={cl.titleText}>{state.titleText}</div> : ''}
+            <div className="container">
+                <div className={cl.column1}>
+                    {state.title ? <div className={cl.title}>{state.title}</div> : ''}
+                    {state.text ? <div className={cl.text}>{state.text}</div> : ''}
+                    {state.titleText ? <div className={cl.titleText}>{state.titleText}</div> : ''}
 
+                </div>
             </div>
             <div className={"swiper " + props.column + ' ' + cl.swiper}>
-                <div className={"swiper-wrapper " + cl.wrapperSlid} ref={swiperWrapper}>
+                <div className={"swiper-wrapper " + ' container ' + cl.wrapperSlid } ref={swiperWrapper}>
                     {state.cases.map(el =>
                         <div className={"swiper-slide " + cl.swiperSl}>
                             <div className={cl.titleCase + ' ' + el.color}>

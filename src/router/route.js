@@ -10,6 +10,7 @@ import ContactsPage from "../pages/ContactsPage";
 import SeoPage from "../pages/SeoPage";
 import MobilePage from "../pages/MobilePage";
 import CRMPage from "../pages/CRMPage";
+import MarketplaceSeoPage from "../pages/genericServPages/MarketplaceSeoPage";
 
 export const publicRouters = [
     {path: '/it-industrial-private', component: MainPage, exact: true},
@@ -33,5 +34,7 @@ export const publicRouters = [
     {path: '/seo', component: SeoPage, exact: true},
     {path: '/mobile-develop', component: MobilePage, exact: true},
     {path: '/crm-develop', component: CRMPage, exact: true},
+
+    {path:'/marketplace-seo', component: MarketplaceSeoPage, exact: true}
 ]
 

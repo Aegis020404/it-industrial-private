@@ -1,12 +1,14 @@
 import React from 'react';
 import HeroSection from '../HeroSection';
 import cl from './../../style/SeoHead.module.css';
+import {connect} from "react-redux/lib";
 
-const SeoHead = ()=>{
-    const infoArr = {title: 'SEO продвижение сайтов в Москве', descr: 'Увеличим поток целевых заявок из Яндекса и Google', classesImg: cl.darts}
+const SeoHead = props => {
+    const state = props.totalHeroPage[props.column]
     return (
-        <HeroSection title={infoArr.title} descr={infoArr.descr} classesImg={infoArr.classesImg}/>
+        <HeroSection title={state.title} descr={state.descr} classesImg={state.classesimg}/>
     )
 }
-
-export default SeoHead
+const mapStateToProps = state => ({totalHeroPage: state.totalHeroPage})
+const SeoHeadContainer = connect(mapStateToProps, {})(SeoHead)
+export default SeoHeadContainer

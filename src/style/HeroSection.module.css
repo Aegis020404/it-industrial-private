@@ -102,14 +102,14 @@
         font-weight: 500;
     }
     .content {
-        grid-template-columns: none;
-        grid-template-rows: repeat(2, auto);
+        grid-template-columns: none !important;
+        grid-template-rows: repeat(2, auto) !important;
     }
 }
 @media (max-width:576px) {
     .section {
         padding-top: 20px;
-        min-height: 620px;
+        min-height: 580px;
     }
     .title {
         display: inline-block;

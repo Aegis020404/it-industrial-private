@@ -1,12 +1,15 @@
 import React from 'react';
 import HeroSection from '../HeroSection';
 import cl from './../../style/CrmHero.module.css';
+import { connect } from 'react-redux/lib/exports';
 
-const CrmHero = ()=>{
-    const infoArr = {title: 'Разработка CRM-систем в Москве',descr: 'Учет, контроль и автоматизация бизнеса', classesImg: cl.crm}
+const CrmHero = (props)=>{
+    const state = props.totalHeroPage[props.column]
     return (
-        <HeroSection title={infoArr.title} descr={infoArr.descr} classesImg={infoArr.classesImg} gridCl={cl.grid}/>
+        <HeroSection title={state.title} descr={state.descr} classesImg={state.classesimg} gridCl={state.grid}/>
     )
 }
 
-export default CrmHero
+const mapStateToProps = state => ({totalHeroPage: state.totalHeroPage})
+const CrmHeroContainer = connect(mapStateToProps, {})(CrmHero)
+export default CrmHeroContainer
