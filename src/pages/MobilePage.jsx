@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import MobileHeroContainer from "../components/mobilemsc/MobileHero";
+import MobileHeroContainer from "../components/MobileHero";
 import MobilePortfolio from "../components/mobilemsc/MobilePortfolio";
 import MainApplication from "../components/mainP/MainApplication";
 import MobileServiceContainer from "../components/mobilemsc/MobileService";

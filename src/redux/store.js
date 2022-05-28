@@ -7,7 +7,7 @@ import keysMainReducer from './keysNav-redux.js';
 import {KeySiteReducer} from "./keySite-redux";
 import {tarrifSEORedux} from "./tariffSEO-redux";
 import {mobileServiceReducer} from "./mobileService-redux";
-import {pagesHeroReducer} from "./PagesHero-redux";
+import {mobileHeroReducer} from "./mobileHero-redux";
 import {KeysMainSeoReducer} from "./keysMainSeo-redux";
 
 let reducers = combineReducers( {
@@ -19,7 +19,7 @@ let reducers = combineReducers( {
     KeySitePage: KeySiteReducer,
     tarrifSEOPage: tarrifSEORedux,
     mobileServicePage: mobileServiceReducer,
-    totalHeroPage: pagesHeroReducer,
+    MobileHeroPage: mobileHeroReducer,
     KeysMainSeoPage: KeysMainSeoReducer,
 })
 

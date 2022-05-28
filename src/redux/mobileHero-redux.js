@@ -28,6 +28,6 @@ let initialState = {
 }
 
 
-export function pagesHeroReducer(state = initialState, action) {
+export function mobileHeroReducer(state = initialState, action) {
     return state
 }
