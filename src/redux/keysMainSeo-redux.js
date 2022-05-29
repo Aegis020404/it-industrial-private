@@ -3,6 +3,7 @@ import stroySchedule from "../assets/img/keys-seo-stroy.svg";
 import veniSchedule from "../assets/img/key-seo-veni.svg";
 import autoSchedule from "../assets/img/keys-seo-auto.svg";
 import llumarSchedule from "../assets/img/keys-seo-lumar.svg";
+import graffik1 from "../assets/img/graffik1.png";
 
 const initialState = [{
     nameCompany: 'Эковтор',
@@ -11,7 +12,7 @@ const initialState = [{
         beenChange: {topTen: '67 запросов', traffic: '312'},
         becameChange: {topTen: '453 запроса', traffic: '1 600'}
     },
-    schedule: ecoSchedule,
+    schedule: [ecoSchedule,graffik1],
 },
     {
         nameCompany: 'Строймат',
@@ -20,7 +21,7 @@ const initialState = [{
             beenChange: {topTen: '23 запроса', traffic: '200'},
             becameChange: {topTen: '550 запросов', traffic: '400'}
         },
-        schedule: stroySchedule
+        schedule: [stroySchedule,graffik1]
     },
     {
         nameCompany: 'Вениколор',
@@ -29,7 +30,7 @@ const initialState = [{
             beenChange: {topTen: '5 запросов', traffic: '50'},
             becameChange: {topTen: '453 запроса', traffic: '2 300'}
         },
-        schedule: veniSchedule
+        schedule: [veniSchedule,graffik1]
     },
     {
         nameCompany: 'Автоэстетика',
@@ -38,7 +39,7 @@ const initialState = [{
             beenChange: {topTen: '5 запросов', traffic: '50'},
             becameChange: {topTen: '453 запроса', traffic: '2 300'}
         },
-        schedule: autoSchedule
+        schedule: [autoSchedule,graffik1]
     },
     {
         nameCompany: 'Люмар',
@@ -47,9 +48,10 @@ const initialState = [{
             beenChange: {topTen: '20 запросов', traffic: '50'},
             becameChange: {topTen: '4000 запроса', traffic: '1 800'}
         },
-        schedule: llumarSchedule,
+        schedule: [llumarSchedule,graffik1],
     }]
 
 export function KeysMainSeoReducer(state = initialState, action) {
-    return state
+ return state
 }
+
