@@ -34,14 +34,7 @@
     background-image: url("/src/assets/img/seoRight.svg");
 }
 
-.controller {
-    margin: 0 auto;
-    max-width: 200px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 a {
     text-decoration: none;
@@ -353,8 +346,19 @@ a {
         padding: 25px 35px 25px 35px;
     }
 }
-
+/*.controller {*/
+/*    display: none;*/
+/*}*/
+.controller {
+    margin: 0 auto;
+    max-width: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 576px ) {
+
     .seoItem {
         padding-bottom: 30px;
         width: 100%;
