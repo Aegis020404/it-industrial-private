@@ -1,5 +1,4 @@
 import React, {useRef, useEffect} from "react";
-import MarketplaceSeoHero from "../../components/genericServices/marketplaceSeo/MarketplaceSeoHero";
 import MarketplaceSeoText from "../../components/genericServices/marketplaceSeo/MarketplaceSeoText";
 import MainApplication from "../../components/mainP/MainApplication";
 import MainLider from "../../components/mainP/MainLider";
@@ -7,6 +6,7 @@ import MainOfferContainer from "../../components/mainP/MainOffer";
 import MainQuestion from "../../components/mainP/MainQuestion";
 import MainResult from "../../components/mainP/MainResult";
 import MainSimple from "../../components/mainP/MainSimple";
+import MobileHero from './../../components/MobileHero';
 
 const MarketplaceSeoPage = ()=>{
     const marketI = useRef('')
@@ -16,7 +16,7 @@ const MarketplaceSeoPage = ()=>{
     return (
         <div>
             <main ref={marketI} className="marketplace">
-                <MarketplaceSeoHero/>
+                <MobileHero column='marketPlace'/>
                 <MarketplaceSeoText/>
                 <MainApplication/>
                 <MainOfferContainer/>

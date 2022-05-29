@@ -4,7 +4,6 @@ import MainLider from "../components/mainP/MainLider";
 import MainOfferContainer from "../components/mainP/MainOffer";
 import MainResult from "../components/mainP/MainResult";
 import MainReview from "../components/mainP/MainReview";
-import SeoHead from "../components/seomsc/SeoHead";
 import SeoMini from "../components/seomsc/SeoMini";
 import SeoMonth from "../components/seomsc/SeoMonth";
 import SeoQuestions from "../components/seomsc/SeoQuestions";
@@ -15,6 +14,7 @@ import MainQuestion from './../components/mainP/MainQuestion'
 import SeoReport from './../components/seomsc/SeoReport'
 import SeoTariff from './../components/seomsc/SeoTariff';
 import KeysMainSeoSwiperContainer from "../components/seomsc/KeysMainSeoSwiper";
+import MobileHero from './../components/MobileHero'
 
 const SeoPage =()=>{
     const seoI = useRef(false)
@@ -24,7 +24,7 @@ const SeoPage =()=>{
     return (
         <div>
             <main ref={seoI} className='seo'>
-                <SeoHead column='seo'/>
+                <MobileHero column='seo'/>
                 <div className='seo-page-t'>
                     <SeoTariff/>
                 </div>

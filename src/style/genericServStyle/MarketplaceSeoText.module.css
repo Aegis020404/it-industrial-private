@@ -12,6 +12,10 @@
     color: #607483;
 }
 
+.textCont {
+    max-width: 950px;
+}
+
 .title {
     margin: 55px 0 65px;
     font-family: 'GothamProMedium';
