@@ -44,7 +44,7 @@ const MobileService = (props) => {
             }
         }
         if (checkin) {
-            inititalSwiper()
+            loadResize()
             checkin = 0
         }
         window.addEventListener('load', loadResize);
