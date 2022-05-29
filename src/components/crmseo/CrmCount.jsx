@@ -4,10 +4,10 @@ import cl from './../../style/CrmCount.module.css';
 
 const CrmCount = ()=>{
     return (
-        <div className="container">
-            <h2 className={cl.title}>Стоимость разработки CRM-систем </h2>
-            <TariffSeoContainer column={'firstColumn'}/>
-        </div>
+        <section className={cl.countSection}>
+            <TariffSeoContainer column={'CRMSystem'}/>
+        </section>
+           
     )
 }
 

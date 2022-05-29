@@ -4,6 +4,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const HeaderItem = ({title, info, titleClass, setHeaderNav, burgerA, page, setBurgerItem}) => {
     const changePage = (e)=>{
+        document.body.scrollTo({top: 0,behavior:'smooth'})
         setBurgerItem(false)
         setHeaderNav(false)
     }
