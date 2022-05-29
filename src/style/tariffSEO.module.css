@@ -71,11 +71,11 @@
     box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25) !important;
     border-radius: 5px;
     position: relative;
-    padding-bottom: 190px;
     text-align: center;
     margin-right: 10px;
     margin-left: 10px;
     width: 367px;
+    min-height: 450px;
 }
 
 .pag {
@@ -83,6 +83,7 @@
     /*margin-top: 15px !important;*/
     top: 0;
     text-align: center;
+    margin: 0 !important;
 }
 
 .swiper {
@@ -210,16 +211,83 @@
 
 
 @media (max-width: 992px) {
-
+    .title {
+        font-size: 35px;
+    }
+    .swiper {
+        margin-top: 35px;
+        margin-bottom: 70px;
+    }
 }
 
 
 @media (max-width: 768px) {
+    .title {
+        font-size: 25px;
+    }
+    .swiper {
+        margin-top: 25px;
+        margin-bottom: 55px;
+    }
+    .swiperSl {
+        width: 320px;
+        min-height: 400px;
+    }
+    .circle {
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+    .btnWrap {
+        margin-top: 34px;
+        position: relative;
+        bottom: 0;
+    }
 
 }
 
 @media (max-width: 576px) {
-
+    .title {
+        font-size: 16px;
+    }
+    .swiperSl {
+        width: 250px;
+        min-height: 306px;
+    }
+    .titleCase  {
+        height: 42px;
+        min-height: auto;
+        padding: 12px 0;
+    }
+    .titleCaseSpan {
+        font-size: 13px;
+    }
+    .wrapList {
+        min-height: 145px;
+    }
+    .circle {
+        margin-left: 23px;
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+    .listTitle {
+        align-items: start;
+        font-size: 12px;
+        margin-bottom: 7px;
+        margin-right: 13px;
+    }
+    .btnWrap {
+        margin-top: 34px;
+        position: relative;
+        bottom: 0;
+    }
+    .price {
+        font-size: 12px;
+    }
+    .btn {
+        min-height: 40px;
+        max-width: 141px;
+        margin-bottom: 28px;
+    }
 }
 
 
