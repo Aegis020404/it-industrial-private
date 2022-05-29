@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 
 const MobileService = (props) => {
     const state = props.mobileServicePage[props.column]
+    let checkin = 1
     useEffect(() => {
         let swiper = null;
         let mediaQuerySize = 576
@@ -42,7 +43,10 @@ const MobileService = (props) => {
                 destroySwiper()
             }
         }
-
+        if (checkin) {
+            inititalSwiper()
+            checkin = 0
+        }
         window.addEventListener('load', loadResize);
         window.addEventListener('resize', loadResize);
 
