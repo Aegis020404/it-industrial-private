@@ -1,6 +1,6 @@
 import React from 'react';
 import cl from './../../style/TariffList.module.css';
-
+import MyTitle from './../UI/titlepage/MyTitle'
 
 import MainTariffContainer from '../mainP/MainTariff';
 
@@ -9,7 +9,7 @@ const TariffList = () => {
         <section className={cl.tariff}>
             <span className={cl.tariffBackground}></span>
             <div className="container">
-                <h1 className={cl.tariffTitle}>Тарифы</h1>
+               <MyTitle title='Тарифы' classes={cl.titlePage}/>
             </div>
                 <MainTariffContainer/>
         </section>

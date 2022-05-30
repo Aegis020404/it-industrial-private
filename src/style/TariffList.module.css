@@ -40,3 +40,12 @@
     color: #25495C;
     /*margin-bottom: 67px;*/
 }
+.titlePage{
+    margin-top: 30px;
+}
+
+@media (max-width:576px) {
+    .titlePage{
+        margin-top: 20px;
+    }
+}

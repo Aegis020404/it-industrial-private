@@ -75,7 +75,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 110%;
-    width: 200px;
+    width: 213px;
     letter-spacing: -0.02em;
 
     color: #607483;
@@ -265,7 +265,7 @@
 .wholeText {
     margin-top: 40px;
     align-self: start;
-    width: 360px !important;
+    width: 330px !important;
     font-family: 'GothamProLight';
     font-style: normal;
     font-weight: 400;
@@ -430,6 +430,11 @@
 
     .stepCount {
         padding-left: 0px;
+    }
+    .wholeText  {
+        max-width: 300px;
+        width: auto !important;
+        font-size: 13px;
     }
 }
 

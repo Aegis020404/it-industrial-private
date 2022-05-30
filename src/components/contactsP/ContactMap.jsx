@@ -10,9 +10,14 @@ const ContactMap = (props)=>{
         width: '100%',
         height: '100%',
     })
-    window.addEventListener("resize", ()=>{
+    window.addEventListener('resize', ()=>{
         if(window.innerWidth <= 576 && viewport.zoom !== 16) {
-            setViewport({...viewport, zoom: 13, latitude: 55.622375 , longitude: 37.633675})
+            setViewport({...viewport, zoom: 14, latitude: 55.622375 , longitude: 37.633675})
+        }
+    });
+    window.addEventListener('reload', ()=>{
+        if(window.innerWidth <= 576 && viewport.zoom !== 16) {
+            setViewport({...viewport, zoom: 14, latitude: 55.622375 , longitude: 37.633675})
         }
     });
     

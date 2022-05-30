@@ -66,6 +66,7 @@
 .portLeft, .portRight {
     max-width: 560px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .portImgDescr {
@@ -177,4 +178,9 @@
         margin:0 auto 45px;
         font-size: 13px;
     }
+    
+.portLBlock img {
+    max-width: 100%;
+    max-height: 500px;
+}
 }

@@ -24,25 +24,25 @@ const SeoPage =()=>{
     return (
         <div>
             <main ref={seoI} className='seo'>
-                {/*<MobileHero column='seo'/>*/}
-                {/*<div className='seo-page-t'>*/}
-                {/*    <SeoTariff/>*/}
-                {/*</div>*/}
-                {/*<SeoServices/>*/}
+                <MobileHero column='seo'/>
+                <div className='seo-page-t'>
+                   <SeoTariff/>
+                </div>
+                <SeoServices/>
                 <KeysMainSeoSwiperContainer/>
-                {/*<SeoStable/>*/}
-                {/*<SeoQuestions/>*/}
-                {/*<SeoMini/>*/}
-                {/*<SeoMonth/>*/}
-                {/*<div className='seo-page-o' >*/}
-                {/*    <MainOfferContainer/>*/}
-                {/*</div>*/}
-                {/*<MainApplication/>*/}
-                {/*<SeoReport/>*/}
-                {/*<MainLider/>*/}
-                {/*<MainReview/>*/}
-                {/*<MainSimple/>*/}
-                {/*<MainQuestion/>*/}
+                <SeoStable/>
+                <SeoQuestions/>
+                <SeoMini/>
+                <SeoMonth/>
+                <div className='seo-page-o' >
+                   <MainOfferContainer/>
+                </div>{/*</div>*/}
+                <MainApplication/>
+                <SeoReport/>
+                <MainLider/>
+                <MainReview/>
+                <MainSimple/>
+                <MainQuestion/>
             </main>
         </div>
     )

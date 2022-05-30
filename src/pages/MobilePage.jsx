@@ -11,6 +11,7 @@ import MainOfferContainer from "../components/mainP/MainOffer";
 import TariffSeoContainer from "../components/TariffSEO/TariffSEO";
 import MainDevContainer from "../components/mainP/MainDev";
 import cl from './../style/MobilePage.module.css'
+import MobileCount from './../components/mobilemsc/MobileCount'
 const MobilePage = ()=>{
     const mobileI = useRef(false)
     useEffect(()=>{
@@ -20,7 +21,7 @@ const MobilePage = ()=>{
         <div>
             <main ref={mobileI} className="mobile">
                 <MobileHeroContainer column={'mobile'}/>
-                <TariffSeoContainer column={'mobileCreate'}/>
+                <MobileCount/>
                 <MobileServiceContainer column={'mobileDevelop'}/>
                 <MobilePortfolio/>
                  <MainDevContainer column={'developerMobile'}/>
