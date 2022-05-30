@@ -8,6 +8,8 @@ import MyBtnBlank from "../UI/buttonborder/MyBtnBlank";
 import "swiper/css";
 import "swiper/css/navigation";
 const TariffSeo = (props) => {
+    const nameSwiper = props.column + ~~(Math.random()*1000)
+    console.log(nameSwiper)
     let swiperWrapper = useRef(false),
          pag = useRef(false),
          state = props.tarrifSEOPage[props.column]
@@ -16,16 +18,18 @@ const TariffSeo = (props) => {
     React.useEffect(() => {
         let swiper = null;
         let mediaQuerySize = null
-
+        let checkin = 1;
         function inititalSwiper() {
+            pag.current.style.display = 'block'
+            swiperWrapper.current.style.justifyContent = 'flex-start'
             if (swiper) return
-            swiper = new Swiper(`.${props.column}`, {
+            swiper = new Swiper(`.${nameSwiper}`, {
                 modules: [Pagination],
                 slidesPerView: 'auto',
                 speed: 400,
                 // spaceBetween: 10,
                 pagination: {
-                    el: `.pag${props.column}`,
+                    el: `.pag${nameSwiper}`,
                     type: 'bullets',
 
                 }
@@ -36,7 +40,8 @@ const TariffSeo = (props) => {
             if (!swiper) return
                 swiper.destroy();
             swiper = null;
-
+            swiperWrapper.current.style.justifyContent = 'center'
+            pag.current.style.display = 'none'
         }
 
         function loadResize() {
@@ -52,7 +57,10 @@ const TariffSeo = (props) => {
                 destroySwiper()
             }
         }
-
+        if (checkin) {
+            loadResize()
+            checkin = 0
+        }
         window.addEventListener('load', loadResize);
         window.addEventListener('resize', loadResize);
 
@@ -67,7 +75,7 @@ const TariffSeo = (props) => {
 
                 </div>
             </div>
-            <div className={"swiper " + props.column + ' ' + cl.swiper}>
+            <div className={"swiper " + nameSwiper + ' ' + cl.swiper}>
                 <div className={"swiper-wrapper " + ' container ' + cl.wrapperSlid } ref={swiperWrapper}>
                     {state.cases.map(el =>
                         <div className={"swiper-slide " + cl.swiperSl}>
@@ -93,7 +101,7 @@ const TariffSeo = (props) => {
                     )}
                 </div>
                 <div className="swiper-scrollbar"></div>
-                <div className={`pag${props.column}` + ' ' + cl.pag} ref={pag}></div>
+                <div className={`pag${nameSwiper}` + ' ' + cl.pag} ref={pag}></div>
                 {/*<div className={"pag" + props.column}></div>*/}
             </div>
 

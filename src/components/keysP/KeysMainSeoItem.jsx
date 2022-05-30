@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import cl from './../../style/KeysMainSeo.module.css';
+import {togglePhoto} from "../../redux/keysMainSeo-redux";
 
-const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, beenTraffic, becameTraffic, schedule, scheduleSet})=>{
+const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, beenTraffic, becameTraffic, schedule, index,scheduleSet})=>{
+    let photo = useRef(false)
     return (
         <li className={cl.seoItem}>
             <div className={cl.seoItemBlock}>
@@ -40,13 +42,19 @@ const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, be
                 <div className={cl.seoRightBlock}>
                     <p className={cl.seoRightTopTen}>Количество запросов в ТОП-10</p>
                     <div className={cl.seoSwitchBlock}>
-                        <div className={cl.seoSwitch} onClick={e=>{e.preventDefault();e.target.classList.toggle(cl.active)}}>
+                        <div className={cl.seoSwitch} onClick={ e => {
+                            console.log(index)
+                            e.preventDefault();
+                            photo.current.src = schedule.filter(el=> photo.current.src.split('.').slice(0,1).join``.split`/`.reverse()[0] !== el.split('.').slice(0,1).join``.split`/`.reverse()[0])
+                            e.target.classList.toggle(cl.active)
+                        }
+                        }>
                             <span className={cl.seoSwitchitem}></span>
                         </div>
                         <p className={cl.seoSwitchDescr}>Скриншот</p>
                     </div>
                     <div className={cl.seoRightImg}>
-                        <img src={schedule}  alt="График, отображающий насколько повысились запросы компании"/>
+                        <img src={schedule[0]}  alt="График, отображающий насколько повысились запросы компании" ref={photo}/>
                         {/*srcSet={scheduleSet + ' ' + '2x'}*/}
                     </div>
                 </div>
