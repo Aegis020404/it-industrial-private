@@ -125,7 +125,7 @@ const Header = () => {
                 <div className={cl.defaultHeader}>
                 <div className={cl.clear}></div>
                 <div className={cl.bottomHeader}>
-                    <NavLink  to='/it-industrial-1' onClick={scrollTopPage} className={cl.achorMain}>
+                    <NavLink  to='/it-industrial-private' onClick={scrollTopPage} className={cl.achorMain}>
                         <div className={cl.company}>
                             <div className={cl.logoWrap}>
                                 <span className={cl.logo}></span>

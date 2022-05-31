@@ -135,7 +135,7 @@ const Footer = () => {
                     <nav className={cl.footerMainList}>
                         <li className={cl.footerItem}>
                             <div className={cl.footerIMainInfo}>
-                                <NavLink to="/it-industrial-1" className={cl.achorMain}>
+                                <NavLink to="/it-industrial-private" className={cl.achorMain}>
                                     <div className={cl.footerILogoBlock}>
                                         <div className={cl.company}>
                                             <div className={cl.logoWrap}>
