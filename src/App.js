@@ -14,7 +14,8 @@ function App() {
     return (
         <BrowserRouter >
             <Header />
-            <AppRouter />
+            {/*<AppRouter />*/}
+            <MainPage/>
             <Footer />
         </BrowserRouter>
     );
