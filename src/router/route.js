@@ -13,7 +13,7 @@ import CRMPage from "../pages/CRMPage";
 import MarketplaceSeoPage from "../pages/genericServPages/MarketplaceSeoPage";
 
 export const publicRouters = [
-    {path: '/it-industrial-private', component: MainPage, exact: true},
+    {path: '/', component: MainPage, exact: true},
     {path: '/keys', component: KeysPage, exact: true},
 
     {path: '/строй-мат', component: KeySiteContainer, exact: true},
