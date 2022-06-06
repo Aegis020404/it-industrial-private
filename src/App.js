@@ -1,20 +1,25 @@
-import React from "react";
-import MainPage from "./pages/MainPage";
+import React, {useRef} from "react";
 import './style/normalize.css';
 import './style/main.css'
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AppRouter from "./components/AppRouter";
 
 
-
 function App() {
+    let wrap = useRef(false)
+    window.addEventListener('load', function() {
+        wrap.current.hidden = false;
+        console.log('zbs    zbs    zbs    zbs    zbs    zbs    ')
+    })
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter >
+            <div ref={wrap} hidden={true}>
             <Header />
             <AppRouter />
             <Footer />
+            </div>
         </BrowserRouter>
     );
 }

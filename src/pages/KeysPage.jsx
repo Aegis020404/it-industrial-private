@@ -1,8 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import MainApplication from '../components/mainP/MainApplication';
 import KeysMain from '../components/keysP/KeysMain';
-import cl from './../../src/style/KeysMain.module.css';
-import {NavLink} from "react-router-dom";
 import NavPagesHead from '../components/UI/navpage/MyNavPages';
 
 const KeysPage = () => {
