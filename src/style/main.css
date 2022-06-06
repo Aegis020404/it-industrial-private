@@ -233,16 +233,27 @@ html {
 
 
 
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: grayscale(1)
+}
+
+
 
 @media (max-width: 1200px) {
     /* .container{
         padding: 0 30px;
     } */
 }   
+@media (max-width:768px) {
+    .seo-page-o {
+        margin-bottom: 75px;
+    }
+}
 @media (max-width: 576px) {
   
     body::-webkit-scrollbar {
-        width: 10px;               /* ширина scrollbar */
+        width: 0px;      
+         /* ширина s  crollbar */
     }
     .seo-page-t {
         margin-top: 45px;
@@ -250,6 +261,9 @@ html {
     
     .seo-page-o {
         margin-bottom: 60px;
+    }
+    .seo-page-o {
+        margin-bottom: 50px;
     }
     
 }

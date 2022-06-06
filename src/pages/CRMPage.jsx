@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-
+import cl from './../style/CRM.module.css'
 import MobilePortfolio from "../components/mobilemsc/MobilePortfolio";
 import MainApplication from "../components/mainP/MainApplication";
 import MainSimple from './../components/mainP/MainSimple'
@@ -26,7 +26,7 @@ const CRMPage = ()=>{
                 <MobilePortfolio/>
                 <MainDevContainer column={'developerCRM'}/>
                 <MainApplication/>
-                <div style={{marginBottom: '130px', marginTop: '120px'}}>
+                <div className={cl.offer}>
                     <MainOfferContainer/>
                 </div>
                 <MainLider/>

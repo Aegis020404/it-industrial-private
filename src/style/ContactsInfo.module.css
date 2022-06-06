@@ -206,6 +206,9 @@
 }
 
 @media (max-width:576px) {
+    .contact {
+        padding-bottom: 50px;
+    }
     .contentInfo {
         display: grid;
         grid-template-columns: none;

@@ -1,9 +1,34 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import cl from './../../style/KeysMainSeo.module.css';
 import {togglePhoto} from "../../redux/keysMainSeo-redux";
+import KeysMainSeoInput from './KeysMainSeoInput';
+import mediumZoom from 'medium-zoom';
+
 
 const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, beenTraffic, becameTraffic, schedule, index,scheduleSet})=>{
-    let photo = useRef(false)
+    const [checkImg, setCheckImg] = useState(false)
+    const imgItem = useRef('')
+    const figureItem = useRef('')
+
+    const figureMove = e=>{
+        let rect = e.target.getBoundingClientRect()
+        let x = e.clientX - rect.left
+        let y = e.clientY - rect.top
+        if(window.innerWidth >576){
+            imgItem.current.style.transformOrigin = `${x}px ${y}px`
+            imgItem.current.style.transform = `scale(2)`    
+        }
+        
+    }
+    const figureLeave = e=>{
+        imgItem.current.style.transform = 'none'
+    }
+    const figureActive = (e)=>{
+        if(window.innerWidth <= 576) {
+            e.target.classList.toggle(cl.figureActive)
+        }
+    }
+
     return (
         <li className={cl.seoItem}>
             <div className={cl.seoItemBlock}>
@@ -42,20 +67,54 @@ const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, be
                 <div className={cl.seoRightBlock}>
                     <p className={cl.seoRightTopTen}>Количество запросов в ТОП-10</p>
                     <div className={cl.seoSwitchBlock}>
-                        <div className={cl.seoSwitch} onClick={ e => {
-                            console.log(index)
-                            e.preventDefault();
-                            photo.current.src = schedule.filter(el=> photo.current.src.split('.').slice(0,1).join``.split`/`.reverse()[0] !== el.split('.').slice(0,1).join``.split`/`.reverse()[0])
-                            e.target.classList.toggle(cl.active)
-                        }
-                        }>
+                        <div className={cl.seoSwitch} onClick={ e => {e.preventDefault();e.target.classList.toggle(cl.active); setCheckImg(!checkImg)}}>
                             <span className={cl.seoSwitchitem}></span>
                         </div>
                         <p className={cl.seoSwitchDescr}>Скриншот</p>
                     </div>
-                    <div className={cl.seoRightImg}>
-                        <img src={schedule[0]}  alt="График, отображающий насколько повысились запросы компании" ref={photo}/>
-                        {/*srcSet={scheduleSet + ' ' + '2x'}*/}
+                    <div>
+                        {checkImg ? 
+                            <div className={cl.imgCard}>
+                                <figure ref={figureItem} className={cl.imgBlock} onClick={e=>figureActive(e)} onMouseMove={e=>figureMove(e)} onMouseLeave={e=>figureLeave(e)}>
+                                    <img ref={imgItem} src={schedule[1].img} className={cl.img} id='graph'/>
+                                </figure>
+                               
+                            </div>  
+                        :
+                            <div className={cl.seoRightCard}>
+                                <div className={cl.seoCountBlock}>
+                                    <ul className={cl.seoCountList}>
+                                            {schedule[0].numbers.map(e=><li className={cl.seoCountItem}>{e}</li>)}
+                                    </ul>
+                                </div>
+                                <div className={cl.seoGraphBlock}>
+                                    <div className={cl.seoLeftGraph}>
+                                        <div className={cl.seoGraphTop}>
+                                            <ul className={cl.seoGraphRightL}>
+                                                {schedule[0].monthsGrey.map(e=><li className={cl.seoGraphItem}>
+                                                    <KeysMainSeoInput  schedule={schedule[0]} inputInfo={e} position={false}/>
+                                                    <p className={cl.seoGraphNameM}>{e.name}</p>
+                                                </li>)}
+                                                
+                                            </ul>
+                                        </div>
+                                        <div className={cl.seoGraphBottom}>БЫЛО</div>
+                                    </div>
+                                    <div className={cl.sepRightGraph}>
+                                        <div className={cl.seoGraphTop}>
+                                            <ul className={cl.seoGraphRightR}>
+                                                {schedule[0].monthsPink.map(e=><li className={cl.seoGraphItem}>
+                                                    <KeysMainSeoInput  schedule={schedule[0]} inputInfo={e} position={true}/>
+                                                    <p className={cl.seoGraphNameM}>{e.name}</p>
+                                                </li>)}
+                                            </ul>
+                                        </div>
+                                        <div className={cl.seoGraphBottom}>СТАЛО</div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        
                     </div>
                 </div>
             </div>
