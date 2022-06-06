@@ -95,6 +95,17 @@
     .accordionLineV, .accordionLineH {
         width: 8px;
     }
+    .css-1iji0d4 {
+        padding: 0 11px 0 25px !important;
+        height: 50px;
+    }
+    
+    .css-u7qq7e {
+        max-width:792px !important;
+        padding-left: 25px !important;
+        padding-right: 35px !important;
+        padding-bottom: 20px !important;
+    }
 
     
 .accordionSignBlock {
