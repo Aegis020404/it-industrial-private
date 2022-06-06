@@ -193,7 +193,7 @@
     
     .accordionDescr, .accordionItem, .accordionWhatDo {  
         padding-right: 25px;
-        font-size: 13px;
+        font-size: 13px;padding-top: 0;
     }
 
     .accordion {
