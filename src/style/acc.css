@@ -71,7 +71,9 @@
 .accordionLineV {
     transform: rotate(90deg);
 }
-
+.css-67l5gl::before  {
+    height: 0px !important;
+}
 @media (max-width:576px) {
     .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
         margin: 8px 0 !important;
