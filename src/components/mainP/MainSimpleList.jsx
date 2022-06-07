@@ -2,9 +2,7 @@ import React from 'react';
 import cl from '../../style/MainSimple.module.css';
 import MainSItem from './MainSItem';
 // import {Swiper, SwiperSlide} from "swiper/react";
-import Swiper from "swiper";
-import {Pagination} from "swiper";
-import MainTItem from "./MainTItem";
+import Swiper, {Pagination} from "swiper";
 
 const MainSimpleList = () => {
 
@@ -87,9 +85,9 @@ const MainSimpleList = () => {
 
 
                 <div className={'swiper-wrapper ' + cl.simpleList}>
-                    {itemInfo.map(e => (
-                        <div className={'swiper-slide ' + cl.swipSl}>
-                            <MainSItem title={e.title} descr={e.descr} count={e.count} key={e.title}/>
+                    {itemInfo.map((e, i) => (
+                        <div className={'swiper-slide ' + cl.swipSl}  key={i}>
+                            <MainSItem title={e.title} descr={e.descr} count={e.count}/>
                         </div>
                     ))}
 

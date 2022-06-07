@@ -14,7 +14,7 @@ const ReviewsItem = ({imgPerson, namePerson, positionPerson, commentPerson})=>{
                 <p className={cl.reviewsDescrItem}>{positionPerson}</p>
             </div>
             <div className={cl.reviewsRight}>
-                <p className={cl.reviewsDescr}>{commentPerson}</p>
+                <div className={cl.reviewsDescr}>{commentPerson}</div>
             </div>
         </li>
     )

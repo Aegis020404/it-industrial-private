@@ -14,14 +14,14 @@ const NavPagesHead = ({navItems})=>{
                     </li>
                     {navItems.map((e,i,arr)=>
                         e.link !== undefined  ? 
-                        <li className={cl.pagItem}>
+                        <li className={cl.pagItem} key={i}>
                             <span className={cl.pagSec}></span>
                             <Link to={e.link}>
                                 <span className={i+1 == arr.length ? cl.activePage : cl.disablePage}>{e.text}</span>
                             </Link>
                         </li>
                         :
-                        <li className={cl.pagItem}>
+                        <li className={cl.pagItem} key={i}>
                             <span className={cl.pagSec}></span>
                             <span className={i+1 == arr.length ? cl.activePage : cl.disablePage}>{e.text}</span>
                         </li>

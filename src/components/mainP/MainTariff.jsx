@@ -94,8 +94,8 @@ const MainTariff = props => {
 
                     <div className={'swiper-wrapper ' + cl.tariffList}>
 
-                        {props.MainTariffPage.map(e => (
-                            <div className={'swiper-slide ' + cl.slide}>
+                        {props.MainTariffPage.map((e, i) => (
+                            <div className={'swiper-slide ' + cl.slide} key={i}>
                                 <MainTItem img={e.img} title={e.title} descr={e.descr} price={e.price} dl={e.dl}
                                            key={e.title} setModal={setModal} setTheme={setTheme}/>
                             </div>

@@ -11,7 +11,6 @@ function App() {
     let wrap = useRef(false)
     window.addEventListener('load', function() {
         wrap.current.hidden = false;
-        console.log('zbs    zbs    zbs    zbs    zbs    zbs    ')
     })
     return (
         <BrowserRouter >

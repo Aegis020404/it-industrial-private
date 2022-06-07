@@ -3,7 +3,7 @@ import cl from './MyNavLink.module.css';
 
 const MyNavLink = ({children,classes, ...props})=>{
     return (
-        <a {...props} className={[cl.myLink, classes].join` `} >{children}</a>
+        <span {...props} className={[cl.myLink, classes].join` `}  >{children}</span>
     )
 }
 

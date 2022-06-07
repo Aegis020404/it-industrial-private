@@ -65,19 +65,19 @@ const MainDev = (props) => {
                                         </div>
 
                                         {Array.isArray(obj.lists) ? <ul className={cl.wrapList}>
-                                            {obj.lists.map(list => {
-                                                return <>
+                                            {obj.lists.map((list, i) => {
+                                                return <div key={i}>
                                                     <li className={cl.listItem}>
                                                         <div className={cl.line}></div>
                                                         <div>{list}</div>
                                                     </li>
-                                                </>
+                                                </div>
                                             })}
                                         </ul> : typeof obj.lists === 'object' ? <div className={cl.wholeText}>
                                             <div className={cl.innerTitle}>{obj.lists.title}</div>
                                             <ul className={cl.ulContainer}>
                                                 {
-                                                    obj.lists.list.map(el=> <li className={cl.lis}>{el}</li>)
+                                                    obj.lists.list.map((el, i)=> <li className={cl.lis} key={i}>{el}</li>)
                                                 }
                                             </ul>
                                         </div> : <div className={cl.wholeText}>{obj.lists}</div>}
@@ -92,19 +92,19 @@ const MainDev = (props) => {
                                                 <div className={cl.stepM}>{i + 1} этап</div>
                                                 <div className={cl.titleM}>{obj.title}</div>
                                                 {Array.isArray(obj.lists) ?    <ul className={cl.listBlockM}>
-                                                    {obj.lists.map(list => {
-                                                        return <>
+                                                    {obj.lists.map((list, i) => {
+                                                        return <div key={i}>
                                                             <li className={cl.listIteMm}>
                                                                 <div className={cl.line}></div>
                                                                 <div>{list}</div>
                                                             </li>
-                                                        </>
+                                                        </div>
                                                     })}
                                                 </ul> : typeof obj.lists === 'object' ? <div className={cl.wholeText}>
                                                     <div className={cl.innerTitle}>{obj.lists.title}</div>
                                                     <ul>
                                                         {
-                                                            obj.lists.list.map(el=> <li>{el}</li>)
+                                                            obj.lists.list.map((el, i)=> <li key={i} >{el}</li>)
                                                         }
                                                     </ul>
                                                 </div> : <div className={cl.wholeText}>{obj.lists}</div>}

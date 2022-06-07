@@ -9,7 +9,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 const TariffSeo = (props) => {
     const nameSwiper = props.column + ~~(Math.random()*1000)
-    console.log(nameSwiper)
     let swiperWrapper = useRef(false),
          pag = useRef(false),
          state = props.tarrifSEOPage[props.column]
@@ -77,14 +76,14 @@ const TariffSeo = (props) => {
             </div>
             <div className={"swiper " + nameSwiper + ' ' + cl.swiper}>
                 <div className={"swiper-wrapper " + ' container ' + cl.wrapperSlid } ref={swiperWrapper}>
-                    {state.cases.map(el =>
-                        <div className={"swiper-slide " + cl.swiperSl}>
+                    {state.cases.map((el, i) =>
+                        <div className={"swiper-slide " + cl.swiperSl} key={i}>
                             <div className={cl.titleCase + ' ' + el.color}>
                                 <div className={cl.titleCaseSpan}>{el.title}</div>
                             </div>
                             {Array.isArray(el.list) ? <ul className={cl.wrapList}>
                                 {
-                                    el.list.map(li => <li className={cl.listTitle}><div className={cl.circle}/> <div>{li}</div></li>)
+                                    el.list.map((li, i) => <li className={cl.listTitle} key={i}><div className={cl.circle}/> <div>{li}</div></li>)
                                 }
 
                             </ul>
@@ -102,7 +101,6 @@ const TariffSeo = (props) => {
                 </div>
                 <div className="swiper-scrollbar"></div>
                 <div className={`pag${nameSwiper}` + ' ' + cl.pag} ref={pag}></div>
-                {/*<div className={"pag" + props.column}></div>*/}
             </div>
 
 

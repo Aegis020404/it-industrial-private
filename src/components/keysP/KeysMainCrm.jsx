@@ -69,7 +69,7 @@ const KeysMainCrm = ({classesTabs}) => {
                 <NavLink to='/CRM' onClick={scrollTopPage}>
                     {infoArr.map((e, i) => <KeysItemList descr={e.descr} logo={e.img.logo} img={e.img.image}
                                                          background={e.img.background} alt={e.img.alt}
-                                                         classesImg={e.img.classesImg}/>)}
+                                                         classesImg={e.img.classesImg} key={i}/>)}
                  </NavLink>
                 </ul>
             </div>

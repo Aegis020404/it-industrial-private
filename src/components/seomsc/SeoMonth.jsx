@@ -16,7 +16,7 @@ const SeoMonth = ()=>{
                 <div className={cl.monthContent}>
                     <div className={cl.monthLeft}>
                         <ul className={cl.monthLeftList}>
-                            {infoArr.map(e=><SeoMonthItem title={e.title} descr={e.descr}/>)}
+                            {infoArr.map((e, i)=><SeoMonthItem key={i} title={e.title} descr={e.descr}/>)}
                         </ul>
                     </div>
                     <div className={cl.monthRight}>

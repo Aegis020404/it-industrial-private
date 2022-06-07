@@ -117,7 +117,6 @@ const MainQuiz = ()=>{
     useMemo(()=>{
         if((checkItem && !checkInputSite)||(checkInputSite && !checkItem)) {activePage && [...[...activePage.children].find(e=>e.classList.contains(cl.quizBtnBlock)).children].find(e=>e.classList.contains(cl.quizSectionBtnNext)).classList.add(cl.quizSectionBtnActive)}
         else{activePage && [...[...activePage.children].find(e=>e.classList.contains(cl.quizBtnBlock)).children].find(e=>e.classList.contains(cl.quizSectionBtnNext)).classList.remove(cl.quizSectionBtnActive)}
-        console.log(checkInputSite);
     },[checkItem, checkInputSite])
 
 

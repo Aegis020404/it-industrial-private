@@ -19,9 +19,9 @@ const HeaderItem = ({title, info, titleClass, setHeaderNav, burgerA, page, setBu
                 <h4 className={[cl.headerICtitle, titleClass].join` `} onClick={e=>changePage(e)}>{title}</h4>
             }           
             <ul className={cl.headerIClist}>
-                {info.map(e=>
+                {info.map((e, i)=>
                     <li className={[cl.headerICitem, e.class].join` `} key={e.link} >
-                        <Link to={e.page} className={cl.headerIClink} onClick={e=>changePage(e)}>{e.link}</Link>
+                        <Link to={e.page} className={cl.headerIClink} onClick={e=>changePage(e)} key={i}>{e.link}</Link>
                     </li>
                 )}
             </ul>

@@ -112,8 +112,8 @@ const MainOther = () => {
 
 
                                 <div className={'swiper-wrapper ' + cl.otherList}>
-                                    {infoItem.map(e =>
-                                        <div className={'swiper-slide ' + cl.swipeSl}>
+                                    {infoItem.map((e, i) =>
+                                        <div className={'swiper-slide ' + cl.swipeSl} key={i}>
                                             <MainOItem title={e.title} img={e.img} setModalItem={setModalItem}
                                                        key={e.title}/>
                                         </div>

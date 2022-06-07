@@ -59,7 +59,7 @@ const MobileService = (props) => {
                 <div className={cl.serviceListBlock}>
                     <div className={`swiper ${props.column}`}>
                         <div className={'swiper-wrapper ' + cl.serviceList}>
-                            {state.cases.map(e => <div className={'swiper-slide ' + cl.swiperSl}>
+                            {state.cases.map((e, i) => <div className={'swiper-slide ' + cl.swiperSl} key={i}>
                                 <MobileServItem title={e.title} descr={e.descr} img={e.img}/>
                             </div>)}
                         </div>

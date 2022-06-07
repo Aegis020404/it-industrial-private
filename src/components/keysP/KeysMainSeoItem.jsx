@@ -84,14 +84,14 @@ const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, be
                             <div className={cl.seoRightCard}>
                                 <div className={cl.seoCountBlock}>
                                     <ul className={cl.seoCountList}>
-                                            {schedule[0].numbers.map(e=><li className={cl.seoCountItem}>{e}</li>)}
+                                            {schedule[0].numbers.map((e, i)=><li className={cl.seoCountItem} key={i}>{e}</li>)}
                                     </ul>
                                 </div>
                                 <div className={cl.seoGraphBlock}>
                                     <div className={cl.seoLeftGraph}>
                                         <div className={cl.seoGraphTop}>
                                             <ul className={cl.seoGraphRightL}>
-                                                {schedule[0].monthsGrey.map(e=><li className={cl.seoGraphItem}>
+                                                {schedule[0].monthsGrey.map((e, i)=><li key={i} className={cl.seoGraphItem}>
                                                     <KeysMainSeoInput  schedule={schedule[0]} inputInfo={e} position={false}/>
                                                     <p className={cl.seoGraphNameM}>{e.name}</p>
                                                 </li>)}
@@ -103,7 +103,7 @@ const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, be
                                     <div className={cl.sepRightGraph}>
                                         <div className={cl.seoGraphTop}>
                                             <ul className={cl.seoGraphRightR}>
-                                                {schedule[0].monthsPink.map(e=><li className={cl.seoGraphItem}>
+                                                {schedule[0].monthsPink.map((e,i)=><li key={i} className={cl.seoGraphItem}>
                                                     <KeysMainSeoInput  schedule={schedule[0]} inputInfo={e} position={true}/>
                                                     <p className={cl.seoGraphNameM}>{e.name}</p>
                                                 </li>)}

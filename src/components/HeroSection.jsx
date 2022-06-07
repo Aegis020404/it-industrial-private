@@ -7,7 +7,6 @@ import MyThxModal from './UI/thxmodal/MyThxModal';
 const HeroSection = ({title, descr, classesImg, gridCl})=>{
     const [modal, setModal] = useState(false)
     const [thxModal, setThxModal] = useState(false)
-    console.log(gridCl);
     return (
         <section className={cl.section}>
         <div className="container">

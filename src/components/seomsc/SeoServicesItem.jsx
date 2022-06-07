@@ -11,8 +11,8 @@ const SeoServicesItem = ({title, img, infoItem})=>{
                 <h4 className={cl.servicesITitle}>{title}</h4>
             </div>
             <ul className={cl.servicesIList}>
-                {infoItem.map(e=>
-                    <li className={cl.servicesIItem}>
+                {infoItem.map((e, i)=>
+                    <li className={cl.servicesIItem} key={i}>
                         {e}
                     </li>    
                 )}

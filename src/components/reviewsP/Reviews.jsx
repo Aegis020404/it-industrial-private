@@ -63,7 +63,7 @@ const Reviews = ()=>{
                     <MyTitle title='Отзывы' classes={cl.reviewsTitle}></MyTitle>
                     <div className={cl.reviewsListBlock}>
                         <ul className={cl.reviewsList}>
-                        {reviewsInfo.map(review => <ReviewsItem imgPerson={review.photo} namePerson={review.name} commentPerson={review.comment} positionPerson={review.position}/>)}
+                        {reviewsInfo.map((review, i) => <ReviewsItem key={i} imgPerson={review.photo} namePerson={review.name} commentPerson={review.comment} positionPerson={review.position}/>)}
                         </ul>
                     </div>
                 </div>

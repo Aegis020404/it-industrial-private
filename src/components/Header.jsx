@@ -22,15 +22,15 @@ const Header = () => {
     const headerI = useRef('')
     const topHeader = useRef('')
 
-    
+
 
     const [navItem, setNavItem] = useState(false)
     const [arrowItem, setArrowItem] = useState(false)
     const [modal, setModal] = useState(false)
     const [thxModal, setThxModal] = useState(false)
     const headerNavV = [cl.nav_span]
-    
-    
+
+
     useMemo(()=>{
         setArrowItem(!arrowItem)
     },[navItem])
@@ -62,9 +62,9 @@ const Header = () => {
     },[navItem])
 
     let  tempScrollTop, currentScrollTop = 0
-    
+
     document.body.addEventListener('scroll', (el)=>{
-        currentScrollTop = document.body.scrollTop     
+        currentScrollTop = document.body.scrollTop
         if (window.innerWidth > 768 && tempScrollTop < currentScrollTop && !topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.add(cl.topHeaderActive); headerI.current.classList.add(cl.headerActive)}
         if (window.innerWidth > 768 && tempScrollTop > currentScrollTop && topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.remove(cl.topHeaderActive);  headerI.current.classList.remove(cl.headerActive)}
         tempScrollTop = currentScrollTop
@@ -92,7 +92,7 @@ const Header = () => {
                             <div className={cl.textUs}>
                                 <MyMail href="mailto:info@it-industriul.ru" classes={cl.mail}>info@it-industriul.ru</MyMail>
                                 <span className={cl.textUs_span}>Написать нам:</span>
-                            
+
                                     <div className={cl.iconBlock}>
                                         <div className={cl.iconFirst}>
                                             <a href="#">
@@ -102,7 +102,7 @@ const Header = () => {
                                                     </svg>
                                                 </span>
                                             </a>
-                                           
+
                                         </div>
                                         <div className={cl.iconSec}>
                                             <a href="#">
@@ -114,7 +114,7 @@ const Header = () => {
                                             </a>
                                         </div>
                                     </div>
-                              
+
                             </div>
                         </div>
                     </div>
@@ -143,7 +143,7 @@ const Header = () => {
                                 <MyNavLink classes={cl.nav_span} onClick={e=>navActive(e)}>Услуги</MyNavLink>
                                 <span className={cl.navArrow}>
                                     <svg width="8" height="6" fill="#4C6171" viewBox="0 0 8 6"  xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.56289 0.966217L4.13341 3.55246L6.70393 0.966217L7.56077 1.8283L4.13341 5.27663L0.706055 1.8283L1.56289 0.966217Z" />
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M1.56289 0.966217L4.13341 3.55246L6.70393 0.966217L7.56077 1.8283L4.13341 5.27663L0.706055 1.8283L1.56289 0.966217Z" />
                                     </svg>
                                 </span>
                             </div>
@@ -163,7 +163,7 @@ const Header = () => {
                             <div className={cl.fixLinks}>
                                 <span className={[cl.textUs_span, cl.textUs_spanF].join` `}>Написать&nbsp;нам:</span>
                                 <div className={cl.iconBlock}>
-                                   
+
                                         <a href="#">
                                             <span className={[cl.icon, cl.whatsapp].join` `}>
                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="#ACB8C0" xmlns="http://www.w3.org/2000/svg">
@@ -171,9 +171,9 @@ const Header = () => {
                                                 </svg>
                                             </span>
                                         </a>
-                                        
-                                
-                                   
+
+
+
                                         <a href="#">
                                             <span className={[cl.icon, cl.tg].join` `}>
                                                 <svg width="20" height="17"  viewBox="0 0 20 17" fill="#ACB8C0" xmlns="http://www.w3.org/2000/svg">
@@ -181,11 +181,11 @@ const Header = () => {
                                                 </svg>
                                             </span>
                                         </a>
-                                   
+
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div className={cl.numberBtnBlock}>
                         <div className={cl.numberWrap}>
                             <a href=""className={cl.number}>+7(925) 117-00-46</a>

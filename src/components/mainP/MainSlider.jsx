@@ -72,8 +72,8 @@ const Slider = (props) => {
 
 
                         {
-                            props.mainSlider.map(item => (
-                                <div className={'swiper-slide'}>
+                            props.mainSlider.map((item, i) => (
+                                <div className={'swiper-slide'} key={i}>
 
                                     <div className={['container ', cl.contentCont].join` `}>
                                         <div className={cl.wrapper}>
@@ -106,10 +106,10 @@ const Slider = (props) => {
                         ))}
 
                 </div>
-                <div class="swiper-pagination pagSlider"></div>
+                <div className="swiper-pagination pagSlider"></div>
 
-                <div class="swiper-button-prev prevElSlider"></div>
-                <div class="swiper-button-next nextElSlider"></div>
+                <div className="swiper-button-prev prevElSlider"></div>
+                <div className="swiper-button-next nextElSlider"></div>
                 <div className="swiper-scrollbar"></div>
 
             </div>

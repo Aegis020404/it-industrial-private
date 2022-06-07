@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React from 'react';
 import cl from './../../style/VacancyAcc.module.css';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -41,15 +41,15 @@ const VacancyAccItem = ({title, descr, whatDo, info, check,classesItem, classesB
                {title} 
           </Typography>
             <div className={'accordionSignBlock'}>
-                <span className={'accordionLineV'}></span>
-                <span className={'accordionLineH'}></span>
+                <span className={'accordionLineV'}/>
+                <span className={'accordionLineH'}/>
             </div>
           </AccordionSummary>
           <AccordionDetails>
           <Typography>
             <div className={cl.accordionCard}>
                 <p className={[cl.accordionDescr, classesDescr].join` `}>{descr}</p>
-                    {whatDo !== undefined && <p className={cl.accordionWhatDo}>{whatDo}</p>}
+                    {whatDo !== undefined && <div className={cl.accordionWhatDo}>{whatDo}</div>}
                     {info !== undefined && 
                     <ul className={cl.accordionList}>
                         {info.map(e => 
@@ -60,7 +60,7 @@ const VacancyAccItem = ({title, descr, whatDo, info, check,classesItem, classesB
                         )}
                     </ul>
                     }
-            </div>  
+            </div>
           </Typography>
           </AccordionDetails>
       </Accordion>

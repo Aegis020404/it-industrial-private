@@ -10,7 +10,7 @@ const SeoReport = ()=>{
                 <h2 className={cl.reportTitle}>Каждый месяц мы будем предоставлять вам подробный отчет о работе</h2>
                 <div className={cl.reportListBLock}>
                     <ul className={cl.reportList}>
-                        {infoArr.map(e=><SeoReportItem text={e}/>)}
+                        {infoArr.map((e, i)=><SeoReportItem text={e} key={i} />)}
                     </ul>
                 </div>
                 <div className={cl.reportResult}>

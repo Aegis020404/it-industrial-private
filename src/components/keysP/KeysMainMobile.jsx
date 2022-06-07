@@ -14,7 +14,7 @@ const KeysMainMobile = ({classesTabs})=>{
             <ul className={cl.mobileList}>
                 <NavLink to='Перевозки-App' className={cl.navLink} onClick={scrollTopPage}>
                 {infoArr.map((e,i)=>
-                    <KeysItemList descr={e.descr} logo={e.img.logo} img={e.img.image} background={e.img.background} alt={e.img.alt} classesImg={e.img.classesImg} imgSet={e.img.imageSet}/>)}
+                    <KeysItemList key={i} descr={e.descr} logo={e.img.logo} img={e.img.image} background={e.img.background} alt={e.img.alt} classesImg={e.img.classesImg} imgSet={e.img.imageSet}/>)}
                 </NavLink>
             </ul>
         </div>
