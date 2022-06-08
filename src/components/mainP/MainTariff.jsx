@@ -79,7 +79,6 @@ const MainTariff = props => {
         window.addEventListener('load', loadResize);
         window.addEventListener('resize', loadResize);
     },[]);
-
     const tariffS = useRef('')
     return (
         <section ref={tariffS} className={cl.tariffSection} >

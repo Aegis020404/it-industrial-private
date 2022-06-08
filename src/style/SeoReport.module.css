@@ -178,6 +178,9 @@
 }
 
 @media (max-width:576px) {
+    .reportSection {
+        padding-bottom: 0;
+    }
     .reportTitle {
         font-size: 16px;
         max-width: 300px;
