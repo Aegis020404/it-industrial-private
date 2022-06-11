@@ -15,20 +15,7 @@
     margin-top: 30px;
     margin-left: -10px;
 }
-input[type="range"]{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 100%;
-    outline: none;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    background-color: transparent;
-    pointer-events: none;
-    /*transform: translateX(-28px);*/
-}
+
 .sliderTrack{
     /*box-sizing: border-box;*/
     width: 100%;
@@ -39,66 +26,7 @@ input[type="range"]{
     bottom: 0;
     border-radius: 5px;
 }
-input[type="range"]::-webkit-slider-runnable-track{
-    -webkit-appearance: none;
-    height: 5px;
-}
-input[type="range"]::-moz-range-track{
-    -moz-appearance: none;
-    height: 5px;
-}
-input[type="range"]::-ms-track{
-    appearance: none;
-    height: 5px;
-}
-input[type="range"]::-webkit-slider-thumb{
-    font-family: GothamProLight;
-    -webkit-appearance: none;
-    height: 1.7em;
-    width: 1.7em;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    border: 5px solid #607483;
 
-    cursor: pointer;
-    margin-top: -9px;
-    pointer-events: auto;
-    border-radius: 50%;
-}
-input[type="range"]::-moz-range-thumb{
-    /*-webkit-appearance: none;*/
-    /*height: 1.7em;*/
-    /*width: 100%;*/
-    /*cursor: pointer;*/
-    /*border-radius: 50%;*/
-    /*background-color: #607483;*/
-    /*pointer-events: auto;*/
-    font-family: GothamProLight;
-    -webkit-appearance: none;
-    height: 1.7em;
-    width: 1.7em;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    border: 5px solid #607483;
-
-    cursor: pointer;
-    margin-top: -9px;
-    pointer-events: auto;
-    border-radius: 50%;
-}
-input[type="range"]::-ms-thumb{
-    appearance: none;
-    height: 1.7em;
-    width: 1.7em;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: #607483;
-    pointer-events: auto;
-}
-input[type="range"]:active::-webkit-slider-thumb{
-    background-color: #607483;
-;
-}
 .slider {
     font-family: 'GothamProLight';
     margin-left: 5%;
@@ -201,11 +129,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     /*margin: 0 auto;*/
 }
 @media (max-width:576px) {
-    input[type="range"]::-webkit-slider-thumb{
-        height: 1.5em;
-        width: 1.5em;
-        margin-top: -0.65em ;
-    }
+   
     .fuckingWrap {
         left: 14px !important;
         right: 6.5px !important;

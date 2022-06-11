@@ -2,13 +2,13 @@ const SELECT_BTN = 'SELECT_BTN'
 
 let initialState = {
     btns: [{
-        text: 'Разработка сайтов', selected: true
+        text: 'Разработка сайтов', selected: true, number: 0,
     }, {
-        text: 'SEO-продвижение', selected: false
+        text: 'SEO-продвижение', selected: false, number: 1,
     }, {
-        text: 'Мобильные приложения', selected: false
+        text: 'Мобильные приложения', selected: false, number: 2,
     }, {
-        text: 'CRM', selected: false
+        text: 'CRM', selected: false, number: 3,
     },
     ]
 }

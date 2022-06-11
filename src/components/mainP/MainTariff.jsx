@@ -1,11 +1,9 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import MainTItem from './MainTItem';
 import cl from '../../style/MainTariff.module.css';
 import cli from '../../style/MainTItem.module.css'
 import {connect} from "react-redux/lib";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { useSelector, useDispatch } from 'react-redux'
 // import {Swiper, SwiperSlide} from "swiper/react";
 import Swiper from "swiper";
 import MyModal from '../UI/modal/MyModal';
@@ -17,11 +15,13 @@ import postRequest from "../../redux/requests";
 import MyThxModal from '../UI/thxmodal/MyThxModal';
 import TariffsListContainer from '../TariffsList.Item';
 
-let mapStateToProps = state => ({MainTariffPage: state.MainTariffPage, })
 const MainTariff = props => {
     const [theme, setTheme] = useState('')
     const [modal, setModal] = useState(false)
     const [thxModal, setThxModal] = useState(false)
+    const dispatch = useDispatch();
+    const {MainTariffPage} = useSelector((state)=>state)
+    const infoData = [...MainTariffPage]
 
     const [modalInfo, setModalInfo] = useState({namePerson: '', tel: ''})
 
@@ -35,13 +35,13 @@ const MainTariff = props => {
         }
         forServerInfo = {...newModal}
         setModalInfo({namePerson: '', tel: ''})
-        postRequest(forServerInfo)
+        // postRequest(forServerInfo)
     }
 
         let pager = 'pag' + ~~(Math.random()*1000)
         let swiperName = 'swiper' + ~~(Math.random()*1000)
     // className={cl.mySwiper}
-    React.useEffect(() => {
+    useEffect(() => {
 
         let swiper = null;
         let mediaQuerySize = 576;
@@ -71,14 +71,14 @@ const MainTariff = props => {
             let windowWidth = window.innerWidth
             if (windowWidth <= mediaQuerySize) {
                 catalogSliderInit()
-            } else {
+            } else if (swiper) {
                 catalogSliderDestroy()
             }
         }
         loadResize()
         window.addEventListener('load', loadResize);
         window.addEventListener('resize', loadResize);
-    },[]);
+    },[theme]);
 
     const tariffS = useRef('')
     return (
@@ -94,7 +94,7 @@ const MainTariff = props => {
 
                     <div className={'swiper-wrapper ' + cl.tariffList}>
 
-                        {props.MainTariffPage.map(e => (
+                        {infoData.map(e => (
                             <div className={'swiper-slide ' + cl.slide}>
                                 <MainTItem img={e.img} title={e.title} descr={e.descr} price={e.price} dl={e.dl}
                                            key={e.title} setModal={setModal} setTheme={setTheme}/>
@@ -112,7 +112,5 @@ const MainTariff = props => {
     )
 }
 
-let MainTariffContainer = connect(mapStateToProps,
-    {}
-)(MainTariff)
-export default MainTariffContainer
+
+export default MainTariff

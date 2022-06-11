@@ -199,10 +199,7 @@
 
 @media (min-width: 1200px) {
 
-    swiperSl {
-        width: 2400px !important;
-        background: #000;
-    }
+
 
     .circle {
         margin-left: 50px

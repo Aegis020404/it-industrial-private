@@ -4,13 +4,13 @@ import KeysMainSeoItem from "../keysP/KeysMainSeoItem";
 import cl from "../../style/KeysMainSeo.module.css";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination, Navigation} from "swiper";
+import { useDispatch, useSelector } from 'react-redux';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
 const KeysMainSeoSwiper = (props) => {
-    console.log(props)
-    let state = props.KeysMainSeoPage;
+    const {KeysMainSeoPage} = useSelector(state=>state);
+    const dispatch = useDispatch();
+    let state = KeysMainSeoPage;
     return (
         <div>
             <Swiper
@@ -42,8 +42,6 @@ const KeysMainSeoSwiper = (props) => {
     );
 };
 
-const mSTP = state => ({ KeysMainSeoPage: state.KeysMainSeoPage})
 
-const KeysMainSeoSwiperContainer = connect(mSTP, {})(KeysMainSeoSwiper)
 
-export default KeysMainSeoSwiperContainer;
+export default KeysMainSeoSwiper;

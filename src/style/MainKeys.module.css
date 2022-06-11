@@ -85,7 +85,7 @@
 
 .keysImgF {
     height: 512px;
-    background-image: url('../assets/img/pad-keys.png');
+   
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -240,7 +240,7 @@
 
 .keysImgF {
     height: 462px;
-    background-image: url('../assets/img/pad-keys.png');
+  
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -390,7 +390,7 @@
 
 .keysImgF {
     height: 462px;
-    background-image: url('../assets/img/pad-keys.png');
+   
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

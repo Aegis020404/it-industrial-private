@@ -4,17 +4,13 @@ import Swiper from "swiper";
 import {Pagination, Navigation} from "swiper";
 import {connect} from "react-redux/lib";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
 import MyModal from './../UI/modal/MyModal';
 import MyBtnFiled from './../UI/buttonback/MyBtnFiled';
 import MyMask from './../UI/maskinput/MyMask';
 import MyInput from './../UI/input/MyInput';
 // import required modules
-
-
-import "./../../style/swiper.css";
+import { useSelector, useDispatch } from 'react-redux'
 import cl from '../../style/Slider.module.css';
 import MyBtnBlank from './../UI/buttonborder/MyBtnBlank';
 import postRequest from "../../redux/requests";
@@ -22,12 +18,14 @@ import ContactsService from '../../API/ContactsService';
 import MainTItem from "./MainTItem";
 import MyThxModal from '../UI/thxmodal/MyThxModal';
 
-let mapStateToProps = state => ({mainSlider: state.mainSliderPage});
+
 
 
 const Slider = (props) => {
     const [modalInfo, setModalInfo] = useState({namePerson: '', tel: ''})
-
+    const dispatch = useDispatch();
+    const {mainSliderPage} = useSelector((state)=>state)
+    const infoData = [...mainSliderPage]
     let forServerInfo = {}
 
     const addModalInfo = (e) => {
@@ -39,8 +37,8 @@ const Slider = (props) => {
         forServerInfo = {...newModal}
         setModalInfo({namePerson: '', tel: ''})
         console.log(forServerInfo);
-        postRequest(forServerInfo)
-        ContactsService.setPhoneNName(modalInfo.tel, modalInfo.namePerson)
+        // postRequest(forServerInfo)
+        // ContactsService.setPhoneNName(modalInfo.tel, modalInfo.namePerson)
     }
 
     const sliderI = useRef(false)
@@ -72,7 +70,7 @@ const Slider = (props) => {
 
 
                         {
-                            props.mainSlider.map(item => (
+                            infoData.map(item => (
                                 <div className={'swiper-slide'}>
 
                                     <div className={['container ', cl.contentCont].join` `}>
@@ -121,5 +119,5 @@ const Slider = (props) => {
     );
 };
 
-const SliderContainer = connect(mapStateToProps, {})(Slider)
-export default SliderContainer;
+
+export default Slider;

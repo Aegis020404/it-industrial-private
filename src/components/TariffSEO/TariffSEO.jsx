@@ -5,14 +5,16 @@ import {Swiper, Pagination} from "swiper";
 import MyModal from "../UI/modal/MyModal";
 import MyThxModal from "../UI/thxmodal/MyThxModal";
 import MyBtnBlank from "../UI/buttonborder/MyBtnBlank";
-import "swiper/css";
-import "swiper/css/navigation";
-const TariffSeo = (props) => {
-    const nameSwiper = props.column + ~~(Math.random()*1000)
+import { useDispatch, useSelector } from 'react-redux';
+
+const TariffSeo = ({column}) => {
+    const nameSwiper = column + ~~(Math.random()*1000)
+    const {tarrifSEOPage}=useSelector(state=>state)
+    const dispatch = useDispatch()
     console.log(nameSwiper)
     let swiperWrapper = useRef(false),
          pag = useRef(false),
-         state = props.tarrifSEOPage[props.column]
+         state = tarrifSEOPage[column]
     const [modal, setModal] = useState(false)
     const [thxModal, setThxModal] = useState(false)
     React.useEffect(() => {
@@ -48,7 +50,7 @@ const TariffSeo = (props) => {
             mediaQuerySize = state.cases.length * 400;
             let windowWidth = window.innerWidth
             if (windowWidth <= mediaQuerySize) {
-                pag.current.style.display = 'block'
+                if (pag.current !== null && pag.current !== undefined) {pag.current.style.display = 'block'}
             swiperWrapper.current.style.justifyContent = 'flex-start'
                 inititalSwiper()
             } else {
@@ -102,7 +104,7 @@ const TariffSeo = (props) => {
                 </div>
                 <div className="swiper-scrollbar"></div>
                 <div className={`pag${nameSwiper}` + ' ' + cl.pag} ref={pag}></div>
-                {/*<div className={"pag" + props.column}></div>*/}
+                {/*<div className={"pag" + column}></div>*/}
             </div>
 
 
@@ -113,9 +115,5 @@ const TariffSeo = (props) => {
     )
         ;
 };
-let mapStateToProps = state => ({
-    tarrifSEOPage: state.tarrifSEOPage
-})
 
-const TariffSeoContainer = connect(mapStateToProps, {})(TariffSeo)
-export default TariffSeoContainer;
+export default TariffSeo;

@@ -1,7 +1,7 @@
 import React, { useState, useMemo,useEffect } from 'react';
 import cl from './../../style/ContactMap.module.css';
 import { YMaps, Map, Placemark } from "react-yandex-maps";
-import Marker from './../../assets/img/map-placemark.svg';
+
 
 const ContactMap = (props)=>{
     const [defaultState, setDefaultState] = useState({ center: [55.621950, 37.636882], zoom: 17 })
@@ -22,7 +22,7 @@ const ContactMap = (props)=>{
             <YMaps>
                 <div onClick={e=>e.target.classList.toggle(cl.active)}>
                 <Map state={defaultState}  className={cl.map}>
-                    <Placemark geometry={[55.622636, 37.635177]} options={{iconLayout: "default#image",iconImageHref:Marker,iconImageSize: [55,66]}} />
+                    <Placemark geometry={[55.622636, 37.635177]} options={{iconLayout: "default#image",iconImageHref:'/img/map-placemark.svg',iconImageSize: [55,66]}} />
                 </Map>
                 </div>
             </YMaps>

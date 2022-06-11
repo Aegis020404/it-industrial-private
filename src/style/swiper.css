@@ -20,6 +20,7 @@ body {
 
 
 
+
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     display: none;
 }
@@ -31,9 +32,9 @@ body {
 }
 .swiper-button-next, .swiper-button-prev {
 
-    width: 42px;
-    height: 42px;
-    color: black;
+    width: 42px !important;
+    height: 42px !important;
+    color: black !important;
     border-radius: 50%;
     background-color: white;
     box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25);
@@ -45,7 +46,7 @@ body {
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 8px;
+    font-size: 7px !important;
     font-weight: 700;
     box-shadow: 0px 14px 24px rgba(207, 201, 201, 0.25);
 }
@@ -81,7 +82,7 @@ body {
     height: 10px;
     width: 10px;
     border: 3px solid red;
-    background: white;
+    background: white !important;
 }
 
 @media (max-width: 1200px) {

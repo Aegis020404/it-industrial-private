@@ -9,7 +9,7 @@ const MainOItem = ({title, img, setModalItem})=>{
     return (
         <li className={cl.otherItem}>
             <h3 className={cl.otherItemTitle}>{title}</h3>
-            <img className={cl.otherItemImgBlock} src={img}/>
+            <img className={cl.otherItemImgBlock} src={`/img/${img}`}/>
             <MyBtnBlank classes={cl.otherItemBtn} onClick={e=>{e.preventDefault(e); setModalItem(true)}}>ЗАКАЗАТЬ</MyBtnBlank>
         </li>
     )

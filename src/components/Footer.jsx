@@ -1,15 +1,14 @@
 import React, {useState} from "react";
 import cl from '../style/Footer.module.css';
 import FooterItem from "./FooterItem";
-import MyBtnBlank from "./UI/buttonborder/MyBtnBlank";
-import logo from './../assets/img/logo-header.svg'
+import MyBtnBlank from "./UI/buttonborder/MyBtnBlank"; 
 import MyMail from "./UI/mail/MyMail";
 import MyBtnFiled from "./UI/buttonback/MyBtnFiled";
 import MyModal from "./UI/modal/MyModal";
 import MyInput from "./UI/input/MyInput";
 import MyMask from "./UI/maskinput/MyMask";
 import ContactsService from "../API/ContactsService";
-import {NavLink} from "react-router-dom";
+import Link from "next/link";
 import MyThxModal from "./UI/thxmodal/MyThxModal";
 
 const Footer = () => {
@@ -135,11 +134,11 @@ const Footer = () => {
                     <nav className={cl.footerMainList}>
                         <li className={cl.footerItem}>
                             <div className={cl.footerIMainInfo}>
-                                <NavLink to="/it-industrial-private" className={cl.achorMain}>
+                                <Link href="/" className={cl.achorMain}>
                                     <div className={cl.footerILogoBlock}>
                                         <div className={cl.company}>
                                             <div className={cl.logoWrap}>
-                                                <img className={cl.logo} src={logo} alt="logo"/>
+                                                <img className={cl.logo} src={`/img/logo-header.svg`} alt="logo"/>
                                             </div>
                                             <div className={cl.companyWrap}>
                                                 <p className={cl.name}>IT-INDUSTRIAL</p>
@@ -147,7 +146,7 @@ const Footer = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </NavLink>
+                                </Link>
                                 <a href="" className={cl.footerumber}>+7(925) 117-00-46</a>
                                 <MyMail href="mailto:info@it-industriul.ru"
                                         classes={cl.mail}>info@it-industriul.ru</MyMail>

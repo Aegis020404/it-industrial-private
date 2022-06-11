@@ -6,13 +6,10 @@ import MyMask from "../UI/maskinput/MyMask";
 import MyInput from "../UI/input/MyInput";
 import MainOItem from "./MainOItem";
 import ContactsService from "../../API/ContactsService";
-import "swiper/css";
+
 // import {Swiper, SwiperSlide} from "swiper/react";
 import Swiper from "swiper";
-import circleCubs from '../../assets/img/circle-cubs.png';
-import circleSMM from '../../assets/img/circle-phone.png';
-import circleAnalitic from '../../assets/img/circle-mac.png';
-import circleCheck from '../../assets/img/circle-contract.png';
+
 import MainTItem from "./MainTItem";
 import {Pagination} from "swiper";
 import MyThxModal from "../UI/thxmodal/MyThxModal";
@@ -32,7 +29,7 @@ const MainOther = () => {
         }
         forServerInfo = {...newModal}
         setModalInfo({namePerson: '', tel: ''})
-        ContactsService.setPhoneNName(modalInfo.tel, modalInfo.tel)
+        // ContactsService.setPhoneNName(modalInfo.tel, modalInfo.tel)
     }
 
     const addModalInfo = (e) => {
@@ -43,7 +40,7 @@ const MainOther = () => {
         }
         forServerInfo = {...newModal}
         setModalInfo({namePerson: '', tel: ''})
-        ContactsService.setPhoneNName(modalInfo.tel, modalInfo.tel)
+        // ContactsService.setPhoneNName(modalInfo.tel, modalInfo.tel)
     }
 
 
@@ -52,10 +49,10 @@ const MainOther = () => {
 
     const [modalItem, setModalItem] = useState(false)
 
-    const infoItem = [{title: 'SEO-продвижение', img: circleCubs},
-        {title: 'SMM', img: circleSMM},
-        {title: 'Аналитика сайта', img: circleAnalitic},
-        {title: 'Аудит сайта', img: circleCheck}]
+    const infoItem = [{title: 'SEO-продвижение', img: 'circle-cubs.png'},
+        {title: 'SMM', img: 'circle-phone.png'},
+        {title: 'Аналитика сайта', img: 'circle-mac.png'},
+        {title: 'Аудит сайта', img: 'circle-contract.png'}]
 
 
 

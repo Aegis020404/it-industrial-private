@@ -1,6 +1,7 @@
 import React from 'react';
 import cl from './MyBtns.module.css';
 import {Swiper} from "swiper";
+import { useDispatch } from 'react-redux';
 
 const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive,itemSwipeClasses}) => {
     React.useEffect(() => {
@@ -36,6 +37,7 @@ const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive,itemS
         window.addEventListener('resize', loadResize);
 
     });
+    const dispatch = useDispatch();
 
             return (
 
@@ -48,9 +50,9 @@ const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive,itemS
                                     className={el.selected ? [cl.btn, cl.btnSelected, btnClasses].join` ` : [btnClasses, cl.btn].join` `}
                                     key={i} my_key={i}
                                     onClick={(e, i) => {
-                                        selectBtn(e.target.getAttribute('my_key'))
-                                        setTabActive(e.target.getAttribute('my_key'))
                                         e.preventDefault();
+                                        dispatch({type: 'SELECT_BTN', key:e.target.getAttribute('my_key') })
+                                        setTabActive(e.target.getAttribute('my_key'))
                                     }}>
                                     {el.text}
                                 </button>

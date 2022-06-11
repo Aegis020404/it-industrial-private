@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import cl from './../../style/VacancyAcc.module.css';
-import './../../style/acc.css';
+
 import VacancyAccItem from "./VacancyAccItem";
 
 
