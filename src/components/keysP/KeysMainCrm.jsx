@@ -65,7 +65,7 @@ const KeysMainCrm = ({classesTabs}) => {
        
             <div className={[cl.crmBlock, classesTabs].join` `}>
                 <ul className={cl.crmList}>
-                    {infoArr.map((e, i) => <KeysItemList page={e.href} descr={e.descr} logo={e.img.logo} img={e.img.img}
+                    {infoArr.map((e, i) => <KeysItemList key={i} page={e.href} descr={e.descr} logo={e.img.logo} img={e.img.img}
                                                          background={e.img.background} alt={e.img.alt}
                                                          classesImg={e.img.classesImg}/>)}
                    

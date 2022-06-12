@@ -25,15 +25,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/about": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/about.js"
-    ],
     "/keys": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/keys.js"
+    ],
+    "/seo": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/seo.js"
+    ],
+    "/vacancy": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/vacancy.js"
     ]
   },
   "ampFirstPages": []

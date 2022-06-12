@@ -1,17 +1,11 @@
-import React, {useMemo, useRef, useState, useEffect} from "react";
+import React, {useEffect, useMemo, useRef, useState} from "react";
 import Link from "next/link";
 import cl from '../style/Header.module.css';
-import whatsAppIcon from './../assets/img/whatsapp.svg'
-import tgIcon from './../assets/img/tg.svg'
 
 import MyMail from "./UI/mail/MyMail";
 import MyBtnFiled from "./UI/buttonback/MyBtnFiled";
-import MyBtnBlank from "./UI/buttonborder/MyBtnBlank";
 import MyNavLink from "./UI/navlink/MyNavLink";
 import MyModal from "./UI/modal/MyModal";
-import MyInput from "./UI/input/MyInput";
-import MyMask from "./UI/maskinput/MyMask";
-import postRequest from "../redux/requests";
 import HeaderNav from "./HeaderNav";
 
 import MyThxModal from "./UI/thxmodal/MyThxModal";

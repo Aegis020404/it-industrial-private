@@ -68,8 +68,8 @@ const MainOffer = (props) => {
                             className={cl.mySwiper}>
 
                             {infoData.map((el, i) => (
-                                <SwiperSlide className={cl.swipeSl}>
-                                    <button className={el.selected ? `${cl.btn} ${cl.btnSelected}` : cl.btn} key={i} my_key={i}
+                                <SwiperSlide className={cl.swipeSl} key={i}>
+                                    <button className={el.selected ? `${cl.btn} ${cl.btnSelected}` : cl.btn}  my_key={i}
                                             onClick={e => {
                                                 dispatch(selectBtn(e.target.getAttribute('my_key')))
                                                 e.preventDefault();

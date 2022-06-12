@@ -16,7 +16,7 @@ const KeysMainSeoSwiper = (props) => {
             <Swiper
                 modules={[Navigation,Pagination]}
                 pagination={{
-                    type:"fraction",
+                    type: "fraction",
                     el: '.paginationRev',
                 }}
                 navigation ={{
@@ -26,16 +26,16 @@ const KeysMainSeoSwiper = (props) => {
                 }}
                 autoHeight={true}
                 >
-                {state.map((e,i)=> <SwiperSlide>
-                    <div className={"container " + cl.container}>
-                    <KeysMainSeoItem  nameCompany={e.nameCompany} linkCompany={e.linkCompany} beenTopTen={e.changeSeo.beenChange.topTen} schedule={e.schedule} scheduleSet={e.scheduleSet} beenTraffic={e.changeSeo.becameChange.traffic} becameTopTen={e.changeSeo.becameChange.topTen} becameTraffic={e.changeSeo.becameChange.traffic} index={i}/>
+                {state.map((e,i)=> <SwiperSlide key={i}>
+                    <div className={"container " + cl.container} key={i}>
+                    <KeysMainSeoItem key={i} nameCompany={e.nameCompany} linkCompany={e.linkCompany} beenTopTen={e.changeSeo.beenChange.topTen} schedule={e.schedule} scheduleSet={e.scheduleSet} beenTraffic={e.changeSeo.becameChange.traffic} becameTopTen={e.changeSeo.becameChange.topTen} becameTraffic={e.changeSeo.becameChange.traffic} index={i}/>
                     </div>
                     </SwiperSlide>
                 )}
                     <div className={cl.controller}>
-                        <div className={ cl.arrow + " arrPrevRevSeo " + cl.arrPrevRevSeo}></div>
-                        <div className={"paginationRev " + cl.pag }></div>
-                        <div className={ cl.arrow + " arrNextRevSeo " + cl.arrNextRevSeo} ></div>
+                        <div className={ cl.arrow + " arrPrevRevSeo " + cl.arrPrevRevSeo} />
+                        <div className={"paginationRev " + cl.pag } />
+                        <div className={ cl.arrow + " arrNextRevSeo " + cl.arrNextRevSeo}  />
                     </div>
             </Swiper>
         </div>

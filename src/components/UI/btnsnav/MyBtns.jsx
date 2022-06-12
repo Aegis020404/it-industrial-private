@@ -36,6 +36,7 @@ const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive,itemS
                 catalogSliderDestroyd()
             }
         }
+        loadResize()
         window.addEventListener('load', loadResize);
         window.addEventListener('resize', loadResize);
 

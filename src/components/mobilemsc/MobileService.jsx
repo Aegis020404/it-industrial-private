@@ -30,7 +30,7 @@ const MobileService = ({column}) => {
             })
         }
 
-        function catalogSliderDestroy() {
+        function destroySwiper() {
             try {
                 if (swiper) {
                     swiper.destroy();

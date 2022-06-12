@@ -12,7 +12,7 @@ const KeysMainMobile = ({classesTabs})=>{
         <div className={[cl.mobileBlock,classesTabs].join` `}>
             <ul className={cl.mobileList}>
                     {infoArr.map((e,i)=>
-                    <KeysItemList descr={e.descr} page={e.href} logo={e.img.logo} img={e.img.image} background={e.img.background} alt={e.img.alt} classesImg={e.img.classesImg} imgSet={e.img.imageSet}/>)}
+                    <KeysItemList key={i} descr={e.descr} page={e.href} logo={e.img.logo} img={e.img.image} background={e.img.background} alt={e.img.alt} classesImg={e.img.classesImg} imgSet={e.img.imageSet}/>)}
             </ul>
         </div>
     )

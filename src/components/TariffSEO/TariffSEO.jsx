@@ -8,7 +8,6 @@ import {useSelector} from 'react-redux';
 
 const TariffSeo = ({column}) => {
     let nameSwiper = column// + ~~(Math.random() * 100)
-    console.log(nameSwiper)
     const {tarrifSEOPage} = useSelector(state => state)
     let swiperWrapper = React.createRef(false), pag = React.createRef(false), state = tarrifSEOPage[column]
     const [modal, setModal] = useState(false)
@@ -26,7 +25,10 @@ const TariffSeo = ({column}) => {
             }
             if (swiper) return
             swiper = new Swiper(`.${nameSwiper}`, {
-                modules: [Pagination], slidesPerView: 'auto', speed: 400, // spaceBetween: 10,
+                modules: [Pagination],
+                slidesPerView: 'auto',
+                speed: 400,
+                spaceBetween: 10,
                 pagination: {
                     el: `.${nameSwiper + 'pag'}`, type: 'bullets',
 
@@ -91,12 +93,12 @@ const TariffSeo = ({column}) => {
             </div>
             <div className={"swiper " + nameSwiper + ' ' + cl.swiper}>
                 <div className={"swiper-wrapper " + ' container ' + cl.wrapperSlid} ref={swiperWrapper}>
-                    {state.cases.map(el => <div className={"swiper-slide " + cl.swiperSl}>
+                    {state.cases.map((el, i) => <div key={i} className={"swiper-slide " + cl.swiperSl}>
                         <div className={cl.titleCase + ' ' + el.color}>
                             <div className={cl.titleCaseSpan}>{el.title}</div>
                         </div>
                         {Array.isArray(el.list) ? <ul className={cl.wrapList}>
-                            {el.list.map(li => <li className={cl.listTitle}>
+                            {el.list.map((li, i) => <li key={i} className={cl.listTitle}>
                                 <div className={cl.circle}/>
                                 <div>{li}</div>
                             </li>)}

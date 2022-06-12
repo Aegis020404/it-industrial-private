@@ -219,6 +219,10 @@
 
 
 @media (max-width: 768px) {
+    .caserText {
+        margin: 0 auto ;
+    }
+
     .title {
         font-size: 25px;
     }

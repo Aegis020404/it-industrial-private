@@ -8,7 +8,7 @@ import AppRouter from "./components/AppRouter";
 
 
 function App() {
-    let wrap = useRef(false)
+    let wrap = React.createRef(false)
     window.addEventListener('load', function() {
         wrap.current.hidden = false;
     })

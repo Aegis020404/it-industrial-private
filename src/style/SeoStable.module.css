@@ -99,7 +99,7 @@
         font-size: 13px;
     }
     .stableITitle {
-        margin: 20px 0;
+        margin: 20px 0 0;
 
     }
     .stableList {
@@ -115,9 +115,10 @@
 
 @media (max-width:576px) {
     .stableITitle {
-        font-size: 16px;
-        margin: 15px 0 0 ;
+        font-size: 14px;
+        margin: 20px 0 ;
         max-width: 300px;
+        height: auto;
     }
     .stableItem {
         min-height: 240px;
@@ -126,12 +127,12 @@
         min-height: 170px;
         font-size: 12px;
     }
-    .stableITitle {
-        margin: 24px 0 15px;
-        height: auto;
-        min-height: 65px;
-        font-size: 14px;
-    }
+    /*.stableITitle {*/
+    /*    margin: 24px 0 15px;*/
+    /*    height: auto;*/
+    /*    min-height: 65px;*/
+    /*    font-size: 14px;*/
+    /*}*/
     .stableList {
         max-width: 400px;
         margin: 0 auto;
