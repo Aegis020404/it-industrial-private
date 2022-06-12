@@ -45,7 +45,7 @@
     "yandex-map-react": "^1.1.1"
   },
   "scripts": {
-    "start": "next dev",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "dev": "next dev",
     "eject": "react-scripts eject"

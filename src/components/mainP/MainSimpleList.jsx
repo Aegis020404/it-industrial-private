@@ -59,10 +59,13 @@ const MainSimpleList = () => {
         }
 
         function catalogSliderDestroy() {
-            if (swiperS) {
-                swiperS.destroy();
-                swiperS = null;
-            }
+            try {
+                if (swiperS) {
+                    swiperS.destroy();
+                    swiperS = null;
+
+                }
+            } catch (err) {}
         }
 
         function loadResize() {
