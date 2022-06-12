@@ -25,20 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/keys": [
+    "/contacts": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/keys.js"
+      "static/chunks/pages/contacts.js"
     ],
-    "/seo": [
+    "/tariffs": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/seo.js"
-    ],
-    "/vacancy": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/vacancy.js"
+      "static/chunks/pages/tariffs.js"
     ]
   },
   "ampFirstPages": []
