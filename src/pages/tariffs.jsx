@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import MainApplication from "../components/mainP/MainApplication";
 import TariffList from "../components/tariffP/TariffList";
-import TariffSeo from "../components/tariffP/TariffSeo";
+import TariffSeoDuo from "../components/tariffP/TariffSeoDuo";
 import NavPagesHead from "../components/UI/navpage/MyNavPages";
 import MainTariffContainer from '../components/mainP/MainTariff';
 import Container from "../components/Container";
@@ -19,7 +19,7 @@ const TariffPage = ()=>{
                 <main ref={tariffRef} className='tariff'>
                     <NavPagesHead navItems={infoPage}/>
                     <TariffList/>
-                    <TariffSeo/>
+                    <TariffSeoDuo/>
                     <MainApplication/>
                 </main>
             </Container>

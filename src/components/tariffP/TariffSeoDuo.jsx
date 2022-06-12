@@ -2,7 +2,7 @@ import React from "react";
 import TariffSeoContainer from "../TariffSEO/TariffSEO";
 import cl from './../../style/SeoTariff.module.css';
 
-const TariffSeo = ()=>{
+const TariffSeoDuo = ()=>{
     return (
         <section className={cl.seoSection}>
             <TariffSeoContainer column={'firstColumn'}/>
@@ -11,4 +11,4 @@ const TariffSeo = ()=>{
     )
 }
 
-export default TariffSeo
+export default TariffSeoDuo
