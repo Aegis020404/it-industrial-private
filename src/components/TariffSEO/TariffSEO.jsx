@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, {useState} from 'react';
 import cl from './../../style/tariffSEO.module.css'
 import {Swiper, Pagination} from "swiper";
 import MyModal from "../UI/modal/MyModal";
@@ -40,26 +40,33 @@ const TariffSeo = ({column}) => {
                     swiper.destroy();
                     swiper = null;
                 }
+                swiperWrapper.current.style.justifyContent = 'center'
+                pag.current.style.display = 'none'
             } catch (err) {
                 console.log('')
             }
-            swiperWrapper.current.style.justifyContent = 'center'
-            pag.current.style.display = 'none'
         }
 
         function loadResize() {
             mediaQuerySize = state.cases.length * 400;
             let windowWidth = window.innerWidth
             if (windowWidth <= mediaQuerySize) {
-                if (pag.current !== null && pag.current !== undefined) {
-                    pag.current.style.display = 'block'
-                    swiperWrapper.current.style.justifyContent = 'flex-start'
+                try {
+                    if (pag.current !== null && pag.current !== undefined) {
+                        pag.current.style.display = 'block'
+                        swiperWrapper.current.style.justifyContent = 'flex-start'
+                    }
+                } catch (e) {
                 }
                 inititalSwiper()
             } else {
-                if (pag.current !== null && pag.current !== undefined) {
-                    swiperWrapper.current.style.justifyContent = 'center'
-                    pag.current.style.display = 'none'
+                try {
+
+                    if (pag.current !== null && pag.current !== undefined) {
+                        swiperWrapper.current.style.justifyContent = 'center'
+                        pag.current.style.display = 'none'
+                    }
+                } catch (e) {
                 }
                 destroySwiper()
             }
