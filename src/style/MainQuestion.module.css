@@ -132,7 +132,7 @@ color: #ACB8C0;
     line-height: 130%;
 }
 
-
+/* 
 ::-webkit-input-placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder  {
     font-family: 'GothamProRegular';
     font-style: normal;
@@ -141,7 +141,7 @@ color: #ACB8C0;
     line-height: 130%;
     letter-spacing: -0.02em;
     color: #ACB8C0;
-}
+} */
 
 .questiontextAreaBlock {
     margin-top: 15px;
@@ -342,7 +342,7 @@ color: #ACB8C0;
         background: #fff;
     }
     
-    input::placeholder {
+    /* input::placeholder {
         font-family: 'GothamProRegular';
         font-style: normal;
         font-weight: 400;
@@ -350,7 +350,7 @@ color: #ACB8C0;
         line-height: 130%;
         letter-spacing: -0.02em;
         color: #ACB8C0;
-    }
+    } */
 
     /* .questiontextAreaBlock {
         max-width: 575px;
@@ -509,7 +509,7 @@ color: #ACB8C0;
         color: #ACB8C0;
         background: #fff;
     }
-    
+/*     
     input::placeholder {
         font-family: 'GothamProRegular';
         font-style: normal;
@@ -518,7 +518,7 @@ color: #ACB8C0;
         line-height: 130%;
         letter-spacing: -0.02em;
         color: #ACB8C0;
-    }
+    } */
 
     .questiontextAreaBlock {
         display: inline-block;
@@ -705,7 +705,7 @@ line-height: 130%;
         color: #ACB8C0;
         background: #fff;
     }
-    
+/*     
     input::placeholder {
         font-family: 'GothamProRegular';
         font-style: normal;
@@ -714,7 +714,7 @@ line-height: 130%;
 line-height: 130%;
         letter-spacing: -0.02em;
         color: #ACB8C0;
-    }
+    } */
 
     .questiontextAreaBlock {
         margin-top: 7px;

@@ -4,12 +4,13 @@ import KeysMainSeoItem from "../keysP/KeysMainSeoItem";
 import cl from "../../style/KeysMainSeo.module.css";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination, Navigation} from "swiper";
+import { useDispatch, useSelector } from 'react-redux';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
 const KeysMainSeoSwiper = (props) => {
-    let state = props.KeysMainSeoPage;
+    const {KeysMainSeoPage} = useSelector(state=>state);
+    const dispatch = useDispatch();
+    let state = KeysMainSeoPage;
     return (
         <div>
             <Swiper
@@ -26,23 +27,21 @@ const KeysMainSeoSwiper = (props) => {
                 autoHeight={true}
                 >
                 {state.map((e,i)=> <SwiperSlide>
-                    <div className={"container " + cl.container} key={i}>
-                    <KeysMainSeoItem key={i}  nameCompany={e.nameCompany} linkCompany={e.linkCompany} beenTopTen={e.changeSeo.beenChange.topTen} schedule={e.schedule} scheduleSet={e.scheduleSet} beenTraffic={e.changeSeo.becameChange.traffic} becameTopTen={e.changeSeo.becameChange.topTen} becameTraffic={e.changeSeo.becameChange.traffic} index={i}/>
+                    <div className={"container " + cl.container}>
+                    <KeysMainSeoItem  nameCompany={e.nameCompany} linkCompany={e.linkCompany} beenTopTen={e.changeSeo.beenChange.topTen} schedule={e.schedule} scheduleSet={e.scheduleSet} beenTraffic={e.changeSeo.becameChange.traffic} becameTopTen={e.changeSeo.becameChange.topTen} becameTraffic={e.changeSeo.becameChange.traffic} index={i}/>
                     </div>
                     </SwiperSlide>
                 )}
                     <div className={cl.controller}>
-                        <div className={ cl.arrow + " arrPrevRevSeo " + cl.arrPrevRevSeo}/>
-                        <div className={"paginationRev " + cl.pag }/>
-                        <div className={ cl.arrow + " arrNextRevSeo " + cl.arrNextRevSeo} />
+                        <div className={ cl.arrow + " arrPrevRevSeo " + cl.arrPrevRevSeo}></div>
+                        <div className={"paginationRev " + cl.pag }></div>
+                        <div className={ cl.arrow + " arrNextRevSeo " + cl.arrNextRevSeo} ></div>
                     </div>
             </Swiper>
         </div>
     );
 };
 
-const mSTP = state => ({ KeysMainSeoPage: state.KeysMainSeoPage})
 
-const KeysMainSeoSwiperContainer = connect(mSTP, {})(KeysMainSeoSwiper)
 
-export default KeysMainSeoSwiperContainer;
+export default KeysMainSeoSwiper;

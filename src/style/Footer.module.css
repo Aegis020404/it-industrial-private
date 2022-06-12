@@ -7,6 +7,9 @@
     padding-top: 87px;
 }
 
+.footerIComponent a {
+    text-decoration: none;
+}
 .footerContent {
     max-width: 1128px;
 }
@@ -41,7 +44,7 @@
 }
 
 .company {
-   
+    margin-bottom: 72px;
     display: flex;
     align-items: center;
 }
@@ -336,6 +339,7 @@
     .company {
         display: flex;
         align-items: center;
+        margin-bottom: 42px;
     }
     
     .footerMainList {
@@ -623,7 +627,7 @@
         margin-bottom: 42px;
     }
     
-    .company {
+    .company { margin-bottom: 42px;
       
         display: flex;
         align-items: center;
@@ -908,7 +912,7 @@
 
     .company {
         text-align: center;
-       
+        margin-bottom: 30px;
         display: inline-flex;
         align-items: center;
     }

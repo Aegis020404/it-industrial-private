@@ -1,25 +1,17 @@
 import React, {useMemo} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation, Pagination} from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+
 import cl from './../../style/MainDev.module.css'
+import { useDispatch, useSelector } from 'react-redux';
 
-import {connect} from "react-redux/lib";
-
-let mapStateToProps = state => ({MainDevPage: state.MainDevPage})
 
 
 const MainDev = (props) => {
     let spaceBetweenSwiper = 50;
-    let state = props.MainDevPage[props.column]
-
-    useMemo(() => {
-        if (window.innerWidth < 576) {
-            spaceBetweenSwiper = 10
-        }
-    }, [])
+    const dispatch = useDispatch()
+    const {MainDevPage} = useSelector(state=>state)
+    const infoData = MainDevPage.turnkeyWebsite
     return (<section className={cl.MainDev}>
             <div className={["container", cl.container].join` `}>
                 <h1 className={cl.text}>Процесс разработки сайта под ключ</h1>
@@ -48,7 +40,7 @@ const MainDev = (props) => {
                             <span className={cl.arrowNextGray}></span>
                         </div>
                     </div>
-                    {state.map((obj, i) => {
+                    {infoData.map((obj, i) => {
                         return (<SwiperSlide key={i} className={cl.Swiper}>
                                 <div className={cl.contentBlock}>
 
@@ -128,6 +120,6 @@ const MainDev = (props) => {
         </section>)
 
 };
-const MainDevContainer = connect(mapStateToProps, {})(MainDev)
 
-export default MainDevContainer;
+
+export default MainDev;

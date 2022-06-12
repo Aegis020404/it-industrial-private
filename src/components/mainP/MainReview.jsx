@@ -4,7 +4,7 @@ import {Navigation, Pagination} from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import photoOfClient from './../../assets/img/photoOfClient.png'
+
 import arrPrevRev from './../../assets/img/arrPrevRev.svg'
 import arrNextRev from './../../assets/img/arrNextRev.svg'
 import cl from './../../style/MainReview.module.css'
@@ -12,7 +12,7 @@ import cl from './../../style/MainReview.module.css'
 const MainReview = () => {
     let state = [
         {
-            photo: photoOfClient,
+            photo: 'photoOfClient.png',
             name: 'Юлия Орлова',
             position: 'Руководитель компании Эковтор',
             comment: <div>Мы продолжаем глобально меняться, предлагая принципиально новые и креативные решения: в
@@ -22,7 +22,7 @@ const MainReview = () => {
                 сотрудников.</div>
         },
         {
-            photo: photoOfClient,
+            photo: 'photoOfClient.png',
             name: 'Юлия Орлова',
             position: 'Руководитель компании Эковтор',
             comment: <div>Мы продолжаем глобально меняться, предлагая принципиально новые и креативные решения: в
@@ -32,7 +32,7 @@ const MainReview = () => {
                 сотрудников.</div>
         },
         {
-            photo: photoOfClient,
+            photo: 'photoOfClient.png',
             name: 'Юлия Орлова',
             position: 'Руководитель компании Эковтор',
             comment: <div>Мы продолжаем глобально меняться, предлагая принципиально новые и креативные решения: в
@@ -42,7 +42,7 @@ const MainReview = () => {
                 сотрудников.</div>
         },
         {
-            photo: photoOfClient,
+            photo: 'photoOfClient.png',
             name: 'Юлия Орлова',
             position: 'Руководитель компании Эковтор',
             comment: <div>Мы продолжаем глобально меняться, предлагая принципиально новые и креативные решения: в
@@ -52,7 +52,7 @@ const MainReview = () => {
                 сотрудников.</div>
         },
         {
-            photo: photoOfClient,
+            photo: 'photoOfClient.png',
             name: 'Юлия Орлова',
             position: 'Руководитель компании Эковтор',
             comment: <div>Мы продолжаем глобально меняться, предлагая принципиально новые и креативные решения: в
@@ -88,7 +88,7 @@ const MainReview = () => {
                         <SwiperSlide key={i}>
                             <div className={cl.wrapper}>
                                 <div>
-                                    <img src={obj.photo} alt="photo" className={cl.photo}/>
+                                    <img src={`/img/${obj.photo}`} alt="photo" className={cl.photo}/>
                                     <p className={cl.name}>{obj.name}</p>
                                     <p className={cl.position}>{obj.position}</p>
                                 </div>
@@ -117,7 +117,7 @@ const MainReview = () => {
                             <div className={cl.wrapper}>
                                 <div className={cl.wrapperPhotoPerson}>
                                     <div className={cl.photoBlock}>
-                                        <img src={obj.photo} alt="photo" className={cl.photo}/>
+                                        <img src={`/img/${obj.photo}`} alt="photo" className={cl.photo}/>
                                         <p className={cl.name}>{obj.name}</p>
                                     </div>
                                     <p className={cl.position}>{obj.position}</p>

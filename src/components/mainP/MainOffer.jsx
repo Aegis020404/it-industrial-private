@@ -7,15 +7,18 @@ import Ranger from "./../UI/ranger/Ranger";
 import MyModal from '../UI/modal/MyModal';
 import {connect} from "react-redux/lib";
 import MyBtnBlank from '../UI/buttonborder/MyBtnBlank';
-import "swiper/css";
+
 import {Swiper, SwiperSlide} from "swiper/react";
 import ContactsService from '../../API/ContactsService';
 import MyThxModal from '../UI/thxmodal/MyThxModal';
 import {selectBtn} from "../../redux/mainOffer-redux";
+import { useDispatch, useSelector } from 'react-redux';
 
 const MainOffer = (props) => {
     const [btnActive, setBtnActive] = useState('')
-
+    const dispatch = useDispatch();
+    const {mainOfferPage} =useSelector(state=>state)
+    const infoData = mainOfferPage.btns
     const [priceTo, setPriseTo] = useState(0)
     const [priceFrom, setPriseFrom] = useState(0)
 
@@ -33,8 +36,8 @@ const MainOffer = (props) => {
         setModalInfo(()=>({...modalInfo, themeSite: btnActive}))
     }, [btnActive])
     useMemo(()=> {
-        setBtnActive(() => props.state.btns.filter(el=>el.selected).map(el => el.text))
-    },[props.state.btns])
+        setBtnActive(() => infoData.filter(el=>el.selected).map(el => el.text))
+    },[infoData])
     const addModalInfo = (e) => {
         e.preventDefault();
         setModal(true);
@@ -44,7 +47,7 @@ const MainOffer = (props) => {
         forServerInfo = {...newModal}
         setModalInfo(()=>({namePerson: '', tel: '', range: {from: priceFrom, to: priceTo}, themeSite: ''}))
         console.log(modalInfo)
-        ContactsService.setPhonaNameBudget(forServerInfo.namePerson, forServerInfo.tel, forServerInfo.range.from, forServerInfo.range.to)
+        // ContactsService.setPhonaNameBudget(forServerInfo.namePerson, forServerInfo.tel, forServerInfo.range.from, forServerInfo.range.to)
     }
     return (
         <section className={cl.MainOffer}>
@@ -64,11 +67,11 @@ const MainOffer = (props) => {
 
                             className={cl.mySwiper}>
 
-                            {props.state.btns.map((el, i) => (
-                                <SwiperSlide className={cl.swipeSl} key={i}>
-                                    <button className={el.selected ? `${cl.btn} ${cl.btnSelected}` : cl.btn}  my_key={i}
+                            {infoData.map((el, i) => (
+                                <SwiperSlide className={cl.swipeSl}>
+                                    <button className={el.selected ? `${cl.btn} ${cl.btnSelected}` : cl.btn} key={i} my_key={i}
                                             onClick={e => {
-                                                props.selectBtn(e.target.getAttribute('my_key'))
+                                                dispatch(selectBtn(e.target.getAttribute('my_key')))
                                                 e.preventDefault();
                                             }}>{el.textS}
                                     </button>
@@ -77,10 +80,10 @@ const MainOffer = (props) => {
                         </Swiper>
                     </div>
                     <div className={cl.btns}>
-                        {props.state.btns.map((el, i) => (
+                        {infoData.map((el, i) => (
                             <button className={el.selected ? `${cl.btn} ${cl.btnSelected}` : cl.btn} key={i} my_key={i}
                                     onClick={(e,i) => {
-                                        props.selectBtn(e.target.getAttribute('my_key'))
+                                        dispatch(selectBtn(e.target.getAttribute('my_key')))
                                         e.preventDefault();
                                     }}>{el.text}
                             </button>
@@ -130,9 +133,5 @@ const MainOffer = (props) => {
 
 };
 
-let mapStateToProps = state => ({
-    state: state.mainOfferPage
-})
-const MainOfferContainer = connect(mapStateToProps, {selectBtn})(MainOffer)
 
-export default MainOfferContainer;
+export default MainOffer;

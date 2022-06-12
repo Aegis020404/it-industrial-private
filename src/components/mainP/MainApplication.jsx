@@ -21,7 +21,7 @@ const MainApplication = ()=>{
         forServerInfo = {...newModal}
         setModalInfo({namePerson:'',tel:''})
         console.log(forServerInfo);
-        postRequest(forServerInfo)
+        // postRequest(forServerInfo)
 
     }
 

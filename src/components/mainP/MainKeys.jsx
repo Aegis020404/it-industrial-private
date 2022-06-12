@@ -2,15 +2,8 @@ import React from 'react';
 import cl from '../../style/MainKeys.module.css';
 import MainKItem from './MainKItem';
 import MyBtnBlank from './../UI/buttonborder/MyBtnBlank';
-import imgPhone from './../../assets/img/orange-phone-block.jpg';
-import imgAmout from './../../assets/img/black-gadjets-block.jpg';
-import imgPag from './../../assets/img/pad-keys.png';
-import imgEvo from './../../assets/img/logo-evo.svg';
-import imgFamale from './../../assets/img/female-sort.png';
-import imgPadH from './../../assets/img/pad-hockey.png';
-import imgPadM from './../../assets/img/pad-mobile.jpg';
-import imgEkoM from './../../assets/img/eko-mobile.jpg';
-import {Link, NavLink} from "react-router-dom";
+
+import Link from 'next/link';
 
 const MainKeys = () => {
 
@@ -20,13 +13,13 @@ const MainKeys = () => {
             href: '/строй-мат',
             descr: 'Интернет-магазин «Строймат»',
             classes: cl.imgPhone,
-            img: imgPhone,
+            img: 'orange-phone-block.jpg',
             alt: 'Website компании "Строймат" на телефоне'
         }, {
             href: '/avto-estetica',
             descr: 'Интернет-магазин «Автоэстетика»',
             classes: cl.imgAmout,
-            img: imgAmout,
+            img: 'black-gadjets-block.jpg',
             alt: 'Website компании "Автоэстетика" на телефоне и ноутбуке'
         }]
     }, {
@@ -35,7 +28,7 @@ const MainKeys = () => {
             href: '/llumar',
             descr: 'Сайт компании «Llumar»',
             classes: [cl.imgPad, cl.imgPadM],
-            img: [imgPag, imgPadM],
+            img: ['pad-keys.png', 'pad-mobile.jpg'],
             alt: 'Website компании "Llumar" на планшете'
         }]
     }, {
@@ -44,13 +37,13 @@ const MainKeys = () => {
             href: '/ec-vtor',
             descr: 'Разработка сайта компании «Эковтор»',
             classes: cl.imgEva,
-            img: [imgEvo, imgFamale, imgEkoM],
+            img: ['logo-evo.svg', 'female-sort.png', 'eko-mobile.jpg'],
             alt: '"Ековтор" - экологически чистая компания, спасает природу, перерабатывая бумагу, пластик, пластмассы'
         }, {
             href: '/hock-team',
             descr: 'Сайт для хоккейной команды',
             classes: cl.imgMiniPad,
-            img: imgPadH,
+            img: 'pad-hockey.png',
             alt: 'Website хоккейной команды на планшете'
         }]
     }]
@@ -68,10 +61,10 @@ const MainKeys = () => {
                             )}
                         </ul>
                     </div>
-                    <Link to='/keys' onClick={e => {
-                        document.body.scrollTo({top: 0, behavior: 'smooth'})
-                    }}>
-                        <MyBtnBlank classes={cl.keysBtn}>все кейсы</MyBtnBlank>
+                    <Link href='/keys'>
+                        <a onClick={e => {document.body.scrollTo({top: 0, behavior: 'smooth'})}}> 
+                            <MyBtnBlank classes={cl.keysBtn}>все кейсы</MyBtnBlank>
+                        </a>
                     </Link>
 
                 </div>

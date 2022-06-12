@@ -1,4 +1,5 @@
-import {combineReducers, createStore} from 'redux'
+import {applyMiddleware, combineReducers, createStore} from 'redux'
+import {createWrapper} from 'next-redux-wrapper';
 import sliderReducer from "./slider-redux";
 import MainTariffReducer from "./mainTariff-redux";
 import MainDevReducer from "./mainDev-redux";
@@ -9,6 +10,7 @@ import {tarrifSEORedux} from "./tariffSEO-redux";
 import {mobileServiceReducer} from "./mobileService-redux";
 import {mobileHeroReducer} from "./mobileHero-redux";
 import {KeysMainSeoReducer} from "./keysMainSeo-redux";
+import { composeWithDevTools } from 'redux-devtools-extension'
 
 let reducers = combineReducers( {
     mainSliderPage: sliderReducer,
@@ -23,7 +25,11 @@ let reducers = combineReducers( {
     KeysMainSeoPage: KeysMainSeoReducer,
 })
 
-let store = createStore(reducers)
-window.store = store;
+const initStore = ()=>{
+    return createStore(reducers, composeWithDevTools(
+        applyMiddleware()
+    ))
+}
 
-export default store;
+
+export const wrapper = createWrapper(initStore)

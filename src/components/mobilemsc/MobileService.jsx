@@ -3,11 +3,13 @@ import cl from './../../style/MobileService.module.css';
 import MobileServItem from './MobileServItem';
 import {connect} from "react-redux/lib";
 import {Pagination, Swiper} from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
 
-const MobileService = (props) => {
-    const state = props.mobileServicePage[props.column]
+import { useSelector, useDispatch } from 'react-redux';
+
+const MobileService = ({column}) => {
+    const {mobileServicePage} = useSelector(state=>state)
+    const dispatch = useDispatch()
+    const state = mobileServicePage[column]
     let checkin = 1
     useEffect(() => {
         let swiper = null;
@@ -15,24 +17,28 @@ const MobileService = (props) => {
 
         function inititalSwiper() {
             if (swiper) return
-            swiper = new Swiper(`.${props.column}`, {
+            swiper = new Swiper(`.${column}`, {
                 modules: [Pagination],
                 slidesPerView: 'auto',
                 speed: 400,
                 spaceBetween: 20,
                 pagination: {
-                    el: `.pag${props.column}`,
+                    el: `.pag${column}`,
                     type: 'bullets',
                 },
                 autoHeight: true,
             })
         }
 
-        function destroySwiper() {
-            if (!swiper) return
-            swiper.destroy();
-            swiper = null;
-
+        function catalogSliderDestroy() {
+            try {
+                if (swiper) {
+                    swiper.destroy();
+                    swiper = null;
+                }
+            } catch (err) {
+                console.log('')
+            }
         }
 
         function loadResize() {
@@ -57,20 +63,18 @@ const MobileService = (props) => {
                 {state.title ? <h2 className={cl.serviceTitle}>{state.title}</h2> : ''}
                 {state.text ? <p className={cl.serviceDescr}>{state.text}</p> : ''}
                 <div className={cl.serviceListBlock}>
-                    <div className={`swiper ${props.column}`}>
+                    <div className={`swiper ${column}`}>
                         <div className={'swiper-wrapper ' + cl.serviceList}>
                             {state.cases.map((e, i) => <div className={'swiper-slide ' + cl.swiperSl} key={i}>
                                 <MobileServItem title={e.title} descr={e.descr} img={e.img}/>
                             </div>)}
                         </div>
                         <div className="swiper-scrollbar"></div>
-                        <div className={`pag${props.column}` + ' ' + cl.pag} ></div>
+                        <div className={`pag${column}` + ' ' + cl.pag} ></div>
                     </div>
                 </div>
             </div>
         </section>
     )
-}
-const stateToProps = state => ({mobileServicePage: state.mobileServicePage})
-const MobileServiceContainer = connect(stateToProps, {})(MobileService)
-export default MobileServiceContainer
+    }
+export default MobileService

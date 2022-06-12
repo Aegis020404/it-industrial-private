@@ -1,52 +1,3 @@
-import stroimat1 from './../assets/img/1stroimat.png'
-import stroimat2 from './../assets/img/2stroimat.png'
-import stroimat3 from './../assets/img/3stroimat.png'
-import stroimat4 from './../assets/img/4stroimat.png'
-import stroimat5 from './../assets/img/5stroimat.png'
-import stroimat6 from './../assets/img/6stroimat.png'
-
-import estetic1 from './../assets/img/1estetic.png'
-import estetic2 from './../assets/img/2estetic.png'
-import estetic3 from './../assets/img/3estetic.png'
-import estetic4 from './../assets/img/4estetic.png'
-import estetic5 from './../assets/img/5estetic.png'
-import estetic6 from './../assets/img/6estetic.png'
-
-import hockey1 from './../assets/img/1hockey.png'
-import hockey2 from './../assets/img/2hockey.png'
-import hockey3 from './../assets/img/3hockey.png'
-import hockey4 from './../assets/img/4hockey.png'
-import hockey5 from './../assets/img/5hockey.png'
-import hockey6 from './../assets/img/6hockey.png'
-
-import lumar1 from './../assets/img/1lumar.png'
-import lumar2 from './../assets/img/2lumar.png'
-import lumar3 from './../assets/img/3lumar.png'
-import lumar4 from './../assets/img/4lumar.png'
-import lumar5 from './../assets/img/5lumar.png'
-import lumar6 from './../assets/img/6lumar.png'
-
-import acovtor1 from './../assets/img/1acovtor.png'
-import acovtor2 from './../assets/img/2acovtor.png'
-import acovtor3 from './../assets/img/3acovtor.png'
-import acovtor4 from './../assets/img/4acovtor.png'
-import acovtor5 from './../assets/img/5acovtor.png'
-import acovtor6 from './../assets/img/6acovtor.png'
-
-import app1 from './../assets/img/app1.png'
-import app2 from './../assets/img/app2.png'
-import app3 from './../assets/img/app3.png'
-import app4 from './../assets/img/app4.png'
-import app5 from './../assets/img/app5.png'
-import app6 from './../assets/img/app6.png'
-
-import crm1 from './../assets/img/1crm.png'
-import crm2 from './../assets/img/2crm.png'
-import crm3 from './../assets/img/3crm.png'
-import crm4 from './../assets/img/4crm.png'
-import crm5 from './../assets/img/5crm.png'
-import crm6 from './../assets/img/6crm.png'
-
 
 
 
@@ -57,10 +8,10 @@ const initialState = [{
     descrAchor: 'Интернет-магазин «Строймат»',
     descr: 'Разработка интернет-магазина «Строймат»',
     achorSite: ['строй-мат.рф','https://строй-мат.рф/'],
-    href: '/строй-мат',
+    href: '/stroy-mat',
     aboutCompany: 'Компания является крупнейшим официальным дистрибьютором ведущих производителей строительно–отделочных материалов, таких как Кнауф, Saint–Gobain, Ceresit, Основит, Евро Л, Kronoflooring и другие.\n' + '\n' + 'Побеждали в тендерах и выступали в качестве поставщика на многих объектах Москвы и РФ.',
     task: 'Разработать полноценный интернет-магазин на Wordpress, добавить более 20 000 товаров на сайт',
-    imageInfo: [['', stroimat1], ['Главная страница', stroimat2], ['Мобильная версия', stroimat3], ['Карточка товара и каталог', stroimat4], ['Элементы интерфейса', stroimat5], ['Спасибо за просмотр!',stroimat6]]
+    imageInfo: [['', '/1stroimat.png'], ['Главная страница', '/2stroimat.png'], ['Мобильная версия', '/3stroimat.png'], ['Карточка товара и каталог', '/4stroimat.png'], ['Элементы интерфейса', '/5stroimat.png'], ['Спасибо за просмотр!', '/6stroimat.png']]
 
 }, {
     descrAchor: 'Интернет-магазин «Автоэстетика»',
@@ -70,7 +21,7 @@ const initialState = [{
 
     aboutCompany: 'Компания АвтоЭстетика предоставляет свои услуги в авто тематике с 2009 года. Осуществляем полный спектр услуг по уходу и сохранению внешнего и внутреннего вида автомобиля. Работает только с проверенными немецкими и американскими материалами. Широкий выбор антигравийной защиты, автовинила, тонирующих плёнок и детейлинг услуг. Предоставляем гарантии на все выполненные работы.',
     task: 'Разработать полноценный интернет-магазин ',
-    imageInfo: [['', estetic1], ['Каталог товаров', estetic2], ['Карточка товара', estetic3], ['Оформление заказа и оплата', estetic4], ['Мобильная версия', estetic5], ['Спасибо за просмотр!', estetic6]]
+    imageInfo: [['', '/1estetic.png'], ['Каталог товаров', '/2estetic.png'], ['Карточка товара', '/3estetic.png'], ['Оформление заказа и оплата', '/4estetic.png'], ['Мобильная версия', '/5estetic.png'], ['Спасибо за просмотр!', '/6estetic.png']]
 
 }, {
     descrAchor: 'Сайт для Хоккейного клуба',
@@ -80,7 +31,7 @@ const initialState = [{
 
     aboutCompany: 'Хоккейный клуб — спортивная организация, участвующая в соревнованиях по хоккею с шайбой.' + ' Кроме собственно спортсменов-хоккеистов, в состав клуба входят тренер и его помощники, менеджеры клуба,' + ' врачи и прочий обслуживающий персонал. Непосредственно основная команда состоит из двадцати и более игроков.',
     task: 'Разработать имиджевый корпоративный сайт ',
-    imageInfo: [['', hockey1], ['Главный экран', hockey2], ['О клубе', hockey3], ['Цены и как записаться', hockey4], ['Мобильная версия', hockey5], ['Спасибо за просмотр!', hockey6]]
+    imageInfo: [['', '/1hockey.png'], ['Главный экран', '/2hockey.png'], ['О клубе', '/3hockey.png'], ['Цены и как записаться', '/4hockey.png'], ['Мобильная версия', '/5hockey.png'], ['Спасибо за просмотр!', '/6hockey.png']]
 
 }, {
     descrAchor: 'Сайт для бренда Llumar',
@@ -90,35 +41,35 @@ const initialState = [{
 
     aboutCompany: 'Официальный эксклюзивный дистрибьютор LLumar на территории России и стран СНГ.' + 'Компания основана в 1997 году. Лидирующий поставщик профессиональных тонирующих и антигравийных пленок, произведенных в США.',
     task: 'Разработать полноценный интернет-магазин автопленок для крупного бренда',
-    imageInfo: [['', lumar1], ['Главная страница', lumar2], ['Каталог пленок', lumar3], ['Мобильная версия', lumar4], ['Элементы интерфейса', lumar5], ['Спасибо за просмотр!', lumar6]]
+    imageInfo: [['', '/1lumar.png'], ['Главная страница', '/2lumar.png'], ['Каталог пленок', '/3lumar.png'], ['Мобильная версия', '/4lumar.png'], ['Элементы интерфейса', '/5lumar.png'], ['Спасибо за просмотр!', '/6lumar.png']]
 
 }, {
     descrAchor: 'Сайт «Эковтор»',
     descr: 'Разработка сайта «Эковтор»',
     achorSite: ['ec-vtor.ru', 'http://ec-vtor.ru/'],
-    href: '/ec-vtor',
+    href: '/ecovtor',
     aboutCompany: 'Переработка вторсырья – основное направление деятельности нашей.' + ' «Эковтор» имеет своем распоряжении современное высокотехнологичное оборудование, позволяющее производить переработку быстро и качественно.',
     task: 'Разработать сайт услуг для компании по переработки вторсырья',
-    imageInfo: [['', acovtor1], ['Главная страница', acovtor2], ['Мобильная версия', acovtor3], ['Заказ услуги', acovtor4], ['Мобильная версия', acovtor5], ['Спасибо за просмотр!', acovtor6]]
+    imageInfo: [['', '/1acovtor.png'], ['Главная страница', '/2acovtor.png'], ['Мобильная версия', '/3acovtor.png'], ['Заказ услуги', '/4acovtor.png'], ['Мобильная версия', '/5acovtor.png'], ['Спасибо за просмотр!', '/6acovtor.png']]
 
 },{
     descrAchor: ' Перевозки App',
     descr: 'Перевозки App',
-    href: '/Перевозки-App',
+    href: '/carriage-app',
     aboutCompany: 'Круглосуточная служба перевозки лежачих\n' +
         'больных и инвалидов колясочников. Cлужба перевозки работает круглосуточно и готова выехать по любому адресу в назначенное время.',
     task: 'Разработать CRM-систему для медицинского такси',
-    imageInfo: [['', app1], ['Заказ', app2], ['Автопарк', app3], ['Аналитика', app4], ['Элементы', app5], ['Спасибо за просмотр!', app6]]
+    imageInfo: [['', '/app1.png'], ['Заказ', '/app2.png'], ['Автопарк', '/app3.png'], ['Аналитика', '/app4.png'], ['Элементы', '/app5.png'], ['Спасибо за просмотр!', '/app6.png']]
 
 },{
     descrAchor: 'CRM-системы',
     descr: 'Разработка индивидуальной \n' +
         'CRM-системы',
-    href: '/CRM',
+    href: '/crm-system',
     aboutCompany: `Официальный эксклюзивный дистрибьютор LLumar на территории России и стран СНГ.
     \nКомпания основана в 1997 году. Лидирующий поставщик профессиональных тонирующих и антигравийных пленок, произведенных в США.`,
     task: 'Разработать CRM-систему для международной компании Llumar',
-    imageInfo: [['', crm1], ['Основное', crm2], ['Мобильная версия', crm3], ['Продажи по дилерам', crm4], ['Гарантийные талоны', crm5], ['Спасибо за просмотр!', crm6]]
+    imageInfo: [['', '/1crm.png'], ['Основное', '/2crm.png'], ['Мобильная версия', '/3crm.png'], ['Продажи по дилерам', '/4crm.png'], ['Гарантийные талоны', '/5crm.png'], ['Спасибо за просмотр!', '/6crm.png']]
 
 },]
 

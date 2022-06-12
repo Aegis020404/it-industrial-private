@@ -23,9 +23,9 @@ const MyModal = ({block, title, visible, setVisible, setThx})=>{
         }
         forServerInfo = {...newModal}
         setModalInfo({namePerson:'',tel:''})
-        postRequest(forServerInfo)
-        console.log(forServerInfo)
-        ContactsService.setPhoneNName(modalInfo.tel, modalInfo.tel)
+        // postRequest(forServerInfo)
+        // console.log(forServerInfo)
+        // ContactsService.setPhoneNName(modalInfo.tel, modalInfo.tel)
     }
 
 
@@ -33,16 +33,16 @@ const MyModal = ({block, title, visible, setVisible, setThx})=>{
 
     let [distance, setDistance] = useState(0) 
 
-    useMemo(()=>{
-        if (visible){
-            document.body.classList.add('desable-scroll');
-            document.documentElement.classList.add('html-overflow')
-            rootContentClasses.push(cl.contentM)
-        }else{
-            // rootContentClasses.pop(cl.contentM)
-            document.documentElement.classList.remove('html-overflow')
-            document.body.classList.remove('desable-scroll');
-        }},[visible])
+    // useMemo(()=>{
+    //     if (visible){
+    //         document.body.classList.add('desable-scroll');
+    //         document.documentElement.classList.add('html-overflow')
+    //         rootContentClasses.push(cl.contentM)
+    //     }else{
+    //          rootContentClasses.pop(cl.contentM)
+    //         document.documentElement.classList.remove('html-overflow')
+    //         document.body.classList.remove('desable-scroll');
+    //     }},[visible])
   
 
 

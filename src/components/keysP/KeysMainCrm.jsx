@@ -1,15 +1,14 @@
 import React from 'react';
-import crmLlumar from './../../assets/img/keys-crm-red.svg';
 import cl from './../../style/KeysMainCrm.module.css';
 import KeysItemList from '../KeysItemList';
-import {NavLink} from "react-router-dom";
+import Link from 'next/link';
 
 const KeysMainCrm = ({classesTabs}) => {
     const infoArr = [{
-        descr: 'Разработка индивидуальной CRM-системы', img: {
-            background: '#E50A0B',
-            image: crmLlumar,
+        descr: 'Разработка индивидуальной CRM-системы',  href: '/crm-system', img: {
+            background: '#E50A0B', 
             alt: 'Индивидуальная CRM-система разработанная для компании "LLumar"',
+            img: 'keys-crm-red.svg',
             classesImg: cl.crmLlumarImg,
             logo: <svg width="81" height="45" viewBox="0 0 81 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.38873 16.8357H0.823242V43.7824H10.4429V40.6823H4.38873V16.8357Z" fill="white"/>
@@ -66,11 +65,10 @@ const KeysMainCrm = ({classesTabs}) => {
        
             <div className={[cl.crmBlock, classesTabs].join` `}>
                 <ul className={cl.crmList}>
-                <NavLink to='/CRM' onClick={scrollTopPage}>
-                    {infoArr.map((e, i) => <KeysItemList descr={e.descr} logo={e.img.logo} img={e.img.image}
+                    {infoArr.map((e, i) => <KeysItemList page={e.href} descr={e.descr} logo={e.img.logo} img={e.img.img}
                                                          background={e.img.background} alt={e.img.alt}
-                                                         classesImg={e.img.classesImg} key={i}/>)}
-                 </NavLink>
+                                                         classesImg={e.img.classesImg}/>)}
+                   
                 </ul>
             </div>
        

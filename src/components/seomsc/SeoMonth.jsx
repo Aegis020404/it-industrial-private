@@ -1,7 +1,7 @@
 import React from "react";
 import cl from './../../style/SeoMonth.module.css';
 import SeoMonthItem from "./SeoMonthItem";
-import seoImg from './../../assets/img/seo-month.png';
+
 
 const SeoMonth = ()=>{
     const infoArr = [{title: 'Работа с семантикой', descr:'Оцениваем потенциал каждой фразы, собираем дополнительные поисковые фразы, анализируем их продвижение в топ'},
@@ -21,7 +21,7 @@ const SeoMonth = ()=>{
                     </div>
                     <div className={cl.monthRight}>
                         <div className={cl.monthRightImg}>
-                            <img src={seoImg} alt="web-google"/>
+                            <img src={'/img/seo-month.png'} alt="web-google"/>
                         </div>
                     </div>
                 </div>

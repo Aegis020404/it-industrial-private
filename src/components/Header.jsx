@@ -1,9 +1,9 @@
 import React, {useMemo, useRef, useState, useEffect} from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import cl from '../style/Header.module.css';
 import whatsAppIcon from './../assets/img/whatsapp.svg'
 import tgIcon from './../assets/img/tg.svg'
-import logo from './../assets/img/logo-header.svg'
+
 import MyMail from "./UI/mail/MyMail";
 import MyBtnFiled from "./UI/buttonback/MyBtnFiled";
 import MyBtnBlank from "./UI/buttonborder/MyBtnBlank";
@@ -13,7 +13,7 @@ import MyInput from "./UI/input/MyInput";
 import MyMask from "./UI/maskinput/MyMask";
 import postRequest from "../redux/requests";
 import HeaderNav from "./HeaderNav";
-import {NavLink} from "react-router-dom";
+
 import MyThxModal from "./UI/thxmodal/MyThxModal";
 
 const Header = () => {
@@ -22,15 +22,15 @@ const Header = () => {
     const headerI = useRef('')
     const topHeader = useRef('')
 
-
+    
 
     const [navItem, setNavItem] = useState(false)
     const [arrowItem, setArrowItem] = useState(false)
     const [modal, setModal] = useState(false)
     const [thxModal, setThxModal] = useState(false)
     const headerNavV = [cl.nav_span]
-
-
+    const [docItem, setDocItem] = useState(false)
+    
     useMemo(()=>{
         setArrowItem(!arrowItem)
     },[navItem])
@@ -42,20 +42,21 @@ const Header = () => {
         // e.target.classList.toggle(cl.activeNav)
     }
 
+    useEffect(()=>{setDocItem(true)},[docItem])
 
     useMemo(()=>{
-        if(burger)  {document.body.classList.add('desable-scroll-h')
+        if(burger && docItem)  {document.body.classList.add('desable-scroll-h')
         document.documentElement.classList.add('html-overflow')}
-        if(!burger)   {document.documentElement.classList.remove('html-overflow')
+        if(!burger && docItem)   {document.documentElement.classList.remove('html-overflow')
         document.body.classList.remove('desable-scroll-h')}
     },[burger])
 
     useMemo(()=>{
-        if(navItem) {
+        if(navItem && docItem) {
             document.body.classList.add('desable-scroll-h');
             document.documentElement.classList.add('html-overflow')
         }
-        if(!navItem) {
+        if(!navItem && docItem) {
             document.documentElement.classList.remove('html-overflow')
             document.body.classList.remove('desable-scroll-h');
         }
@@ -63,12 +64,15 @@ const Header = () => {
 
     let  tempScrollTop, currentScrollTop = 0
 
-    document.body.addEventListener('scroll', (el)=>{
-        currentScrollTop = document.body.scrollTop
-        if (window.innerWidth > 768 && tempScrollTop < currentScrollTop && !topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.add(cl.topHeaderActive); headerI.current.classList.add(cl.headerActive)}
-        if (window.innerWidth > 768 && tempScrollTop > currentScrollTop && topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.remove(cl.topHeaderActive);  headerI.current.classList.remove(cl.headerActive)}
-        tempScrollTop = currentScrollTop
-    })
+    useEffect(()=>{
+        document.body.addEventListener('scroll', (el)=>{
+            currentScrollTop = document.body.scrollTop     
+            if(topHeader.current !== null) if (window.innerWidth > 768 && tempScrollTop < currentScrollTop && !topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.add(cl.topHeaderActive); headerI.current.classList.add(cl.headerActive)}
+            if(topHeader.current !== null) if (window.innerWidth > 768 && tempScrollTop > currentScrollTop && topHeader.current.classList.contains(cl.topHeaderActive)) {topHeader.current.classList.remove(cl.topHeaderActive);  headerI.current.classList.remove(cl.headerActive)}
+            tempScrollTop = currentScrollTop
+        })
+    },[topHeader])
+   
 
     useEffect(()=>{
         headerI.current.classList.add(cl.headerL)
@@ -84,15 +88,19 @@ const Header = () => {
                 <div className="container">
                     <div  className={cl.topHeader}>
                         <div className={cl.topList}>
-                            <Link to='/about' onClick={scrollTopPage} className={[cl.links, cl.fLink].join` `}>О компании</Link>
-                            <Link to='/reviews' onClick={scrollTopPage} className={cl.links}>Отзывы</Link>
-                            <Link to='/vacancy' onClick={scrollTopPage} className={cl.links}>Вакансии</Link>
+                            <Link href='/about' >
+                                <a className={[cl.links, cl.fLink].join` `} >О компании</a>
+                            </Link>
+                            <Link href='/reviews'><a className={cl.links } onClick={()=>scrollTopPage}>
+                                Отзывы
+                                </a></Link>
+                            <Link href='/vacancy'><a className={cl.links} onClick={()=>scrollTopPage} >Вакансии</a></Link>
                         </div>
                         <div className={cl.topLinks}>
                             <div className={cl.textUs}>
                                 <MyMail href="mailto:info@it-industriul.ru" classes={cl.mail}>info@it-industriul.ru</MyMail>
                                 <span className={cl.textUs_span}>Написать нам:</span>
-
+                            
                                     <div className={cl.iconBlock}>
                                         <div className={cl.iconFirst}>
                                             <a href="#">
@@ -102,7 +110,7 @@ const Header = () => {
                                                     </svg>
                                                 </span>
                                             </a>
-
+                                           
                                         </div>
                                         <div className={cl.iconSec}>
                                             <a href="#">
@@ -114,7 +122,7 @@ const Header = () => {
                                             </a>
                                         </div>
                                     </div>
-
+                              
                             </div>
                         </div>
                     </div>
@@ -125,8 +133,8 @@ const Header = () => {
                 <div className={cl.defaultHeader}>
                 <div className={cl.clear}></div>
                 <div className={cl.bottomHeader}>
-                    <NavLink  to='/it-industrial-private' onClick={scrollTopPage} className={cl.achorMain}>
-                        <div className={cl.company}>
+                    <Link href='/' className={cl.achorMain}>
+                        <div className={cl.company}  onClick={scrollTopPage}>
                             <div className={cl.logoWrap}>
                                 <span className={cl.logo}></span>
                             </div>
@@ -135,7 +143,7 @@ const Header = () => {
                                 <p className={cl.whoWe}>интерактивное агентство</p>
                             </div>
                         </div>
-                    </NavLink>
+                    </Link>
 
                     <div className={cl.changeitem}>
                         <nav className={cl.nav}>
@@ -147,13 +155,13 @@ const Header = () => {
                                     </svg>
                                 </span>
                             </div>
-                            <Link to='/keys' onClick={scrollTopPage} className={cl.navPage}>
+                            <Link href='/keys' onClick={scrollTopPage} className={cl.navPage}>
                                 <MyNavLink classes={cl.nav_span}>Кейсы</MyNavLink>
                             </Link>
-                            <Link to='/tariffs' onClick={scrollTopPage}>
+                            <Link href='/tariffs' onClick={scrollTopPage}>
                                 <MyNavLink classes={cl.nav_span}>Тарифы</MyNavLink>
                             </Link>
-                            <Link to='/contacts'>
+                            <Link href='/contacts'>
                                 <MyNavLink classes={cl.nav_span}>Контакты</MyNavLink>
                             </Link>
                         </nav>
@@ -163,7 +171,7 @@ const Header = () => {
                             <div className={cl.fixLinks}>
                                 <span className={[cl.textUs_span, cl.textUs_spanF].join` `}>Написать&nbsp;нам:</span>
                                 <div className={cl.iconBlock}>
-
+                                   
                                         <a href="#">
                                             <span className={[cl.icon, cl.whatsapp].join` `}>
                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="#ACB8C0" xmlns="http://www.w3.org/2000/svg">
@@ -171,9 +179,9 @@ const Header = () => {
                                                 </svg>
                                             </span>
                                         </a>
-
-
-
+                                        
+                                
+                                   
                                         <a href="#">
                                             <span className={[cl.icon, cl.tg].join` `}>
                                                 <svg width="20" height="17"  viewBox="0 0 20 17" fill="#ACB8C0" xmlns="http://www.w3.org/2000/svg">
@@ -181,11 +189,11 @@ const Header = () => {
                                                 </svg>
                                             </span>
                                         </a>
-
+                                   
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div className={cl.numberBtnBlock}>
                         <div className={cl.numberWrap}>
                             <a href=""className={cl.number}>+7(925) 117-00-46</a>

@@ -7,10 +7,15 @@ import KeysMainSites from "./KeysMainSites";
 import KeysMainSeo from "./KeysMainSeo";
 import KeysMainMobile from "./KeysMainMobile";
 import KeysMainCrm from "./KeysMainCrm";
+import { useSelector, useDispatch } from "react-redux";
 
 const KeysMainCard = (props)=>{
     let countPages = 4
-    const [tabActive, setTabActive] = useState(0)
+    const {keysNavPage} = useSelector(state=>state)
+    const dispatch = useDispatch()
+    const infoData = keysNavPage.btns
+    const [defaultActive] = infoData.filter((e,i)=>e.selected)
+    const [tabActive, setTabActive] = useState(defaultActive.number)
     const [arrClasses, setArrClasses] = useState([{class: cl.active},{class: cl.disable},{class:cl.disable}, {class:cl.disable}])
     useMemo(()=>{
         (()=>{
@@ -22,7 +27,7 @@ const KeysMainCard = (props)=>{
     return (
         <div className={cl.keysNavBlock}>
             <nav className={cl.keysNav}>
-                <MyBtns arrBtns={props.state.btns} setTabActive={setTabActive} selectBtn={props.selectBtnKeys} btnsClasses={cl.keysNavList} btnClasses={cl.keysNavItem} itemSwipeClasses={cl.keysSwipeItem}/>
+                <MyBtns arrBtns={infoData} setTabActive={setTabActive} selectBtn={selectBtnKeys} btnsClasses={cl.keysNavList} btnClasses={cl.keysNavItem} itemSwipeClasses={cl.keysSwipeItem}/>
             </nav>
             <KeysMainSites classesTabs={arrClasses[0].class}/>
             <KeysMainSeo  classesTabs={arrClasses[1].class}/>
@@ -32,9 +37,5 @@ const KeysMainCard = (props)=>{
     )
 }
 
-let mapStateToProps = state => ({
-    state: state.keysNavPage
-})
-const KeysMainContainer = connect(mapStateToProps, {selectBtnKeys})(KeysMainCard)
 
-export default KeysMainContainer
+export default KeysMainCard

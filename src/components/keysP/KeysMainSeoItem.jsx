@@ -76,7 +76,7 @@ const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, be
                         {checkImg ? 
                             <div className={cl.imgCard}>
                                 <figure ref={figureItem} className={cl.imgBlock} onClick={e=>figureActive(e)} onMouseMove={e=>figureMove(e)} onMouseLeave={e=>figureLeave(e)}>
-                                    <img ref={imgItem} src={schedule[1].img} className={cl.img} id='graph'/>
+                                    <img ref={imgItem} src={`/img/${schedule[1].img}`} className={cl.img} id='graph'/>
                                 </figure>
                                
                             </div>  

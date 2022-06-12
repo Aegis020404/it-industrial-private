@@ -1,7 +1,4 @@
 
-:root {
-    --width: 0%;
-}
 
 .pag {
     margin: 55px 10px !important;
@@ -32,18 +29,16 @@
 }
 
 .arrPrevRevSeo {
-    background-image: url("/src/assets/img/seoLeft.svg");
+    background-image: url("./../assets/img/seoLeft.svg");
 }
 
 .arrNextRevSeo {
-    background-image: url("/src/assets/img/seoRight.svg");
+    background-image: url("./..//assets/img/seoRight.svg");
 }
 
 
 
-a {
-    text-decoration: none;
-}
+
 
 .seoBlock {
     max-width: 1200px;
