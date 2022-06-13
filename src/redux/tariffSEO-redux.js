@@ -69,6 +69,6 @@ let inititalState = {
     },
 }
 
-export function tarrifSEORedux(state = inititalState, action) {
+export function tarrifSEORedux(state = inititalState) {
     return state
 }
