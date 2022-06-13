@@ -12,6 +12,7 @@ import {mobileHeroReducer} from "./mobileHero-redux";
 import {KeysMainSeoReducer} from "./keysMainSeo-redux";
 import { composeWithDevTools } from 'redux-devtools-extension'
 
+
 let reducers = combineReducers( {
     mainSliderPage: sliderReducer,
     MainTariffPage: MainTariffReducer,
