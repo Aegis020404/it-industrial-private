@@ -82,18 +82,20 @@ const MainOther = () => {
         }
 
         function loadResize() {
+            if (typeof window !== 'undefined') {
 
-            let windowWidth = window.innerWidth
+                let windowWidth = window.innerWidth
 
-            if (windowWidth <= mediaQuerySize) {
-                catalogSliderInit()
-            } else {
-                catalogSliderDestroy()
+                if (windowWidth <= mediaQuerySize) {
+                    catalogSliderInit()
+                } else {
+                    catalogSliderDestroy()
+                }
             }
-        }
 
-        window.addEventListener('load', loadResize);
-        window.addEventListener('resize', loadResize);
+            window.addEventListener('load', loadResize);
+            window.addEventListener('resize', loadResize);
+        }
     });
 
 

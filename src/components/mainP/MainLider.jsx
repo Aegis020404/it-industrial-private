@@ -9,7 +9,7 @@ const MainLider = ()=>{
                     <div className={cl.liderLeft}>
                         <h2 className={cl.liderTitle}>Слово руководителя «IT-INDUSTRIAL»</h2>
                         <div className={cl.liderDescrBlock}>
-                            <span className={cl.liderQuote}></span>
+                            <span className={cl.liderQuote}/>
                             <p className={cl.liderDescr}>
                                 <span className={cl.liderDescrB}>К нам часто приходят клиенты</span> от других студий <span className={cl.liderDescrB}>переделывать сайты</span>, потому что они не работают и клиентов не приносят. Мы не экономим, делаем сайт хорошо один раз, и он вам стабильно приносит заявки 2-3 года.
                             </p>

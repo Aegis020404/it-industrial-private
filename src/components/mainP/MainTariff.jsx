@@ -1,18 +1,11 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import MainTItem from './MainTItem';
 import cl from '../../style/MainTariff.module.css';
-import cli from '../../style/MainTItem.module.css'
-import {useSelector, useDispatch} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 // import {Swiper, SwiperSlide} from "swiper/react";
-import Swiper from "swiper";
+import Swiper, {Pagination} from "swiper";
 import MyModal from '../UI/modal/MyModal';
-import MyInput from '../UI/input/MyInput';
-import MyMask from '../UI/maskinput/MyMask';
-import MyBtnFiled from '../UI/buttonback/MyBtnFiled';
-import {Pagination} from "swiper";
-import postRequest from "../../redux/requests";
 import MyThxModal from '../UI/thxmodal/MyThxModal';
-import TariffsListContainer from '../TariffsList.Item';
 
 const MainTariff = props => {
     const [theme, setTheme] = useState('')
@@ -65,21 +58,25 @@ const MainTariff = props => {
                     swiper = null;
 
                 }
-            } catch (err) {}
-        }
-
-        function loadResize() {
-            let windowWidth = window.innerWidth
-            if (windowWidth <= mediaQuerySize) {
-                catalogSliderInit()
-            } else if (swiper) {
-                catalogSliderDestroy()
+            } catch (err) {
             }
         }
 
-        loadResize()
-        window.addEventListener('load', loadResize);
-        window.addEventListener('resize', loadResize);
+        function loadResize() {
+            if (typeof window !== 'undefined') {
+
+                let windowWidth = window.innerWidth
+                if (windowWidth <= mediaQuerySize) {
+                    catalogSliderInit()
+                } else if (swiper) {
+                    catalogSliderDestroy()
+                }
+            }
+
+            loadResize()
+            window.addEventListener('load', loadResize);
+            window.addEventListener('resize', loadResize);
+        }
     }, []);
 
     const tariffS = useRef('')
@@ -105,7 +102,7 @@ const MainTariff = props => {
                     </div>
 
                     <div className="swiper-scrollbar"/>
-                    <div className={ cl.pag}/>
+                    <div className={cl.pag}/>
 
                 </div>
             </div>

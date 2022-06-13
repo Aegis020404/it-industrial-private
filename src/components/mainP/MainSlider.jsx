@@ -1,24 +1,13 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useRef, useState} from 'react';
 // import {Swiper, SwiperSlide} from "swiper/react";
-import Swiper from "swiper";
-import {Pagination, Navigation} from "swiper";
-import {connect} from "react-redux/lib";
+import Swiper, {Navigation, Pagination} from "swiper";
 // Import Swiper styles
-
 import MyModal from './../UI/modal/MyModal';
-import MyBtnFiled from './../UI/buttonback/MyBtnFiled';
-import MyMask from './../UI/maskinput/MyMask';
-import MyInput from './../UI/input/MyInput';
 // import required modules
-import { useSelector, useDispatch } from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import cl from '../../style/Slider.module.css';
 import MyBtnBlank from './../UI/buttonborder/MyBtnBlank';
-import postRequest from "../../redux/requests";
-import ContactsService from '../../API/ContactsService';
-import MainTItem from "./MainTItem";
 import MyThxModal from '../UI/thxmodal/MyThxModal';
-
-
 
 
 const Slider = (props) => {

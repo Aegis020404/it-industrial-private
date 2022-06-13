@@ -14,18 +14,21 @@ const KeysMainSeoItem = ({nameCompany, linkCompany, beenTopTen, becameTopTen, be
         let rect = e.target.getBoundingClientRect()
         let x = e.clientX - rect.left
         let y = e.clientY - rect.top
-        if(window.innerWidth >576){
-            imgItem.current.style.transformOrigin = `${x}px ${y}px`
-            imgItem.current.style.transform = `scale(2)`    
+        if (typeof window !== 'undefined') {
+            if (window.innerWidth > 576) {
+                imgItem.current.style.transformOrigin = `${x}px ${y}px`
+                imgItem.current.style.transform = `scale(2)`
+            }
         }
-        
     }
     const figureLeave = e=>{
         imgItem.current.style.transform = 'none'
     }
     const figureActive = (e)=>{
-        if(window.innerWidth <= 576) {
-            e.target.classList.toggle(cl.figureActive)
+        if (typeof window !== 'undefined') {
+            if (window.innerWidth <= 576) {
+                e.target.classList.toggle(cl.figureActive)
+            }
         }
     }
 

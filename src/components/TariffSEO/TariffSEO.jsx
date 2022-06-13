@@ -50,37 +50,38 @@ const TariffSeo = ({column}) => {
         }
 
         function loadResize() {
-            mediaQuerySize = state.cases.length * 400;
-            let windowWidth = window.innerWidth
-            if (windowWidth <= mediaQuerySize) {
-                try {
-                    if (pag.current !== null && pag.current !== undefined) {
-                        pag.current.style.display = 'block'
-                        swiperWrapper.current.style.justifyContent = 'flex-start'
+            if (typeof window !== 'undefined') {
+                mediaQuerySize = state.cases.length * 400;
+                let windowWidth = window.innerWidth
+                if (windowWidth <= mediaQuerySize) {
+                    try {
+                        if (pag.current !== null && pag.current !== undefined) {
+                            pag.current.style.display = 'block'
+                            swiperWrapper.current.style.justifyContent = 'flex-start'
+                        }
+                    } catch (e) {
                     }
-                } catch (e) {
-                }
-                inititalSwiper()
-            } else {
-                try {
+                    inititalSwiper()
+                } else {
+                    try {
 
-                    if (pag.current !== null && pag.current !== undefined) {
-                        swiperWrapper.current.style.justifyContent = 'center'
-                        pag.current.style.display = 'none'
+                        if (pag.current !== null && pag.current !== undefined) {
+                            swiperWrapper.current.style.justifyContent = 'center'
+                            pag.current.style.display = 'none'
+                        }
+                    } catch (e) {
                     }
-                } catch (e) {
+                    destroySwiper()
                 }
-                destroySwiper()
             }
-        }
 
-        if (checkin) {
-            loadResize()
-            checkin = 0
+            if (checkin) {
+                loadResize()
+                checkin = 0
+            }
+            window.addEventListener('load', loadResize);
+            window.addEventListener('resize', loadResize);
         }
-        window.addEventListener('load', loadResize);
-        window.addEventListener('resize', loadResize);
-
     })
     return (<div className={cl.tariffSEO}>
             <div className="container">

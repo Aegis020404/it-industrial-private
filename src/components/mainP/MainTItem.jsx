@@ -1,11 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import cl from '../../style/MainTItem.module.css';
-import MyBtnFiled from "./../UI/buttonback/MyBtnFiled";
 import MyBtnBlank from "./../UI/buttonborder/MyBtnBlank";
-import MyModal from "./../UI/modal/MyModal";
-import MyMask from "../UI/maskinput/MyMask";
-import MyInput from "../UI/input/MyInput";
-import postRequest from "../../redux/requests";
 
 
 const MainTItem = ({img, title, descr, price, dl, setModal, setTheme})=>{

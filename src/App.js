@@ -9,9 +9,11 @@ import Footer from "./components/Footer";
 
 function App() {
     let wrap = React.createRef(false)
-    window.addEventListener('load', function() {
-        wrap.current.hidden = false;
-    })
+    if (typeof window !== 'undefined') {
+        window.addEventListener('load', function () {
+            wrap.current.hidden = false;
+        })
+    }
     return (
         <BrowserRouter >
             <div ref={wrap} hidden={true}>

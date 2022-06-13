@@ -1,9 +1,9 @@
 import React from 'react';
 import cl from './MyBtns.module.css';
 import {Swiper} from "swiper";
-import { useDispatch } from 'react-redux';
+import {useDispatch} from 'react-redux';
 
-const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive,itemSwipeClasses}) => {
+const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive, itemSwipeClasses}) => {
     React.useEffect(() => {
         let swiper = null;
         let mediaQuerySize = 900;
@@ -25,50 +25,52 @@ const MyBtns = ({arrBtns, selectBtn, btnsClasses, btnClasses, setTabActive,itemS
                     swiper = null;
 
                 }
-            } catch (err) {}
+            } catch (err) {
+            }
         }
 
         function loadResize() {
-            let windowWidth = window.innerWidth
-            if (windowWidth <= mediaQuerySize) {
-                catalogSliderInit()
-            } else {
-                catalogSliderDestroyd()
+            if (typeof window !== 'undefined') {
+                let windowWidth = window.innerWidth
+                if (windowWidth <= mediaQuerySize) {
+                    catalogSliderInit()
+                } else {
+                    catalogSliderDestroyd()
+                }
             }
+            loadResize()
+            window.addEventListener('load', loadResize);
+            window.addEventListener('resize', loadResize);
         }
-        loadResize()
-        window.addEventListener('load', loadResize);
-        window.addEventListener('resize', loadResize);
-
     });
     const dispatch = useDispatch();
 
-            return (
+    return (
 
-                // <div className={[cl.btns, btnsClasses].join` `}>
-                <div className="swiperBtnsCase swiper ">
-                    <div className={"swiper-wrapper " + [cl.btns, btnsClasses].join` `}>
-                        {arrBtns.map((el, i) => (
-                            <div className={"swiper-slide " + cl.swipeSl + ' ' + itemSwipeClasses} key={i}>
-                                <button
-                                    className={el.selected ? [cl.btn, cl.btnSelected, btnClasses].join` ` : [btnClasses, cl.btn].join` `}
-                                    key={i} my_key={i}
-                                    onClick={(e, i) => {
-                                        e.preventDefault();
-                                        dispatch({type: 'SELECT_BTN', key:e.target.getAttribute('my_key') })
-                                        setTabActive(e.target.getAttribute('my_key'))
-                                    }}>
-                                    {el.text}
-                                </button>
-                            </div>
-                        ))}
+        // <div className={[cl.btns, btnsClasses].join` `}>
+        <div className="swiperBtnsCase swiper ">
+            <div className={"swiper-wrapper " + [cl.btns, btnsClasses].join` `}>
+                {arrBtns.map((el, i) => (
+                    <div className={"swiper-slide " + cl.swipeSl + ' ' + itemSwipeClasses} key={i}>
+                        <button
+                            className={el.selected ? [cl.btn, cl.btnSelected, btnClasses].join` ` : [btnClasses, cl.btn].join` `}
+                            key={i} my_key={i}
+                            onClick={(e, i) => {
+                                e.preventDefault();
+                                dispatch({type: 'SELECT_BTN', key: e.target.getAttribute('my_key')})
+                                setTabActive(e.target.getAttribute('my_key'))
+                            }}>
+                            {el.text}
+                        </button>
                     </div>
-                    <div className="swiper-scrollbar"></div>
-                </div>
+                ))}
+            </div>
+            <div className="swiper-scrollbar"></div>
+        </div>
 
-                // </div>
-            )
-        }
+        // </div>
+    )
+}
 
 
-        export default MyBtns
+export default MyBtns

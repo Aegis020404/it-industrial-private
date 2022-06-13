@@ -1,18 +1,15 @@
-import React, {useMemo, useState, useEffect} from 'react';
+import React, {useMemo, useState} from 'react';
 import cl from './../../style/MainOffer.module.css'
 import MyBtnFiled from './../UI/buttonback/MyBtnFiled'
 import MyMask from './../UI/maskinput/MyMask'
 import MyInput from "./../UI/input/MyInput";
 import Ranger from "./../UI/ranger/Ranger";
-import MyModal from '../UI/modal/MyModal';
-import {connect} from "react-redux/lib";
 import MyBtnBlank from '../UI/buttonborder/MyBtnBlank';
 
 import {Swiper, SwiperSlide} from "swiper/react";
-import ContactsService from '../../API/ContactsService';
 import MyThxModal from '../UI/thxmodal/MyThxModal';
 import {selectBtn} from "../../redux/mainOffer-redux";
-import { useDispatch, useSelector } from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 
 const MainOffer = (props) => {
     const [btnActive, setBtnActive] = useState('')

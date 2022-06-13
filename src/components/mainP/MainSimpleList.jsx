@@ -69,16 +69,19 @@ const MainSimpleList = () => {
         }
 
         function loadResize() {
-            let windowWidth = window.innerWidth
-            if (windowWidth <= mediaQuerySize) {
-                catalogSliderInit()
-            } else {
-                catalogSliderDestroy()
-            }
-        }
+            if (typeof window !== 'undefined') {
 
-        window.addEventListener('load', loadResize);
-        window.addEventListener('resize', loadResize);
+                let windowWidth = window.innerWidth
+                if (windowWidth <= mediaQuerySize) {
+                    catalogSliderInit()
+                } else {
+                    catalogSliderDestroy()
+                }
+            }
+
+            window.addEventListener('load', loadResize);
+            window.addEventListener('resize', loadResize);
+        }
     });
 
 

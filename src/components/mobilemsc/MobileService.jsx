@@ -42,20 +42,22 @@ const MobileService = ({column}) => {
         }
 
         function loadResize() {
-            let windowWidth = window.innerWidth
-            if (windowWidth <= mediaQuerySize) {
-                inititalSwiper()
-            } else {
-                destroySwiper()
-            }
-        }
-        if (checkin) {
-            loadResize()
-            checkin = 0
-        }
-        window.addEventListener('load', loadResize);
-        window.addEventListener('resize', loadResize);
+            if (typeof window !== 'undefined') {
 
+                let windowWidth = window.innerWidth
+                if (windowWidth <= mediaQuerySize) {
+                    inititalSwiper()
+                } else {
+                    destroySwiper()
+                }
+            }
+            if (checkin) {
+                loadResize()
+                checkin = 0
+            }
+            window.addEventListener('load', loadResize);
+            window.addEventListener('resize', loadResize);
+        }
     })
     return (
         <section className={cl.serviceSection}>
