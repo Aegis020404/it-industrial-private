@@ -1,4 +1,3 @@
-import Reaact from 'react';
 import MainSimpleList from '../mainP/MainSimpleList';
 import cl from './../../style/AboutSimple.module.css';
 
