@@ -2,15 +2,471 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13c6eac1-78ac-4aea-b259-c78e359a2028" name="Changes" comment="pworkinh">
+      <change afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/crm-develop.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mobile-develop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/seo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/2.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/tariffSEO-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/tariffSEO-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/ContactsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/API/ContactsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBlack/GothamProBlack.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBlack/GothamProBlack.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBlack/GothamProBlack.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBlack/GothamProBlack.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBlack/GothamProBlack.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBlack/GothamProBlack.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBlackItalic/GothamProBlackItalic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBlackItalic/GothamProBlackItalic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBlackItalic/GothamProBlackItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBlackItalic/GothamProBlackItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBlackItalic/GothamProBlackItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBlackItalic/GothamProBlackItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBold/GothamProBold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBold/GothamProBold.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBold/GothamProBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBold/GothamProBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBold/GothamProBold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBold/GothamProBold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBoldItalic/GothamProBoldItalic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBoldItalic/GothamProBoldItalic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBoldItalic/GothamProBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBoldItalic/GothamProBoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProBoldItalic/GothamProBoldItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProBoldItalic/GothamProBoldItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProItalic/GothamProItalic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProItalic/GothamProItalic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProItalic/GothamProItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProItalic/GothamProItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProItalic/GothamProItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProItalic/GothamProItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProLight/GothamProLight.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProLight/GothamProLight.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProLight/GothamProLight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProLight/GothamProLight.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProLight/GothamProLight.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProLight/GothamProLight.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProLightItalic/GothamProLightItalic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProLightItalic/GothamProLightItalic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProLightItalic/GothamProLightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProLightItalic/GothamProLightItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProLightItalic/GothamProLightItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProLightItalic/GothamProLightItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProMedium/GothamProMedium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProMedium/GothamProMedium.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProMedium/GothamProMedium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProMedium/GothamProMedium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProMedium/GothamProMedium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProMedium/GothamProMedium.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProMediumItalic/GothamProMediumItalic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProMediumItalic/GothamProMediumItalic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProMediumItalic/GothamProMediumItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProMediumItalic/GothamProMediumItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProMediumItalic/GothamProMediumItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProMediumItalic/GothamProMediumItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProRegular/GothamProRegular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProRegular/GothamProRegular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProRegular/GothamProRegular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProRegular/GothamProRegular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/GothamProRegular/GothamProRegular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/fonts/GothamProRegular/GothamProRegular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1acovtor.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1acovtor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1crm.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1crm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1devMobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1devMobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1estetic.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1estetic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1hockey.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1hockey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1lumar.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1lumar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1slide.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1slide.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1stepIconCRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1stepIconCRM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1stepIconCRM.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1stepIconCRM.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/1stroimat.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/1stroimat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2acovtor.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2acovtor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2crm.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2crm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2devMobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2devMobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2estetic.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2estetic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2hockey.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2hockey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2lumar.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2lumar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2stepIconCRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2stepIconCRM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2stepIconCRM.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2stepIconCRM.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/2stroimat.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/2stroimat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3acovtor.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3acovtor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3crm.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3crm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3devMobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3devMobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3devMobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3devMobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3estetic.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3estetic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3hockey.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3hockey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3lumar.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3lumar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3stepIconCRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3stepIconCRM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3stepIconCRM.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3stepIconCRM.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/3stroimat.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/3stroimat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/4acovtor.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/4acovtor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/4crm.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/4crm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/4devMobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/4devMobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/4estetic.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/4estetic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/4hockey.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/4hockey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/4lumar.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/4lumar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/4stepIconCRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/4stepIconCRM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/4stepIconCRM.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/4stepIconCRM.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/4stroimat.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/4stroimat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5acovtor.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5acovtor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5crm.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5crm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5devMobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5devMobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5devMobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5devMobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5estetic.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5estetic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5hockey.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5hockey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5lumar.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5lumar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5stepIconCRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5stepIconCRM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5stepIconCRM.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5stepIconCRM.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/5stroimat.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/5stroimat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/6acovtor.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/6acovtor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/6crm.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/6crm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/6devMobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/6devMobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/6estetic.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/6estetic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/6hockey.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/6hockey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/6lumar.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/6lumar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/6stepIconCRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/6stepIconCRM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/6stepIconCRM.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/6stepIconCRM.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/6stroimat.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/6stroimat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/7crm.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/7crm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Arrow 4@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/Arrow 4@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ArrowNextGray.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/ArrowNextGray.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ArrowPrevGray.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/ArrowPrevGray.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/active-arrow-slide.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/active-arrow-slide.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/app1.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/app1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/app2.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/app2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/app3.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/app3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/app4.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/app4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/app5.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/app5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/app6.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/app6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/arrNextRev.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/arrNextRev.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/arrPrevRev.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/arrPrevRev.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/arrow-active-header.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/arrow-active-header.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/arrow-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/arrow-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/arrow-slide.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/arrow-slide.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/audi-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/audi-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/auto-estetica.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/auto-estetica.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/autoSchedule.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/autoSchedule.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/autoestetica-schedule-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/autoestetica-schedule-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/autoestetica-schedule.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/autoestetica-schedule.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bc-mini-seo.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/bc-mini-seo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bg-industrial.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/bg-industrial.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/blank-about.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/blank-about.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/blue-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/blue-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/calendar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/calendar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/circle-contract-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/circle-contract-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/circle-cubs-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/circle-cubs-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/circle-famale.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/circle-famale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/circle-mac-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/circle-mac-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/circle-phone-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/circle-phone-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/cloud-grid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/cloud-grid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/contract.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/contract.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/crm-control.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/crm-control.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/crm-design.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/crm-design.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/crm-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/crm-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/crm-int.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/crm-int.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/crm-screen.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/crm-screen.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/crm-settings.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/crm-settings.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/crm-w.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/crm-w.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/darts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/darts.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/darts.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/darts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/dev-fifth.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/dev-fifth.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/dev-first.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/dev-first.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/dev-fourth.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/dev-fourth.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/dev-sixth.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/dev-sixth.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/dev-third.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/dev-third.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/dev.-second.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/dev.-second.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/doc-left-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/doc-left-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/doc-right-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/doc-right-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/eco-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/eco-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/eco-schedule-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/eco-schedule-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/eco-schedule-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/eco-schedule-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/eco-schedule.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/eco-schedule.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ecoScheduleM.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/ecoScheduleM.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ekvador-block.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/ekvador-block.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ekvador.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/ekvador.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/exit-modal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/exit-modal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/female-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/female-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/form-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/form-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gadjets.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/gadjets.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gadjets.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/gadjets.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gears.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/gears.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gps-pink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/gps-pink.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/graffik1-05.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/graffik1-05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/graffik1-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/graffik1-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/graffik1.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/graffik1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/graffik1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/graffik1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/graffil1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/graffil1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/graph-keys.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/graph-keys.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/grey-bg-right-itemsvg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/grey-bg-right-itemsvg.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/grey-item-bg-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/grey-item-bg-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/greyBigLogo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/greyBigLogo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/headphones-pink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/headphones-pink.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/hero-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/hero-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/hockey-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/hockey-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/home.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/iphone-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/iphone-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/it-bgjpg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/it-bgjpg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/it-industrial-true-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/it-industrial-true-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/key-seo-veni.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/key-seo-veni.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/keys-seo-auto.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/keys-seo-auto.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/keys-seo-eco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/keys-seo-eco.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/keys-seo-lumar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/keys-seo-lumar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/keys-seo-stroy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/keys-seo-stroy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/left-bg-pink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/left-bg-pink.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/left-slide-review.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/left-slide-review.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/lider-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/lider-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/literals.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/literals.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/llumar-crm-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/llumar-crm-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/llumar-crm.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/llumar-crm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/llumar-logo-crm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/llumar-logo-crm.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/llumar-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/llumar-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/llumar-schedule-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/llumar-schedule-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/llumar-schedule.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/llumar-schedule.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/llumarSchedule.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/llumarSchedule.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/logo-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/logo-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/logo-ekovtor.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/logo-ekovtor.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/logo-header.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/logo-header.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mac-grid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mac-grid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mailRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mailRight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mainLeft.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mainLeft.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/male-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/male-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/map-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/map-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/map-75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/map-75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/map.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/map.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/market-grid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/market-grid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/marketplace-img.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/marketplace-img.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mb-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mb-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mini-app-bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mini-app-bg.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mini-iphone-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mini-iphone-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/miniPhone.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/miniPhone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mob-analitic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mob-analitic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mob-design.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mob-design.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mob-develop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mob-develop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mob-phones.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mob-phones.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mob-project.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mob-project.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mob-seo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mob-seo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mob-test.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mob-test.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mobile-hand.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/mobile-hand.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ok-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/ok-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/one-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/one-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/op-right-offer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/op-right-offer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/phone-pink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/phone-pink.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/phones-blue-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/phones-blue-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/phones-blue-m.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/phones-blue-m.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/phones-blue.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/phones-blue.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/phones-blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/phones-blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pink-bg-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/pink-bg-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pink-bg-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/pink-bg-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/right-bg-pink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/right-bg-pink.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/screen-mac.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/screen-mac.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/screen-tablet.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/screen-tablet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/search-big.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/search-big.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-calendar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-calendar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-clients.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-clients.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-control.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-control.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-count.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-count.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-key.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-key.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-links.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-links.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-mini.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-mini.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-ready.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-ready.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-report-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-report-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-report.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-report.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-setting.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-setting.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-stonks.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-stonks.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seo-text.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seo-text.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seoLeft.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seoLeft.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/seoRight.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/seoRight.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/site-grid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/site-grid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/step1.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/step1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/step2.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/step2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/step3.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/step3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/step4.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/step4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/step5.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/step5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/step6.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/step6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/stroySchedule.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/stroySchedule.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/stroymat-schedule-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/stroymat-schedule-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/stroymat-schedule.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/stroymat-schedule.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/tg-active.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/tg-active.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/tg-footer-active.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/tg-footer-active.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/tg-footer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/tg-footer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/tg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/tg.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/veniScheduleM.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/veniScheduleM.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/venikolor-schedule-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/venikolor-schedule-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/venikolor-schedule.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/venikolor-schedule.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/visit-card-grid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/visit-card-grid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/whatsapp-active.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/whatsapp-active.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/whatsapp-footer-active.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/whatsapp-footer-active.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/whatsapp-footer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/whatsapp-footer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/whatsapp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/whatsapp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/x-eva.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/img/x-eva.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/Container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FooterItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/FooterItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/HeaderItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/HeaderNav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/HeroSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/KeyGenSites.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/KeyGenSites.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/KeysItemList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/KeysItemList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MobileHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/MobileHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TariffSEO/TariffSEO.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/TariffSEO/TariffSEO.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TariffsList.Item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/TariffsList.Item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/btnsnav/MyBtns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/btnsnav/MyBtns.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/btnsnav/MyBtns.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/btnsnav/MyBtns.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/buttonback/MyBtnFiled.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/buttonback/MyBtnFiled.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/buttonback/MyBtnFiled.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/buttonback/MyBtnFiled.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/buttonborder/MyBtnBlank.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/buttonborder/MyBtnBlank.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/buttonborder/MyBtnBlank.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/buttonborder/MyBtnBlank.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/input/MyInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/input/MyInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/input/MyInput.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/input/MyInput.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/mail/MyMail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/mail/MyMail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/mail/MyMail.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/mail/MyMail.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/maskinput/MyMask.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/maskinput/MyMask.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/maskinput/MyMask.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/maskinput/MyMask.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/modal/MyModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/modal/MyModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/modal/MyModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/modal/MyModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/navlink/MyNavLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/navlink/MyNavLink.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/navlink/MyNavLink.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/navlink/MyNavLink.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/navpage/MyNavPages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/navpage/MyNavPages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/navpage/MyNavPages.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/navpage/MyNavPages.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/ranger/Ranger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/ranger/Ranger.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/ranger/Ranger.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/ranger/Ranger.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/textarea/MyTextarea.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/textarea/MyTextarea.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/textarea/MyTextarea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/textarea/MyTextarea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/thxmodal/MyThxModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/thxmodal/MyThxModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/thxmodal/MyThxModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/thxmodal/MyThxModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/titlepage/MyTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/titlepage/MyTitle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/titlepage/MyTitle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/UI/titlepage/MyTitle.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/aboutP/AboutSimple.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/aboutP/AboutSimple.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/aboutP/AboutText.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/aboutP/AboutText.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contactsP/ContactMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/contactsP/ContactMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contactsP/ContactsLocationInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/contactsP/ContactsLocationInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/crmseo/CrmCount.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/crmseo/CrmCount.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/crmseo/CrmOpportunities.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/crmseo/CrmOpportunities.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/genericServices/marketplaceSeo/MarketplaceSeoText.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/genericServices/marketplaceSeo/MarketplaceSeoText.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMain.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMainCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMainCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMainCompany.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMainCompany.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMainCrm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMainCrm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMainMobile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMainMobile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMainSItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMainSItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMainSeo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMainSeo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMainSeoInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMainSeoInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMainSeoItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMainSeoItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keysP/KeysMainSites.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/keysP/KeysMainSites.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainApplication.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainApplication.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainDev.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainDev.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainKItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainKItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainKeys.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainKeys.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainLider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainLider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainOItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainOItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainOffer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainOffer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainOfferBtns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainOfferBtns.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainOther.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainOther.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainQItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainQItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainQuestion.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainQuestion.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainQuiz.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainQuiz.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainResult.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainResult.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainReview.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainReview.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainSItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainSItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainSimple.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainSimple.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainSimpleList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainSimpleList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainSlider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainTItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainTItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainP/MainTariff.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mainP/MainTariff.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mobilemsc/MobileCount.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mobilemsc/MobileCount.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mobilemsc/MobileOppServ.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mobilemsc/MobileOppServ.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mobilemsc/MobilePortfolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mobilemsc/MobilePortfolio.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mobilemsc/MobileServItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mobilemsc/MobileServItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mobilemsc/MobileService.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/mobilemsc/MobileService.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reviewsP/Reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/reviewsP/Reviews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reviewsP/ReviewsItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/reviewsP/ReviewsItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/KeysMainSeoSwiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/KeysMainSeoSwiper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoMini.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoMonth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoMonth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoMonthItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoMonthItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoQuestions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoQuestions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoReport.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoReportItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoReportItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoServices.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoServicesItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoServicesItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoStable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoStable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoStableItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoStableItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seomsc/SeoTariff.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/seomsc/SeoTariff.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tariffP/TariffList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/tariffP/TariffList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tariffP/TariffSeoDuo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/tariffP/TariffSeoDuo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/vacancyP/VacancyAcc.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/vacancyP/VacancyAcc.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/vacancyP/VacancyAccAll.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/vacancyP/VacancyAccAll.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/vacancyP/VacancyAccItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/componentsUI/vacancyP/VacancyAccItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useFetching.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/hooks/useFetching.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contacts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/crm-develop.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/keys.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/keys.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/keys/avto-estetica.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/keys/avto-estetica.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/keys/carriage-app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/keys/carriage-app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/keys/crm-system.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/keys/crm-system.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/keys/ecovtor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/keys/ecovtor.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/keys/hock-team.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/keys/hock-team.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/keys/llumar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/keys/llumar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/keys/stroy-mat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/keys/stroy-mat.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/marketplace-seo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/marketplace-seo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobile-develop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/reviews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/seo.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sites.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sites.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/tariffs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tariffs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/vacancy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/vacancy.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/keySite-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/keySite-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/keysMainSeo-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/keysMainSeo-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/keysNav-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/keysNav-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mainDev-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/mainDev-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mainOffer-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/mainOffer-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mainOther-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/mainOther-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mainTariff-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/mainTariff-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mobileHero-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/mobileHero-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mobileService-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/mobileService-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slider-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/slider-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/tariffSEO-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/tariffSEO-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/static.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/AboutSimple.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/AboutSimple.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/AboutText.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/AboutText.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/CRM.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/CRM.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/ContactMap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/ContactMap.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/ContactsInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/ContactsInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/CrmCount.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/CrmCount.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/CrmHero.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/CrmHero.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/CrmOpportunities.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/CrmOpportunities.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/Footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/HeroSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/HeroSection.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/KeysItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/KeysItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/KeysMain.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/KeysMain.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/KeysMainCrm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/KeysMainCrm.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/KeysMainMobile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/KeysMainMobile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/KeysMainSeo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/KeysMainSeo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/KeysMainSites.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/KeysMainSites.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainApplication.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainApplication.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainDev.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainDev.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainKeys.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainKeys.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainLider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainLider.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainOffer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainOffer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainOther.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainOther.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainQuestion.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainQuestion.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainQuiz.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainQuiz.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainResult.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainResult.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainReview.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainReview.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainSimple.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainSimple.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainTItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainTItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MainTariff.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MainTariff.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MobileCount.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MobileCount.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MobileHero.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MobileHero.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MobilePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MobilePage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MobilePortfolio.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MobilePortfolio.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/MobileService.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/MobileService.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Reviews.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/Reviews.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/SeoHead.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/SeoHead.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/SeoMini.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/SeoMini.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/SeoMonth.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/SeoMonth.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/SeoQuestion.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/SeoQuestion.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/SeoReport.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/SeoReport.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/SeoServices.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/SeoServices.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/SeoStable.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/SeoStable.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/SeoTariff.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/SeoTariff.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/Slider.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/TariffList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/TariffList.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/VacancyAcc.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/VacancyAcc.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/acc.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/acc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/genericServStyle/MarketplaceSeoText.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/genericServStyle/MarketplaceSeoText.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/keySite.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/keySite.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/swiper.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/swiper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/tariffSEO.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/style/tariffSEO.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +486,10 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/components/aboutP/AboutSimple.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/API/ContactsService.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/pages/about.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/redux/tariffSEO-redux.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/components/componentsUI/aboutP/AboutSimple.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/components/API/ContactsService.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/about.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/redux/tariffSEO-redux.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,15 +510,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aegis\OneDrive\Рабочий стол\crm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aegis\OneDrive\Рабочий стол\crm" />
+      <recent name="C:\Users\aegis\OneDrive\Рабочий стол\crm\public" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -139,6 +606,7 @@
       <workItem from="1655144864901" duration="3821000" />
       <workItem from="1655150101040" duration="2699000" />
       <workItem from="1655154424286" duration="3129000" />
+      <workItem from="1655181121201" duration="1480000" />
     </task>
     <task id="LOCAL-00001" summary="add redirect">
       <created>1654279996682</created>
@@ -436,5 +904,9 @@
     <MESSAGE value="pwork" />
     <MESSAGE value="pworkinh" />
     <option name="LAST_COMMIT_MESSAGE" value="pworkinh" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
